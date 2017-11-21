@@ -1,0 +1,23 @@
+init:
+    define s = Character("Seba")
+    image girl:
+        choice( i == 1 ):
+            "main1.png"
+        choice( i == 2 ):
+            "main2.png"
+        choice( i == 3 ):
+            "main3.png"
+        
+label chapter1:
+    scene white
+    
+    show text "{color=#FFFFFF}Chapter 1\nPierwszy dzień na studiach{/color}"
+    with dissolve
+    pause 1
+    
+    scene weeia
+    #play music "hello.mp3"
+    
+    show girl
+    m "No czesc"
+    jump chapter2

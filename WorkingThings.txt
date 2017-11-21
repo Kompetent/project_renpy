@@ -1,0 +1,30 @@
+-----------------------------------
+przeciagac sie da:
+  
+drag:
+
+            drag_name "Ivy"
+
+            child "first_man.png"
+
+            droppable False
+
+            xpos 100 ypos 100
+***********************************
+hbox:
+
+	textbutton "Wybierz mnie." xpos 100 ypos 600 text_color "#FF0000" text_hover_color "#00FF00"  action Jump("a")
+
+        textbutton "Wybierz mnie." xpos 400 ypos 600 text_color "#FF0000" text_hover_color "#00FF00" action Jump("b")
+
+        textbutton "Wybierz mnie." xpos 700 ypos 600 text_color "#FF0000" text_hover_color "#00FF00" action Jump("c")
+
+***********************************
+Wyœwietlanie naszych studentek
+
+        show mainGirl1 at left
+
+        show mainGirl2 at center
+
+        show mainGirl3 at right
+***********************************
