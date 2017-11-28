@@ -2,9 +2,12 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 76: invalid syntax
-    voice "music/tutorial/jakieimie.ogg"
-                                        ^
-    
+File "game/chapter1.rpy", line 300: expected statement.
+    glownabohaterka Zwykly przypadek. Przewidziało Ci się najwidoczniej.
+                                    ^
+
+File "game/chapter1.rpy", line 301: expected statement.
+    Malfoy: Nie udawaj. Widziałam, jak się na mnie lampisz. Czyżbym Cię czymś zdenerwowała?
+          ^
 
 Ren'Py Version: Ren'Py 6.99.12.4.2187

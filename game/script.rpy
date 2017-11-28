@@ -1,12 +1,22 @@
 init:
-    define m = Character("MainCharacter")
-
+    define m = Character("MainCharacter",dynamic=True)
+    define wybrana = "main1.png"
+    #minigra_tpi może być
     image weeia = "weeia.jpg"
     image bg white = "white.png"
-    image side mainGirl1 = "main1.png"
-    image side mainGirl2 = "main2.png"
-    image side mainGirl3 = "main3.png"
+    
+    define mainGirl1 = Image("main1.png")
+    define mainGirl2 = Image("main2.png")
+    define mainGirl3 = Image("main3.png")
+
     image side narrator = "first_man.png"
+    #image wybrana:
+    #    choice (i == 1):
+    #            "main1.png"
+    #    choice (i == 2):
+    #            "main2.png"
+    #    choice (i == 3):
+    #            "main3.png"
 
     define ob = Character("Obserwator", image="narrator")
 
@@ -15,6 +25,14 @@ init:
             imagebutton auto "main1_%s.png" action Jump("a")
             imagebutton auto "main2_%s.png" action Jump("b")
             imagebutton auto "main3_%s.png" action Jump("c")
+    #init python:
+    #    def wybor(numer):
+    #        if numer == 1:
+    #            renpy.image("wybrana",mainGirl1)
+    #        if numer == 2:
+    #            renpy.image("wybrana",mainGirl2)
+    #        if numer == 3:
+    #            renpy.image("wybrana",mainGirl3)
 
 label start:
     scene bg white
@@ -30,6 +48,7 @@ label start:
     #hide text
     voice "music/tutorial/2.ogg"
     "Poczekaj chwilę. Ktoś tu zgasił światło. O, chyba znalazłem!"
+    #jump minigame_tpi
     scene bg white
     voice "music/tutorial/3.ogg"
     ob "Nareszcie ci się udało! Witaj! Pewnie masz do mnie sporo pytań?"
@@ -51,6 +70,7 @@ label start:
         jej poczynani podczas tego szalonego okresu jakim jest studiowanie."
         voice "music/tutorial/7.ogg"
         ob "Wybierz sobie teraz jedną z trzech dostępnych w grze postaci."
+        hide textbox
 
         show screen choices
         pause 30
@@ -73,21 +93,20 @@ label start:
     label next:
         voice "music/tutorial/jakieimie.ogg"
         python:
+            import names
 
             name = renpy.input("Jak ma się nazywać twoja studentka?")
-            if not name:
-                name = "Alicja"
-        #Tu mozna to zapetlic jakos i wymusic "dobre imie"
-        #trzeba zrobic blok if'a
-        #bedzie tworzyl m w zaleznosci od i
-        $ m = Character(name)
-        #$ m = name
+            while(names.correct_name(name.encode('utf8')) == False):
+                name = renpy.input("Podanego imienia nie ma w bazie.\nJak ma się nazywać twoja studentka?")
+
         if i == 1:
             $ m = Character(name, image="mainGirl1")
         elif i == 2:
             $ m = Character(name, image="mainGirl2")
         elif i == 3:
             $ m = Character(name, image="mainGirl3")
+            #init python:
+                #renpy.image("wybrana",mainGirl3)
         else:
             "cos poszlo nie tak"
             return
@@ -101,6 +120,14 @@ label start:
         ob "Jakkolwiek zdecydujesz mam nadzieję, że [m] będzie szczęśliwa i zmotywowana do rozwijania samej siebie"
         voice "music/tutorial/11.ogg"
         ob "Nie przedłużajmy więc. Nasza bohaterka czeka na Ciebie. My pewnie się jeszcze zobaczymy. Wejdź do świata Wonderful Time."
+        
+        #pokazywanie naszej studentki
+        if i == 1:
+            show main1
+        elif i == 2:
+            show main2
+        elif i == 3:
+            show main3
 
         m "Cześć, mam nadzieje, że będzie Ci się fajnie mną grało."
         m "Powodzenia."
