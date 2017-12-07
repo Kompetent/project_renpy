@@ -2,13 +2,25 @@ init:
     image bg pokoj = "pokoj.jpg"
     image bg aula = "aula.jpg"
     image bg miasto = "miasto.jpg"
+    image bg korytarz = "korytarz2.jpg"
+    image bg a128 = "sala1.jpg"
+    image bg a129 = "sala2.jpg"
+    image bg a123 = "sala3.jpg"
 
-    image side father = "father.png"
-    define o = Character("Ojciec", image="father")
+    image father = "father.png"
+    image draco = "draco.png"
+    image dziekan = "dziekan.png"
+    image opiekun = "matylda.png"
+    
+    define o = Character("Ojciec") #mozna dodac font różny
     define dziekan = Character("Dziekan")
+    define opiekunroku = Character("Opiekun Roku")
+    define malfoy = Character("Amanda")
+
     define love_u = "Uczelnia Informatyk Różnych"
     define hate_u = "Uczelnia Informatyczno-matematyczna im. P. Czybyszewa"
 label chapter1:
+    jump chapter2 #pokazujemy tylko progres
     scene bg white
 
     show text "{color=#000000}Chapter 1\nPierwszy dzień na studiach{/color}"
@@ -16,6 +28,7 @@ label chapter1:
     hide text
 
     scene black
+    show father at left
     o "Kochanie, obudź się, już 8"
     menu:
         "Śpij dalej":
@@ -37,8 +50,17 @@ label chapter1:
         o "Wybacz młoda panno, ale nie dałaś mi wyboru, biegiem do łazienki."
     label obudzona:
         scene bg pokoj
-
+        show father at left
         o "Wyglądasz ślicznie córeczko, gdyby tylko mama mogła Cię zobaczyć."
+        
+        #pokazywanie naszej studentki
+        if i == 1:
+            show main1
+        elif i == 2:
+            show main2
+        elif i == 3:
+            show main3
+
         menu:
             "Tato, przestań...":
                 m "Tato, przestań. Naprawdę nie lubię jak tak mówisz."
@@ -85,6 +107,14 @@ label chapter1:
 
         scene bg miasto
 
+        #pokazywanie naszej studentki
+        if i == 1:
+            show main1
+        elif i == 2:
+            show main2
+        elif i == 3:
+            show main3
+
         m "Mam jeszcze 15 minut, tempo mam dobre. Całe szczęście to mam w miarę blisko tutaj."
         m "Nawet ładny ten budynek. Co prawda nie umywa się do [love_u], ale ten wygląda na bardziej zadbany."
         m "Zapomnij o [love_u], [m]. Musisz wziąć to co dało ci życie. Jeśli dobrze Ci pójdzie to będziesz mogła zrobić
@@ -103,6 +133,14 @@ label chapter1:
         #wnętrze sali wykładowej, głos gwary
         scene bg aula
 
+        #pokazywanie naszej studentki
+        if i == 1:
+            show main1
+        elif i == 2:
+            show main2
+        elif i == 3:
+            show main3
+
         m "Wow, tylu ludzi w jednym miejscu na żywo jeszcze nie widziałam."
         m "Każdy z nich ma swoje cele i ambicje, każdy ma inny powód dla którego się tutaj znalazł.
         Oni wszyscy są moją przyszłą konkurencją na rynku pracy."
@@ -112,8 +150,16 @@ label chapter1:
         Ojciec chyba ma rację, nie mogę zmarnować tego czasu, który mam. Będziesz ze mnie
         dumny tato i... mamo. "
 
-        #podniosła muzyka
+        #ukrywanie naszej studentki
+        if i == 1:
+            hide main1
+        elif i == 2:
+            hide main2
+        elif i == 3:
+            hide main3
 
+        #podniosła muzyka
+        show dziekan at left
         dziekan "Witam świeżo upieczonych studentów. Nazywam się prof. Roman Kosior i jestem
         dziekanem Wydziału Informatycznego."
         dziekan "Nasza uczelnia z roku na rok dokłada starań by każdy jej absolwent
@@ -129,6 +175,259 @@ label chapter1:
         dziekan "Teraz każdy kierunek będzie miał rozmowę ze swoim
         opiekunem, który omówi najważniejsze elementy waszej przyszłej nauki.
         Do zobaczenia na zajęciach."
+        hide dziekan
+        #schowaj dziekana
+        "Komunikat głosowy" "Informacja dla kierunków pierwszego roku. Zaraz rozpocznie się podpisywanie 
+        umów studenckich i odbierania legitymacji. Podaję numery sal: Mechatronika A123, Informatyka A128, 
+        BHP A129, Automatyka i Robotyka A130,  BHP A132..."
 
-    #jump chapter2
-    return
+        #pokazywanie naszej studentki
+        if i == 1:
+            show main1
+        elif i == 2:
+            show main2
+        elif i == 3:
+            show main3
+
+        m "Hmm...a już myślałam, że będę mogła pójść do domu. Męczą mnie takie uroczystości. 
+        W sumie nic dziwnego. Większość czasu spędzam przed komputerem."
+        m "Może jak będzie już na studiach WF to się zapiszę na jakąś siłownię lub fitness. 
+        Trzeba będzie trochę popracować nad kondycją."
+        m "Teraz nie pora na takie rzeczy. Trzeba się udać na odbiór legitymacji.. Mam nadzieję, 
+        że jakoś przeżyje w tym tłumie."
+        label zmiany:
+        #odgłos tłumu
+        scene black
+        show text "{color=#FFFFFF}Kilka minut później...{/color}"
+        pause 2
+        hide text
+
+        scene bg korytarz
+        #pokazywanie naszej studentki
+        if i == 1:
+            show main1
+        elif i == 2:
+            show main2
+        elif i == 3:
+            show main3
+
+        m "WRESZCIE! Jejku, myślałam, że uduszę się tam. Jestem już na odpowiednim piętrze."
+        m "Hmm....która to była sala?" 
+        python:
+            wrong = False
+        label back:
+            scene bg korytarz
+            menu:
+                "A123":
+                    m "O...k... to była ta sala? No nic przekonajmy sie."
+                    #sala wykladowa
+                    show bg a123
+                    #pokazywanie naszej studentki
+                    if i == 1:
+                        show main1
+                    elif i == 2:
+                        show main2
+                    elif i == 3:
+                        show main3
+                    m "O matko, to nie ta sala. Ale przypał. Muszę znaleźć właściwą salę."
+                    python:
+                        wrong = True
+                    jump back
+                "A129":
+                    m "O...k... to była ta sala? No nic przekonajmy sie."
+                    #sala wykladowa
+                    show bg a129
+                    #pokazywanie naszej studentki
+                    if i == 1:
+                        show main1
+                    elif i == 2:
+                        show main2
+                    elif i == 3:
+                        show main3
+                    m "O matko, to nie ta sala. Ale przypał. Muszę znaleźć właściwą salę."
+                    python:
+                        wrong = True
+                    jump back
+                "A128":
+                    jump go
+        label go:
+            #sala wykladowa
+            show bg a128
+            if wrong:
+                
+                #pokazywanie naszej studentki
+                if i == 1:
+                    show main1
+                elif i == 2:
+                    show main2
+                elif i == 3:
+                    show main3
+                #pokaz opiekuna
+                show opiekun at left
+                opiekunroku "Ludzie kochani. Ilu Was się jeszcze spóźni? Coś kiepsko wróżę Waszą punktualność 
+                na przyszłych zajęciach."
+                hide opiekun
+                #schowaj opiekuna
+                #pokaz draco
+                show draco at right
+                malfoy "Same nieogary na tym kierunku. widać, że moja konkurencja nie zapewni mi nawet żdżbła 
+                ekscytacji w \"rywalizacji\". "
+                #pokaz studentke
+                m "Mogłam lepiej zapamiętać numer sali. Jestem na siebie potwornie zła. Pierwszy 
+                dzien na uczelni i już mi coś nie wychodzi. Muszę się bardziej starac."
+                hide draco
+                if i == 1:
+                    hide main1
+                elif i == 2:
+                    hide main2
+                elif i == 3:
+                    hide main3
+            else:
+                #pokazywanie naszej studentki
+                if i == 1:
+                    show main1
+                elif i == 2:
+                    show main2
+                elif i == 3:
+                    show main3
+                m "Chyba trafiłam do dobrej sali. Nie spodziewałam się, że aż tyle osób wybierze ten kierunek. 
+                Widzę też sporo dziewczyn. Cieszę się, że jest nas co raz więcej na uczelniach technicznych."
+                m "Wciąż przybywają ludzie. Pewnie wcześniej pomylili salę. Dobrze, że udało mi się zapamiętać 
+                właściwy numer"
+                if i == 1:
+                    hide main1
+                elif i == 2:
+                    hide main2
+                elif i == 3:
+                    hide main3
+        #pokaz opiekuna roku
+        show opiekun at left
+        opiekunroku "Mam nadzieję, że to już wszyscy. W tym roku naprawdę dużo ludzi dostało się na ten 
+        kierunek. Mam nadzieję, że ta sala ogarnie nas wszystkich. Inaczej wykłady będziecie mieli na 
+        podwórku."
+        #dżwięk masowego śmiechu
+        opiekunroku "Na początek chciałabym się wam przedstawić. Jestem doktor Matylda Kostrzewska i 
+        jestem opiekunem waszego roku. Równocześnie będę miała z wami zajęcia z Podstaw Programowania."
+        "Student1" "Slyszalem, ze starsze roczniki mówią na nią \"Doktor Kosa\""
+        "Student2" "Czemu? Aż tak ciężko zaliczyć ten przedmiot?"
+        "Student2" "Taa...słyszałem, że do programowania podchodzi bardzo poważnie. Jedna z najbardziej 
+        uzdolnionych osob tutaj."
+        "Student3" "Dajcie spokój. Ja tam nie wierzę starszym rocznikom. Później okazuje się, że połowa to kłamstwo."
+        opiekunroku "...na uroczystości poznaliście jeszcze jedną osobę, z którą będziecie mieli zajęcia w 
+        tym semestrze. Nasz dziekan będzie z wami miał Historię Informatyki."
+        "Student1" "Co? Dopiero pierwszy semestr a już mamy jakieś wypełniacze w planie."
+        opiekunroku "Polecam chodzić, gdyż dziekan bardzo ciekawie prowadzi zajęcia. Z tego co pamiętam to w 
+        tamtym roku prawie wszyscy chodzili na zajęcia."
+        "Student2" "Chyba jednak przesadzasz, chłopie. Coś czuję, że będzie ciekawie."
+        opiekunroku "Plan zajęć zaraz wam przedstawię na tablicy."
+        show plan_zajec: 
+            xalign 0.8 yalign 0.25
+        
+        "Stundent1" "Zaczynamy tydzień zajęciami o 8 rano? Matko, już mi się to nie podoba..."
+        "Student2" "Matematyka w piątek? Nie ma to jak zepsuć sobie koniec tygodnia."
+        opiekunroku "Oooo... najwidoczniej widzę się z wami już w poniedziałek. Też mi się nie podoba ta godzina, 
+        ale nie ja mam na to wpływ."
+        opiekunroku "Na pierwszych zajęciach poznacie zasady prowadzenia i zaliczenia przedmiotu. 
+        Teraz będę wyczytywać alfabetycznie nazwiska. Kiedy kogoś wyczytam ma do mnie podejść by 
+        podpisać umowe i odebrać legitymację."
+        hide plan_zajec
+        #(odglos tlumu)
+        hide opiekun
+        #pokazywanie naszej studentki
+        if i == 1:
+            show main1
+        elif i == 2:
+            show main2
+        elif i == 3:
+            show main3
+        m "Kobitka nie wydaje się zła. Nie sądzę, że będę z nia miała jakieś problemy. Uczyłam sę na własną rękę 
+        programowanie jeszcze jak chodziłam do liceum."
+        show draco at right
+        malfoy "...ojciec poważnie rozważał by mnie wysłać na studia do Stanów. Dzięki temu nauczyłabym się więcej 
+        niż w tym kraju, ale matka nie chciała bym tak daleko była od domu."
+        malfoy "Mimo to, nie jest aż tak źle. Mój ojciec zna tu wielu ludzi. Kiedyś tu wykładal. 
+        Z palcem w nosie zrobię magistra, a potem doktorat w USA."
+        "Student3" "Wow...aale masz fajnie."
+        "Student4" "Prawda. W sumie jesteś ustawiona przez całe studia."
+        malfoy "Niby tak, ale to nie oznacza, że nie dam z siebie wszystkiego. Dziwię się, że aż tylu się 
+        dostało. Nie jest to problemem."
+        malfoy "Rozłożę tych cieniasów tak, że zmienią studia i pójdą na zarządzanie."
+        "Student3" "Hhahhaha. Ty to masz gadane, Malfoy."
+        m "Jezu....i z kimś takim mam studiować. Gorszej baby jeszcze nie widziałam w swoim życiu. Pewnie jest 
+        tylko mocna w gębie ale nic praktycznego zrobić nie potrafi."
+        malfoy "Hej, ty. Czemu się na mnie gapisz?"
+        menu:
+            "To tylko przypadek":
+                m "Zwykly przypadek. Przewidziało Ci się najwidoczniej."
+                malfoy "Nie udawaj. Widziałam, jak się na mnie lampisz. Czyżbym Cię czymś zdenerwowała?"
+                menu:
+                    "tak":
+                        jump bezznaczenia
+                    "nie":
+                        jump bezznaczenia
+            "Masz coś do mnie???":
+                m "Patrzę z politowaniem na twoje przechwałki."
+                malfoy "Patrzcie kogo my tu mamy. Masz cięty język. Możesz sobie gadać zdrów, ale i tak przemawia przez Ciebie zazdrość."
+                m "Chyba coś Ci się pomyliło, kobieto."
+    label bezznaczenia:
+        malfoy "Dostrzegłam to. Te spojrzenie. Spojrzenie pełne zazdrości. Mnie nie zwiedziesz."
+        malfoy "Masz czego mi zazdrościć, moja droga. Patrząc na Ciebie uważam, że i bez tego wszystkiego jestem 
+        lepsza od Ciebie. Wydajesz się być zdeterminowana, ale ja i tak będe górą."
+        m "Daj sobie na wstrzymanie, ok? Możesz sobie gadać zdrów, ale mnie to nie obchodzi. Jesteś tylko mocna w gębie."
+        malfoy "Tak uważasz? Widzę, że mamy tutaj bojowniczkę. Mam pomysł. Zalóżmy się."
+        m "Hę? Jaki zakład?"
+        malfoy "O to, kto będzie miał lepszą średnią na koniec semestru."
+        m "To trochę dziecinne. Jaka niby miałaby być nagroda."
+        malfoy "Jeśli wygrasz, przyznam, że jesteś ode mnie lepsza i dam Ci spokój do konca studiów. 
+        Może nawet jakiś projekt grupowy razem zrobimy."
+        m "Zabawne. Co jeśli ty wygrasz?"
+        malfoy "To proste. Udowodnię swoją wyższość i to, że nie jesteś godzien zainteresowania. Coś czuję, 
+        że porażka dla każdej z nas będzie bolesna a wygrana słodkim triumfem."
+        malfoy "To jak? Zakładamy się?"
+        python:
+            a = 1
+    label back_malfoy:    
+        menu:
+            "tak":
+                m "Niech Ci będzie. Skoro myślisz, że możesz ze mną rywalizować to próbuj. Nie bronię Ci."
+                jump powszystkim
+            "nie":
+                m "Nie mam po co się zakładać. Nie jesteś godna by ze mną konkurować."
+                malfoy "Czcze gadanie. Widzę, że najwyraźniej boisz się ze mną zmierzyć."
+                m "Kogo jak kogo, ale Ciebie nie zamierzam się bać."
+                malfoy "To udowodnij to. Samymi słowami raczej tego nie zrobisz."
+                if a < 2:
+                    python:
+                        a = a + 1
+                    jump back_malfoy
+                else: 
+                    jump zdenerwowana_studentka
+        label zdenerwowana_studentka:
+            m "Zaczynasz mnie denerwować. Jeżeli w końcu zdecyduję się na ten zakład to przestaniesz?"
+            malfoy "Mi tam nie zależy aż tak. Po prostu nie nawidzę ludzi, którzy boja się sprawdzić swoje umiejętności!"
+            m "Dobra, już dobra. Zgadzam sę. Zetrę ten durny uśmiech z Twojej twarzy."
+        label powszystkim:
+            malfoy "Hahahahahaha. No to ustalone. Pozwól, że zdradze Ci, kim jestem. Nazywam się [malfoy] (nazwisko_w_trakcie_wymyślania) i 
+            wiedz, że ze mną tak łatwo nie wygrasz."
+            m "Ja jestem [m] Kowalska. Już Ci współczuje przegranej."
+            opiekunroku "Pani Kowalska, do mnie!"
+            malfoy "Wołają Cię. No to do zobaczenia na zajęciach \"rywalko\". Tylko nie chwal się bardzo, 
+            że się założyłyśmy. Wieść o tym, że zadaję się z taką ofiarą zepsuje mi reputację. Hahahahahha."
+            hide draco
+            #chowaj malfoya
+            #pokaz opiekuna roku
+            show opiekun at left
+            m "W co ja się wpakowałam. No nic. Muszę stawić temu czoła. Nie będzie sobie gówniara pozwalać."
+            opiekunroku "Proszę tylko podpis i legitymacja jest już pani."
+            m "Dobrze, już podpisuję."
+
+            #(odglos pisania)
+
+            opiekunroku "Oto legitymacja studencka. Powodzenia w studiowaniu i do zobaczenia w poniedziałek."
+            m "Dziękuję... napewno się przyda... "
+            #hide opiekun roku
+            m "Mam już dość tego dnia. Lecz prawdziwy koszmar zacznie sę w poniedziałek. Nie daruję tej babie, 
+            że już zrujnowała mi studia. Pokażę na co mnie stać."
+            m "Najpierw jednak wrócę do wygodnego wyrka. Wstawanie o tak wczesnej porze jest nieludzkie."
+            jump chapter2
+            return
