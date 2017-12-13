@@ -1,15 +1,15 @@
 init:
-    define marta = Character("Marta")
-    define ikar = Character("Ikar")
-    define teresa = Character("Teresa")
-    define Izabella = Character("Izabella")
+    define marta = Character("Marta",what_slow_cps=20)
+    define ikar = Character("Ikar",what_slow_cps=20)
+    define teresa = Character("Teresa",what_slow_cps=20)
+    define Izabella = Character("Pan dr",what_slow_cps=20)
     image bg park = "park2.jpg"
 
     image stud1 = "noname1.png"
     image stud2 = "noname2.png"
-    image ikar = "?.png"
-    image teresa = "?.png"
-    image iza = "?.png"
+    image ikar = "pan2.png"
+    image teresa = "pani1.png"
+    image iza = "pan3.png"
     image dziekan casual = "dziekan casual.png"
     image marta = "kumpela.png"
 
@@ -50,7 +50,7 @@ label chapter2:
         hide main2
     elif i == 3:
         hide main3
-    $ opiekunroku = Character("prof. hab. Matylda Kostrzewska")
+    $ opiekunroku = Character("prof. hab. Matylda Kostrzewska",what_slow_cps=20)
     show opiekun:
         xpos 200
     opiekunroku "Witajcie, moi mili. Pozwólcie, że przedstawię się tym, których nie było na immatrykulacj. Nazywam się 
@@ -99,7 +99,6 @@ label chapter2:
     show text "{color=#FFFFFF}temat lekcji: historia i cechy jezyka C, typy zmiennych, podstawy algorytmow-grafy, hello world, wprowadzanie danych, instrukcja IF{/color}"
     pause 5
     hide text
-    "Niby ja mam to wymyślić, no super"
     #==================nowa_scena==================
     show bg korytarz
     if i == 1:
@@ -201,7 +200,7 @@ label w13:
     show dziekan casual at left
     dziekan "Witajcie, drodzy studenci. My się już znamy (a na pewno Ci co byli na inauguracji hehehe) ale przedstawię 
     się wam jeszcze raz. Nazywam się Stanisław Meister i będę miał z Wami w tym semestrze zajęcia z Podstaw elektroniki."
-    $ dziekan = Character("prof. hab. Stanisław Meister")
+    $ dziekan = Character("prof. hab. Stanisław Meister",what_slow_cps=20)
     hide dziekan casual
     show stud1:
         xpos 200
@@ -384,8 +383,6 @@ label w13:
         m "To dziwne, nie widzę Marty. Może nie mogła dzisiaj przyjść."
         m "No nic, lecę na zajęcia. Nie chcę się spóźnić."
     #==================nowa_scena==================
-    return #*********************************************************/***********************************/*************
-    #/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/**/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*
     scene bg a129
     show ikar at left
     ikar "Dzień dobry uczniownie. Proszę o zajęcie miejsc. Zaraz zaczynamy wykład."
@@ -402,7 +399,7 @@ label w13:
     show ikar at left
     ikar "Wydaje mi się, że już wszyscy przyszli. Chciałbym się Wam przedstawić. Jestem dr Grzegorz Ikar 
     i prowadzę zajęcia z Teoretycznych Podstaw Informatyki."
-    $ ikar = Character("dr Grzegorz Ikar")
+    $ ikar = Character("dr Grzegorz Ikar",what_slow_cps=20)
     hide ikar
     if i == 1:
         show main1:
@@ -429,9 +426,11 @@ label w13:
         hide main3
     show ikar at left
     ikar "Moim zadaniem jest Was nauczyć tych rzeczy, które każdy, kto chce wiązać przyszłość z informatyką powinien wiedziec."
+    hide ikar
     show stud1 at right
     "Student1" "Czy każdy przedmiot nie powinien być taki, panie doktorze?"
     hide stud1
+    show ikar at left
     ikar "Mój przedmiot prawdopodobnie jest najważniejszy ze wszystkich na pierwszym semestrze. Bez podstaw, 
     które poznacie tutaj nie poradzicie sobie z innymi przedmiotami."
     ikar "Proszę też o nie przerywanie mi podczas wykładu. Kiedy będę chciał byście byli aktywni, dam Wam znać. 
@@ -498,7 +497,7 @@ label w13:
     zrozumienie. Przejdźmy do tematu zajęć."
     #-------------------------------dodokonczenia-------------------------------
     #==================nowa_scena==================
-    show bg korytarz
+    scene bg korytarz
     if i == 1:
         show main1
     elif i == 2:
@@ -551,7 +550,7 @@ label w13:
     else:
         m "Ehh....co to były za zajęcia. Podejście tego gościa do studentów jest masakryczne. 
         Dopiero początek dnia a już jestem zdenerwowana."
-        m "Lepiej od razu ruszę na zajęcia. Nie chcę, by ta Malfoy jeszcze bardziej popsuła mi dzień."
+        m "Lepiej od razu ruszę na zajęcia. Nie chcę, by ta [malfoy] jeszcze bardziej popsuła mi dzień."
         m "Jeśli ta Marta nie pojawi się jutro, to zainteresuje się tematem. Mam złe przeczucia..."
     #==================nowa_scena==================
     scene bg white
@@ -574,8 +573,8 @@ label w13:
         m "Pamietaj tylko, by nie przesłoniło Ci to Twojego celu. Musisz też radzić sobie na studiach. 
         Jesteś ambitną osobą. Nie skop tego."
     else:
-        m "Hmmm Dzisiejszy dzień zaczynamy Prawem Inżynierskim. Sama teoria. Prawdopodobnie będę się tylko nudzić."
-        m "Studia zaczynają się rozkręcać. Mam nadzieję, że sobie poradzę. Ta Malfoy jeszcze zobaczy na co mnie stać."
+        m "Hmmm... Dzisiejszy dzień zaczynamy Prawem Inżynierskim. Sama teoria. Prawdopodobnie będę się tylko nudzić."
+        m "Studia zaczynają się rozkręcać. Mam nadzieję, że sobie poradzę. Ta [malfoy] jeszcze zobaczy na co mnie stać."
         m "Szkoda tylko, że nie utrzymuję bliższych kontaktów z innymi studentami. Są tu same paczki znajomych. 
         Ciężko będzie się w którąś wkręcić."
 
@@ -592,7 +591,7 @@ label w13:
         musiała dużą czekoladę kupić za te notatki."
         m "Skoro postawiłam sobie motywację, to muszę iść na wykład. Nie ma bata."
     else:
-        m "Hmmm....znowu nie widzę Marty. Zaczynam się niepokoić. Co jeśli posłuchała tej Malfoy? Popytam innych 
+        m "Hmmm....znowu nie widzę Marty. Zaczynam się niepokoić. Co jeśli posłuchała tej [malfoy]? Popytam innych 
         po wykładzie. Może coś wiedzą."
         m "Dobra, wszystko ustalone. Czas zmierzyć się z nowym przedmiotem."
     #==================nowa_scena==================
@@ -604,11 +603,13 @@ label w13:
     elif i == 3:
         show main3
     m "Mimo pierwszych zajęć z tego przedmiotu mało kto dziś przyszedł. Każdy chyba uznał, że przedmiot jest nudny."
+    show stud2 at right
     "Student1" "Słyszałem, że wykład jest niemiłosiernie nudny. Profesorka dobrze o tym wie, dlatego co roku zmienia 
     formę wykładu i zaliczenie. Ma to spowodować większą frekwencje."
     m "Jak widzę i taka metoda zbytnio nie działa. Musi wykombinować coś innego."
     "Student1" "Lepiej by sobie darowała. Chcę to zaliczyć jak najszybciej. Takie wypełniacze zwykle są trudniejsze 
     do zaliczenia niż pełnoprawne przedmioty."
+    hide stud2
     m "No nic. Zobaczmy co w tym roku nam pokaże. Chciałabym już wrócić do domu."
     if i == 1:
         hide main1
@@ -633,8 +634,8 @@ label w13:
     show teresa at left
     teresa "Miejmy formalności za sobą. Jestem Teresa Lowerska i mam z Wami w tym semestrze Prawo Inżynierskie. Mam 
     nadzieję, że wszyscy zaliczą ten przedmiot by potem nie musieć go niepotrzebnie powtarzać."
-    $ teresa = Character("dr Teresa Lowerska")
-    teresa "Moje zaliczenie jest proste. NA koniec semestru odbędzie się krótkie kolokwium. Jeżeli będziecie sumiennie 
+    $ teresa = Character("dr Teresa Lowerska", what_slow_cps=20)
+    teresa "Moje zaliczenie jest proste. Na koniec semestru odbędzie się krótkie kolokwium. Jeżeli będziecie sumiennie 
     robić notatki to powinniście bez problemu zaliczyć."
     hide teresa
     if i == 1:
@@ -679,7 +680,7 @@ label w13:
     else:
         m "Ehhh aż mnieplecy bolą od tego siedzenia. Prawie usnęłam na tym wykładzie. Dobrze, że wszystko zanotowałam."
         m "Teraz musze dowiedzieć się co z tą Martą. Nie wiem, z kim się trzymała. Będzie ciężko zacząć."
-        show malfoy at right
+        show draco at right
         malfoy "Co tam, przegrywie? Wyglądasz jakbyś kogoś szukała. Może mnie? Jak coś to jestem do usług hahahhaha."
         menu:
             "ignoruj ją":
@@ -705,7 +706,7 @@ label w13:
         dziekanatu. Według mnie dobrze jest jak jest."
         m "Czemu? Czemu tak uważasz? Jak możesz tak mówić?"
         malfoy "Jakbyś nagadała jej bzdur to by uroiła sobie, że się tu nadaje. Potem upadek byłby cięższy. Dobrze
-        zrobiłaś, że ją olałaś. Wyrządziłaś jej przysługę."
+        zrobiłaś, że ją olałaś. Wyświadczyłaś jej przysługę."
         malfoy "Wreszcie nadajesz na podobnych falach co ja. Może jesteś mi bliższa niż myślisz?"
         menu:
             "Uderz ją":
@@ -742,11 +743,11 @@ label w13:
                 show marta at right
                 m "Dzieki Bogu, jesteś. Marta, nie rób tego!"
                 marta "Słucham?"
-                m "Jestem [m]. Z Twojego rocznika. Widziałam, jak Malfoy Cię potraktowała. Chciałam do Ciebie podejśc, pomóc jakoś. 
+                m "Jestem [m]. Z Twojego rocznika. Widziałam, jak [malfoy] Cię potraktowała. Chciałam do Ciebie podejśc, pomóc jakoś. 
                 Nie potrafiłam. Nie wiem czemu...."
                 m "Wybacz, że do Ciebie nie podeszłam. Mogłabym Ci wtedy pomóc...Błagam, zostań na uczelni..."
-                marta "Wiem kim jesteś, Mimo, że nie pomogłaś mi wtedy to bardzo Ci dziękuje za te słowa. Bardzo ich potrzebowałam."
-                marta "Mimo tego wszystkiego Malfoy jednak miała rację. Ja serio nie nadaję się tutaj."
+                marta "Wiem kim jesteś, mimo że nie pomogłaś mi wtedy to bardzo Ci dziękuje za te słowa. Bardzo ich potrzebowałam."
+                marta "Mimo tego wszystkiego [malfoy] jednak miała rację. Ja serio nie nadaję się tutaj."
                 m "Daj spokój. Jakbym pomogła Ci w nauce to w mig byś wszystko....."
                 marta "Może tak, może nie...nie dowiemy się tego. Poprawię maturę i jeszcze raz postaram się złożyć papiery do 
                 wymarzonej uczelni. Nic straconego."
@@ -759,7 +760,7 @@ label w13:
                 m "Obiecuję, że ją pokonam. Zwyciężę za wszelką cenę."
                 marta "Hahahaha. Widzę, że jesteś zdeterminowana. To dobry znak. Widzę po tobie, że jesteś inna niż ona. Szkoda, 
                 że wcześniej się nie poznaliśmy. Niestety na razie nie będzie okazji by się bliżej poznać."
-                marta" Zaśmiałam się. To chyba dobry znak. [m] nie przejmuj się mną. Ja sobie ułożę życie tak jak powinnam. Ty natomiast 
+                marta"Zaśmiałam się. To chyba dobry znak. [m] nie przejmuj się mną. Ja sobie ułożę życie tak jak powinnam. Ty natomiast 
                 nie poddawaj się i dąż do spełnienia swoich celów. Daj znać kiedy pokonasz tę [malfoy]."
                 m "Możesz na mnie liczyć. Kiedy będą ferie może pójdziemy na piwo czy coś?"
                 marta "Trzymam Cię za słowo. Obalimy Twój sukces. Życzę Ci powodzenia."
@@ -769,7 +770,7 @@ label w13:
                 show text "{color=#000000}Kilka chwil później{/color}"
                 pause 2
                 #==================nowa_scena==================
-                show bg korytarz
+                scene bg korytarz
                 show draco:
                     xpos 300
                 if i == 1:
@@ -822,7 +823,7 @@ label w13:
         xpos 100
     "Student1" "Nie sądziłem, że znowu będę musiał się uczyć tej znienawidzonej matematyki"
     show stud2:
-        xpos 900
+        xpos 800
     "Student2" "Poszedłeś na infę i myślałeś, że bez matmy się obejdzie? Człowieku ogarnij się."
     "Student1" "No co? Pomarzyć zawsze można. Pewnie i tak nam się to w przyszłości nie przyda."
     "Student2" "Ta, jasne. Jak będą macierze w programowaniu to zmienisz śpiewkę."
@@ -832,7 +833,7 @@ label w13:
         xpos 500
     malfoy "Możecie się przesunąć? Od waszego pitolenia rozbolała mnie głowa."
     "Student1" "Nie jest za miła, co? Tylko do wykładowców potrafi się uśmiechnąć. Przyjaciół tutaj chyba nie znajdzie..."
-    "Student2" "Teraz mogę w 100% się z Tobą zgodzić. Dawaj, zajmijmy dobre miejsca."
+    "Student2" "Teraz mogę w 100 procentach się z Tobą zgodzić. Dawaj, zajmijmy dobre miejsca."
     hide stud1
     hide stud2
     hide draco
@@ -860,8 +861,9 @@ label w13:
     elif i == 3:
         hide main3
     show iza at left
-    Izabella "Od razu przejdę do rzeczy. Nazywam się Izabella Anajewska i będę Wam wykładać Analizę Matematyczną. 
+    Izabella "Od razu przejdę do rzeczy. Nazywam się Miguel Anajewski i będę Wam wykładać Analizę Matematyczną. 
 	Możecie narzekać na ten przedmiot, ale nie martwcie się: następne matematyczne przedmioty będą o wiele trudniejsze."
+    $ Izabella = Character("dr hab. Miguel Anajewski",what_slow_cps=20)
     hide iza
     show stud1:
         xpos 200
@@ -876,16 +878,23 @@ label w13:
     zadanie do policzenia. Ma to sprawdzić, czy uczycie się na bieżąco."
     Izabella "Musicie zaliczyć 2 by móc podejść do egzaminu. Egzamin będzie naturalnie trudniejszy od tych kartkówek, 
     ale jeśli przyłożycie się do nich to egzamin będzie dla Was o wiele łatwiejszy."
+    hide iza
+    show stud1 at left
     "Student1" "Zachciało mi się inżyniera..."
+    hide stud1
+    show iza at left
     Izabella "Sądzę, że chyba wszystko powiedziałam Zacznijmy więc zajęcia."
 #---------------------------------------------------temat zajęć: Granice------------------------------------------------------ 
     scene bg korytarz
     if i == 1:
-        show main1 at left
+        show main1:
+            xpos 200
     elif i == 2:
-        show main2 at left
+        show main2:
+            xpos 200
     elif i == 3:
-        show main3 at left
+        show main3:
+            xpos 200
     if marta_zostala_uspokojona:
         show marta at right
         marta "Jejku, to było męczące. Czy mi się wydaje, czy nudziłaś się na tym wykładzie."

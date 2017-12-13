@@ -1,7 +1,7 @@
 init:
     define m = Character("MainCharacter",dynamic=True)
     define wybrana = "main1.png"
-    #minigra_tpi może być
+
     image bg weeia = "weeia.jpg"
     image bg white = "white.png"
     
@@ -18,13 +18,20 @@ init:
     #    choice (i == 3):
     #            "main3.png"
 
-    define ob = Character("Obserwator", image="narrator")
+    define ob = Character("Obserwator", image="narrator", what_slow_cps=20)
 
     screen choices():
         hbox:
             imagebutton auto "main1_%s.png" action Jump("a")
             imagebutton auto "main2_%s.png" action Jump("b")
             imagebutton auto "main3_%s.png" action Jump("c")
+    screen propozycje():
+        vbox xalign 0.45 yalign 0.45:
+            text "Popełniono za dużo błędów, \nwybierz sobie jedno z 3 przygotowanych przez nas" 
+        hbox xalign 0.45 yalign 0.55:
+            textbutton "Ania" action Jump("Ania")
+            textbutton "Iza" action Jump("Iza")
+            textbutton "Małgorzata" action Jump("Malgorzata")
     #init python:
     #    def wybor(numer):
     #        if numer == 1:
@@ -36,6 +43,7 @@ init:
 
 label start:
     #jump minigame_pp1
+    #jump minigame_pe
     scene bg white
 
     show text "{color=#000000}Chapter 0\nStwórz swoją postać{/color}"
@@ -96,17 +104,35 @@ label start:
         voice "music/tutorial/jakieimie.ogg"
         python:
             import names
-
+            licznik = 0
             name = renpy.input("Jak ma się nazywać twoja studentka?")
-            while(names.correct_name(name.encode('utf8')) == False):
+            while(names.correct_name(name.encode('utf8')) == False and licznik < 2):
                 name = renpy.input("Podanego imienia nie ma w bazie.\nJak ma się nazywać twoja studentka?")
+                licznik = licznik + 1
+        
+        if licznik == 2:
+            show screen propozycje
+            pause 30
+        jump next1
 
+    label Ania:
+        $ name = "Ania"
+        jump next1
+    label Iza:
+        $ name = "Iza"
+        jump next1
+    label Malgorzata:
+        $ name = "Małgorzata"
+        jump next1
+
+    label next1:
+        hide screen propozycje
         if i == 1:
-            $ m = Character(name, image="mainGirl1")
+            $ m = Character(name, image="mainGirl1",what_slow_cps=20)
         elif i == 2:
-            $ m = Character(name, image="mainGirl2")
+            $ m = Character(name, image="mainGirl2",what_slow_cps=20)
         elif i == 3:
-            $ m = Character(name, image="mainGirl3")
+            $ m = Character(name, image="mainGirl3",what_slow_cps=20)
             #init python:
                 #renpy.image("wybrana",mainGirl3)
         else:
@@ -133,5 +159,5 @@ label start:
 
         m "Cześć, mam nadzieje, że będzie Ci się fajnie mną grało."
         m "Powodzenia."
-        jump chapter1
+        jump chapter2
         return

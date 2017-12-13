@@ -12,10 +12,10 @@ init:
     image dziekan = "dziekan.png"
     image opiekun = "matylda.png"
     
-    define o = Character("Ojciec") #mozna dodac font różny
-    define dziekan = Character("Dziekan")
-    define opiekunroku = Character("Opiekun Roku")
-    define malfoy = Character("Amanda")
+    define o = Character("Ojciec",what_slow_cps=20) #mozna dodac font różny
+    define dziekan = Character("Dziekan",what_slow_cps=20)
+    define opiekunroku = Character("Opiekun Roku",what_slow_cps=20)
+    define malfoy = Character("Amanda",what_slow_cps=20)
 
     define love_u = "Uczelnia Informatyk Różnych"
     define hate_u = "Uczelnia Informatyczno-matematyczna im. P. Czybyszewa"
