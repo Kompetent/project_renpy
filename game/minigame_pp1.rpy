@@ -86,6 +86,10 @@ init:
             text "Odpowiedź na 8: [pp1_q8]"
             textbutton "Wyjście" action Return()
 label minigame_pp1:
+    show text "{color=#000000}Egzamin z PP1{/color}"
+    pause 2
+    hide text
+
     scene bg pp1_q1
     show countdown at Position(xalign=.9, yalign=.1)
     $ ui.timer(10.1, ui.jumps("next_pp1_q1_wrong"))

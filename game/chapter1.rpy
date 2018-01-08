@@ -20,7 +20,7 @@ init:
     define love_u = "Uczelnia Informatyk Różnych"
     define hate_u = "Uczelnia Informatyczno-matematyczna im. P. Czybyszewa"
 label chapter1:
-    jump chapter2 #pokazujemy tylko progres
+    #jump chapter2 #pokazujemy tylko progres
     scene bg white
 
     show text "{color=#000000}Chapter 1\nPierwszy dzień na studiach{/color}"

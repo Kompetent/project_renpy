@@ -9,7 +9,7 @@ init:
     define mainGirl2 = Image("main2.png")
     define mainGirl3 = Image("main3.png")
 
-    image side narrator = "first_man.png"
+    image narrator = "first_man.png"
     #image wybrana:
     #    choice (i == 1):
     #            "main1.png"
@@ -18,7 +18,7 @@ init:
     #    choice (i == 3):
     #            "main3.png"
 
-    define ob = Character("Obserwator", image="narrator", what_slow_cps=20)
+    define ob = Character("Obserwator", what_slow_cps=20)
 
     screen choices():
         hbox:
@@ -40,10 +40,24 @@ init:
     #            renpy.image("wybrana",mainGirl2)
     #        if numer == 3:
     #            renpy.image("wybrana",mainGirl3)
-
+#---wyłącza to wszystkie dziwne rzeczy:
+    $ config.keymap['skip'].remove('K_RCTRL')
+    $ config.keymap['skip'].remove('K_LCTRL')
+    $ config.keymap['toggle_skip'].remove('K_TAB')
+    $ config.keymap['rollback'].remove('K_PAGEUP')
+    $ config.keymap['rollback'].remove('repeat_K_PAGEUP')
+    $ config.keymap['rollback'].remove('K_AC_BACK')
+    $ config.keymap['rollback'].remove('mousedown_4')
+    
 label start:
-    #jump minigame_pp1
-    #jump minigame_pe
+    $ _game_menu_screen = None
+    #zrobic egzaminy
+    #zrobic wersje na androida
+    #jump minigame_mat #niezrobione
+    #jump minigame_tpi #niezrobione
+    #jump minigame_prawo #zrobione
+    #jump minigame_pp1 #zrobione
+    #jump minigame_pe #niezrobione
     scene bg white
 
     show text "{color=#000000}Chapter 0\nStwórz swoją postać{/color}"
@@ -59,6 +73,7 @@ label start:
     "Poczekaj chwilę. Ktoś tu zgasił światło. O, chyba znalazłem!"
     #jump minigame_tpi
     scene bg white
+    show narrator at left
     voice "music/tutorial/3.ogg"
     ob "Nareszcie ci się udało! Witaj! Pewnie masz do mnie sporo pytań?"
     menu:
@@ -81,6 +96,7 @@ label start:
         voice "music/tutorial/7.ogg"
         ob "Wybierz sobie teraz jedną z trzech dostępnych w grze postaci."
         hide textbox
+        hide narrator
 
         show screen choices
         pause 30
@@ -138,7 +154,7 @@ label start:
         else:
             "cos poszlo nie tak"
             return
-
+        show narrator at left
         voice "music/tutorial/8.ogg"
         ob "Posłuchaj mnie bardzo uważnie. Nasza [m] ma swoją historię i powody dla których zaczyna swoją przygodę z informatyką, ale to od Ciebie mój graczu zależy jak jej pójdzie."
         voice "music/tutorial/9.ogg"
@@ -148,7 +164,7 @@ label start:
         ob "Jakkolwiek zdecydujesz mam nadzieję, że [m] będzie szczęśliwa i zmotywowana do rozwijania samej siebie"
         voice "music/tutorial/11.ogg"
         ob "Nie przedłużajmy więc. Nasza bohaterka czeka na Ciebie. My pewnie się jeszcze zobaczymy. Wejdź do świata Wonderful Time."
-        
+        hide narrator
         #pokazywanie naszej studentki
         if i == 1:
             show main1
@@ -159,5 +175,5 @@ label start:
 
         m "Cześć, mam nadzieje, że będzie Ci się fajnie mną grało."
         m "Powodzenia."
-        jump chapter2
+        jump chapter3
         return

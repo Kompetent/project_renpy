@@ -909,11 +909,13 @@ label w13:
         menu:
             "Tak":
                 m "No dobra, chodźmy"
+                $ piwo_piatek2 = True
                 jump chapter3
             "Nie":
                 m "Dzisiaj zbytnio nie dam rady. Jadę zaraz z tatą na zakupy. Innym razem spróbujmy."
                 marta "Ok, innym razem. Do zobaczenia w poniedziałek."
                 m "Trzymaj się!"
+                $ piwo_piatek2 = False
                 jump chapter3
     else:
         m "Matko, co za nudy. Miałam już to w liceum. No nic, mniej do nauki mi zostało."
