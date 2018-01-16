@@ -51,13 +51,13 @@ init:
     
 label start:
     $ _game_menu_screen = None
-    #zrobic egzaminy
     #zrobic wersje na androida
-    #jump minigame_mat #niezrobione
-    #jump minigame_tpi #niezrobione
+    #jump minigame_mat #zrobione
+    #jump minigame_tpi #zrobione
     #jump minigame_prawo #zrobione
     #jump minigame_pp1 #zrobione
-    #jump minigame_pe #niezrobione
+    #jump minigame_pe #zrobione
+    #jump exams
     scene bg white
 
     show text "{color=#000000}Chapter 0\nStwórz swoją postać{/color}"
@@ -65,7 +65,7 @@ label start:
     pause 2
 
     scene black
-    #play sound "music/hello.mp3"
+    play music "music/bensound-deepblue.ogg"
     voice "music/tutorial/1.ogg"
     "Halo? Jest tu kto?"
     #hide text
@@ -175,5 +175,6 @@ label start:
 
         m "Cześć, mam nadzieje, że będzie Ci się fajnie mną grało."
         m "Powodzenia."
-        jump chapter3
+        stop music
+        jump chapter1
         return

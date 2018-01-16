@@ -1,7 +1,8 @@
 init:
     define adam = Character("Ziomeczek", what_slow_cps=20)
     image adam_view = "przyjaciel.png"
-label chapter3:
+label chapter3: #DONE
+    play music "music/bensound-sunny.ogg"
     scene bg white
     show text "{color=#000000}Chapter 3\nTydzień drugi{/color}"
     pause 2
@@ -9,9 +10,9 @@ label chapter3:
     scene bg white
     show text "{color=#000000}Poniedziałek{/color}"
     pause 2
-    python:
-        marta_zostala_uspokojona = False
-        piwo_piatek2 = False
+    #python:
+        #marta_zostala_uspokojona = False
+        #piwo_piatek2 = False
     scene bg miasto
     if i == 1:
         show main1
@@ -28,7 +29,7 @@ label chapter3:
         marta "Marudzenie w niczym nam nie pomoże. Mimo, że masz absolutną rację."
         m "W dodatku programowanie. Zamiast tego mogłoby być bo ja wiem...prawo?"
         marta "Stawiam 5 zł, że robią to specjalnie. Chodźmy szybciej bo się spóźnimy."
-        scene korytarz
+        scene bg korytarz
         if i == 1:
             show main1
         elif i == 2:
@@ -41,7 +42,8 @@ label chapter3:
         Odwołują wykład czy jest zastępstwo?"
         marta "Z tego co wiem to częściej odwołują wykład. Mają dla nas choć trochę litości."
         show draco:
-            xpos 500
+            xpos 600
+        play music "music/bensound-scifi.ogg"
         malfoy "O jejku. Popatrzcie na te biedne dziewczynki. Już studia zaczęły boleć?"
         marta "Idealne zaczęcie nowego tygodnia. Dzięki, Amanda."
         malfoy "Do usług. Mam nadzieję, że nauczyłyście się na kartkówkę. Chcę chociaż 
@@ -77,6 +79,7 @@ label chapter3:
         dotrzymać obietnicy. O tak!!!!!"
         m "Nie dam sobie pomiatać tej Amandzie."
 label wyklad_pp1_2:
+    play music "music/bensound-jazzcomedy.ogg"
     scene bg a123
     show opiekun:
         xpos 100
@@ -98,16 +101,17 @@ label wyklad_pp1_2:
     hide stud1
     show opiekun at left
     opiekunroku "Nie przedłużając. Zaczynamy zaliczenie!"
-    #jump do egzaminu
-    #label back_wyklad_pp1_2_cd
+    jump pp1_kart1
+
+label back_wyklad_pp1_2_cd:
+    play music "music/bensound-jazzcomedy.ogg"
     scene bg a123
     show opiekun at left
     opiekunroku "No dobrze. Czas się skończył. Wyniki poznacie na koniec wykładu."
     show stud2 at right
     "Random2" "Przepraszam, skoro pani będzie prowadzić wykład, to kto je teraz sprawdzi?"
     hide stud2
-    opiekunroku "Hahaha, dobrze, że pan pyta (Czy jakiś wykładowca zwrócił się do Ciebie na \"TY\", 
-    mariuszu???). Czas Wam przedstawić system JD3.0"
+    opiekunroku "Hahaha, dobrze, że pan pyta. Czas Wam przedstawić system JD3.0"
     "JD3.0" "BIP BOOP BIP BOOOOP"
     opiekunroku "Tworzony 5 lat przez studentów naszego działu komputerowy system JD3.0 nie służy tylko 
     do sprawdzania kolokwiów i prac domowych."
@@ -134,9 +138,14 @@ label wyklad_pp1_2:
     opiekunroku "Hmmm....miałam rację. Większość z Was zaliczyła. Jestem z Was dumna. 
     Dla tych, co nie zaliczyli mam jedną radę: Więcej pracy!  Dziękuję za wykład. Do zobaczenia!"
     #testowanie wariant1
-    python:
-        ocena_kart1_pp1 = 3
+    #python:
+        #ocena_kart1_pp1 = 3
+    scene bg white
+    show text "{color=#000000}Twoja ocena: [ocena_kart1_pp1]{/color}"
+    pause 2
+
     scene bg a123
+    play music "music/bensound-sweet.ogg"
     if i == 1:
         show main1
     elif i == 2:
@@ -167,6 +176,7 @@ label wyklad_pp1_2:
         else: #2
             m "Nie tym razem. Dałam ciała. Jestem do niczego...."
             marta "Daj spokój. Ona pewnie tego też nie zaliczyła..."
+            play music "music/bensound-scifi.ogg"
             show draco at right
             malfoy "Jednak nie, dostałam 4. Kurde, ta rywalizacja idzie łatwiej niż sądziłam. Hahahahaha"
             malfoy "Jeśli chceszs ię już poddać to nie ma problemu. Widać, że już na starcie Ci nie idzie."
@@ -189,6 +199,7 @@ label wyklad_pp1_2:
         else:
             m "Dałam ciała. Jestem do niczego...."
             m "Ciekawe jak tamtej poszło. Dobrze by było jakby też tego nie zaliczyła..."
+            play music "music/bensound-scifi.ogg"
             show draco at right
             malfoy "Jednak nie, dostałam 4. Kurde, ta rywalizacja idzie łatwiej niż sądziłam. Hahahahaha"
             malfoy "Jeśli chcesz się już poddać to nie ma problemu. Widać, że już na starcie Ci nie idzie."
@@ -198,7 +209,7 @@ label wyklad_pp1_2:
     scene bg white
     show text "{color=#000000}Wtorek{/color}"
     pause 2
-    
+    play music "music/bensound-sunny.ogg"
     scene bg park
     if i == 1:
         show main1
@@ -223,6 +234,7 @@ label wyklad_pp1_2:
         m "Mało dziś ludzi jest. Czyżby zapomnieli o gwarantowanej trójce za obecność? Nie mój interes w sumie."
         m "Nie widzę też Amandy. W sumie dobrze. Potrzebuję trochę od niej odpocząć."
     scene bg a128
+    play music "music/bensound-thejazzpiano.ogg"
     show dziekan casual at left
     dziekan "Witajcie, studenci. Widzę, że coś mało Was dzisiaj. Trochę się tego nie spodziewałem, po ostatnim wykładzie."
     dziekan "Przekażcie reszcie, by jednak na ten wykład chodzili. W tym semestrze mam zdecydowanie za wiele na głowie i nie będę miał czasu sprawdzać wszystkim zaliczenia"
@@ -257,6 +269,7 @@ label wyklad_pp1_2:
     dziekan "Na dzisiaj chyba zakończymy. Do zobaczenia na następnym wykładzie. Przekażcie moją wiadomość nieobecnym, hehehehe."
     
     scene bg korytarz
+    play music "music/bensound-sweet.ogg"
     if i == 1:
         show main1
     elif i == 2:
@@ -281,7 +294,7 @@ label wyklad_pp1_2:
     scene bg white
     show text "{color=#000000}Środa{/color}"
     pause 2
-
+    play music "music/bensound-rumble.ogg"
     scene bg park
     if i == 1:
         show main1
@@ -294,7 +307,7 @@ label wyklad_pp1_2:
         show marta at left
         m "Środa....a co to oznacza?"
         marta "Ikar...nie lubię tego gościa. Czuję, że będziemy mieli za tydzień przewalone u niego"
-        glowna "Z takim podejściem to na pewno. Musimy wziąć się w garść. Trzeba to obalić."
+        m "Z takim podejściem to na pewno. Musimy wziąć się w garść. Trzeba to obalić."
         show adam_view at right
         adam "Podziwiam Wasze zaparcie, ale musicie być bardzo czujne podczas zaliczenia u niego."
         menu:
@@ -337,6 +350,7 @@ label wyklad_pp1_2:
         m "Warto wiedzieć. Będziemy musieli bardziej się przyłożyć na tych zajęciach..."
     
     scene bg a129
+    play music "music/bensound-straight.ogg"
     show ikar at left
     ikar "Jakże miło mi Was znów widzieć. Jestem zaszczycony. Chciałbym przypomnieć, że za tydzień kolokwium decydujące o Waszym podejsciu do egzaminu."
     ikar "Mam nadzieję, że do tego się przyłożycie Nie będę później wysłuchiwał błagań o podwyższenie oceny i innych takich. Brakuje punkta? No to trudno."
@@ -382,6 +396,7 @@ label wyklad_pp1_2:
     pause 2
 
     scene bg korytarz
+    play music "music/bensound-rumble.ogg"
     #pokazywanie głównej postaci
     if i == 1:
         show main1
@@ -399,6 +414,7 @@ label wyklad_pp1_2:
         marta "Jeżeli to komplement to bardzo za niego dziękujemy. To miłe."
         m "Zgadzam się."
         hide adam_view
+        play music "music/bensound-scifi.ogg"
         show draco at right
         malfoy "Bardzo miłe...siostrzyczki sierotki."
         menu:
@@ -438,6 +454,7 @@ label wyklad_pp1_2:
         m "Musimy zmaksymalizować nasze szanse na zdanie. Jak zaczniemy się wcześniej uczyć, to damy rade"
         adam "Słowo daję, Jesteś największą optymistką jaką znam."
         m "Jeżeli to komplement to bardzo za niego dziękuję. To miłe."
+        play music "music/bensound-scifi.ogg"
         show draco at right
         malfoy "Heyo. Grupa wsparcia przed nieuchronnym oblaniem?"
         adam "Daj nam spokój, kobieto. Idź być toksyczna gdzie indziej."
@@ -458,6 +475,7 @@ label wyklad_pp1_2:
     show text "{color=#000000}Czwartek{/color}"
     pause 2
     scene bg korytarz
+    play music "music/bensound-acousticbreeze.ogg"
     #pokazanie glownej bohaterki
     if i == 1:
         show main1 at left
@@ -479,6 +497,7 @@ label wyklad_pp1_2:
         m "Mogę w tym czasie bez skrupułów czytać książki i uczyć się na inne przedmioty"
         adam "Hahah...brzmi jak niezły plan. Chodźmy, zajęcia się zaczynają."
     scene bg a123
+    play music "music/bensound-psychedelic.ogg"
     show teresa at left
     teresa "O widzę, że znowu mała frekwencja na wykładzie. Dalej mnie to nie dziwi."
     teresa "Szczerze? Dałabym Wam ten skrypt i kazała nie przychodzic, no ale za coś mi płacą, tak?"
@@ -501,6 +520,7 @@ label wyklad_pp1_2:
         show main2 at left
     elif i == 3:
         show main3 at left
+    play music "music/bensound-sunny.ogg"
     show adam_view at right
     if marta_zostala_uspokojona:
         adam "Racja, dlatego chodzę na ten wykład. Jakby było inaczej to bym to odpuścił sobie."
@@ -522,7 +542,7 @@ label wyklad_pp1_2:
     scene bg white
     show text "{color=#000000}Piątek{/color}"
     pause 2
-    
+    play music "music/bensound-rumble.ogg"
     scene bg korytarz
     if i == 1:
         show main1
@@ -534,6 +554,7 @@ label wyklad_pp1_2:
         show marta at left
         marta "Zieeeew....Uczyłam się całą noc na matmę. Mam nadzieję, że sobie poradzimy."
         m "Damy radę, trzeba zetrzeć ten uśmiech z twarzy Amandy. Nie sądzę byśmy miały jakieś trudności z tym."
+        play music "music/bensound-scifi.ogg"
         show draco at right
         malfoy "Na moje oko wyglądacie na takie co nawet tabliczki mnożenia nie potrafią się nauczyć."
         marta "Musisz irytować? Próbuję się skupić na powtarzaniu."
@@ -552,8 +573,10 @@ label wyklad_pp1_2:
                 jump sprzeczka_draco_12
     else:
         show adam_view at left
+
         m "Zieeeew....Uczyłam się całą noc na matmę. Mam nadzieję, że sobie poradzę."
         adam "Damy radę, trzeba zetrzeć ten uśmiech z twarzy Amandy. Nie sądzę byśmy miały jakieś trudności z tym."
+        play music "music/bensound-scifi.ogg"
         show draco at right
         malfoy "Na moje oko wyglądacie na takich co nawet tabliczki mnożenia nie potrafią się nauczyć."
         m "Musisz irytować? Próbuję się skupić na powtarzaniu."
@@ -574,6 +597,7 @@ label wyklad_pp1_2:
 
 label sprzeczka_draco_12:
     scene bg a128
+    play music "music/bensound-house.ogg"
     show iza at left
     Izabella  "Witajcie, kochani. Czas na kolejny wykład z analizy. Czeka nas dużo pracy, więc zacznijmy temat jak najszybciej."
     hide iza
@@ -589,12 +613,14 @@ label sprzeczka_draco_12:
     "Random1" "Wykrakałem."
     hide stud1
     Izabella "Zasady są proste. Macie do policzenia jedną granicę. JD3.0 oceni jak Wam poszło. Gotowi? Czas start!"
+    jump mat_kart1
+label back_wyklad_mat_2_cd:
+    
+    scene bg a128
+    show iza at left
     Izabella "Widzę, że wszyscy już skończyli. Teram możemy zająć się kolejnym tematem zajęć."
     Izabella "Radzę Wam się skupić, gdyż temat jest dosyć istotny. Zacznijmy więc."
 
-    #jump do gierki
-    #label powrot_kartkowka1_mat
-    
     scene black
     show text "{color=#FFF}Wykład...{/color}"
     pause 2
@@ -607,16 +633,22 @@ label sprzeczka_draco_12:
     lepiej. Trzymajcie ciepło moje kruszynki się."
     
     #testowa wartosc
-    python:
-        ocena_kart1_mat = 3
+    #python:
+        #ocena_kart1_mat = 3
     hide iza
+
+    scene bg white
+    show text "{color=#000000}Twoja ocena: [ocena_kart1_mat]{/color}"
+    pause 5
+
+    scene bg a128
     if i == 1:
         show main1
     elif i == 2:
         show main2
     elif i == 3:
         show main3
-    
+    play music "music/bensound-acousticbreeze.ogg"
     if marta_zostala_uspokojona:
         show marta at left
         marta "Jak Ci poszło?"
@@ -628,9 +660,11 @@ label sprzeczka_draco_12:
                 marta "Jesteś kochana. Chciałabyś wyjść na piwo? Uczcimy Twój sukces."
                 menu:
                     "tak":
+                        $ piwo_piatek3 = True
                         marta "Zobaczysz, bedzie Super"
                         jump end_chapter3
                     "nie":
+                        $ piwo_piatek3 = False
                         m "Muszę odmówić.  Po tym wszystkim jestem padnięta. Potrzebuję się zdrzemnąć. Innym razem."
                         marta "Też się chyba zdrzemnę. Trzymaj się. Widzimy się w poniedziałek!"
                         jump end_chapter3
@@ -646,17 +680,19 @@ label sprzeczka_draco_12:
             hide draco
             m "Na następnej będziemy lepiej przygotowane! Nie damy się tak łatwo. Razem będziemy się uczyć"
             if piwo_piatek2 == False:
-                Marta "No i to rozumiem. Chciałabyś wyjść na piwo? Trochę się wyluzujemy."
+                marta "No i to rozumiem. Chciałabyś wyjść na piwo? Trochę się wyluzujemy."
                 menu:
                     "tak":
+                        $ piwo_piatek3 = True
                         marta "Zobaczysz, bedzie Super"
                         jump end_chapter3
                     "nie":
+                        $ piwo_piatek3 = False
                         m "Muszę odmówić.  Po tym wszystkim jestem padnięta. Potrzebuję się zdrzemnąć. Innym razem."
                         marta "Też się chyba zdrzemnę. Trzymaj się. Widzimy się w poniedziałek!"
                         jump end_chapter3
             else:
-                Marta "Razem na pewno damy sobie radę. Muszę znikać. Jadę dziś do babci na weekend. Widzimy się w poniedziałek!"
+                marta "Razem na pewno damy sobie radę. Muszę znikać. Jadę dziś do babci na weekend. Widzimy się w poniedziałek!"
                 m "Pa pa. Baw się dobrze!"
     else:
         show adam_view at left
@@ -668,10 +704,12 @@ label sprzeczka_draco_12:
             adam "Super!  Dzień można uznać za udany. Chciałabyś wyjść na piwo? Uczcimy Twój sukces."
             menu:
                 "tak":
+                    $ piwo_piatek3 = True
                     jump end_chapter3
                 "nie":
+                    $ piwo_piatek3 = False
                     m "Muszę odmówić.  Po tym wszystkim jestem padnięta. Potrzebuję się zdrzemnąć. Innym razem."
-                    Adam "Też się chyba zdrzemnę. Trzymaj się. Widzimy się w poniedziałek!"
+                    adam "Też się chyba zdrzemnę. Trzymaj się. Widzimy się w poniedziałek!"
                     jump end_chapter3
         else:
             m "Nie udało się. Najwidoczniej za mało umiem. A Tobie?"
@@ -684,8 +722,10 @@ label sprzeczka_draco_12:
             adam "No i to rozumiem. Chciałabyś wyjść na piwo? Trochę się wyluzować?"
             menu:
                 "tak":
+                    $ piwo_piatek3 = True
                     jump end_chapter3
                 "nie":
+                    $ piwo_piatek3 = False
                     m "Muszę odmówić.  Po tym wszystkim jestem padnięta. Potrzebuję się zdrzemnąć. Innym razem."
                     adam "Też się chyba zdrzemnę. Trzymaj się. Widzimy się w poniedziałek!"
                     jump end_chapter3

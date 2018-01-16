@@ -13,7 +13,7 @@ init:
     image dziekan casual = "dziekan casual.png"
     image marta = "kumpela.png"
 
-label chapter2:
+label chapter2: #DONE
     scene bg white
     show text "{color=#000000}Chapter 2\nPierwszy tydzień zajęć{/color}"
     pause 2
@@ -23,6 +23,7 @@ label chapter2:
     pause 2
     #==================nowa_scena==================
     show bg miasto
+    play music "music/bensound-sweet.ogg"
     #pokazywanie naszej studentki
     if i == 1:
         show main1
@@ -53,6 +54,7 @@ label chapter2:
     $ opiekunroku = Character("prof. hab. Matylda Kostrzewska",what_slow_cps=20)
     show opiekun:
         xpos 200
+    play music "music/bensound-jazzcomedy.ogg"
     opiekunroku "Witajcie, moi mili. Pozwólcie, że przedstawię się tym, których nie było na immatrykulacj. Nazywam się 
     Matylda Kostrzewska i będę miała z wami Podstawy Programowania."
     opiekunroku "Zasady zaliczenia przedmiotu są proste. Na każdych zajęciach(nie licząc tych) będzie króciutka 
@@ -110,6 +112,7 @@ label chapter2:
     elif i == 3:
         show main3:
             xpos 300
+    play music "music/bensound-scifi.ogg"
     m "Wow...to był potężny wykład. Widać kobieta ma pasję do programowania. To się ceni."
     show draco:
         xpos 700
@@ -133,6 +136,7 @@ label chapter2:
     pause 2
     #==================nowa_scena==================
     scene bg park
+    play music "music/bensound-sweet.ogg"
     if i == 1:
         show main1
     elif i == 2:
@@ -147,6 +151,7 @@ label chapter2:
     m "Pamiętaj to co Ci powiedział kiedyś tata."
     #==================nowa_scena==================
     scene bg pokoj
+    play music "music/bensound-memories.ogg"
     show father:
         xpos 200
     o "Nie ważne co będzie w przyszłości. Skup się na tym to co tu i teraz. Reszta przyjdzie w swoim czasie."
@@ -158,7 +163,8 @@ label chapter2:
     show dziekan casual: #casual:
         xpos 200
     show draco:
-        xpos 900
+        xpos 800
+    play music "music/bensound-thejazzpiano.ogg"
     dziekan "Z moim zdrowiem wszystko w porządku. Lepiej mi powiedz co słychać u Andrzeja?"
     malfoy "Och, z tatą wszystko dobrze. Obecnie pojechał na tygodniową delegację do Tokio. Jego firma otwiera się 
     na rynek wschodni. W ciągu 5 lat planowane jest stworzenie trzech oddziałów w Japonii."
@@ -179,6 +185,7 @@ label chapter2:
     elif i == 3:
         show main3:
             xpos 200
+    play music "music/bensound-scifi.ogg"
     m "Oho, dodatkowo jej ojciec jest sponsorem. Naprawdę szkoda, że nie dostałam się do [love_u]."
     malfoy "No co wieśniaro. Masz jakiś problem?"
     menu:
@@ -196,6 +203,7 @@ label chapter2:
     #(tlo sali wykladowej)
     #==================nowa_scena==================
 label w13:
+    play music "music/bensound-thejazzpiano.ogg"
     scene bg a128
     show dziekan casual at left
     dziekan "Witajcie, drodzy studenci. My się już znamy (a na pewno Ci co byli na inauguracji hehehe) ale przedstawię 
@@ -293,6 +301,10 @@ label w13:
     #---------------------------------------dodokonczenia-------------------------------------------------------------
     #==================nowa_scena==================
     #(zdjecie korytarza)
+    scene black
+    show text "{color=#FFF}Wykład{/color}"
+    pause 2
+    play music "music/bensound-rumble.ogg"
     scene bg korytarz
     if i == 1:
         show main1
@@ -308,6 +320,7 @@ label w13:
         hide main2
     elif i == 3:
         hide main3
+    play music "music/bensound-scifi.ogg"
     show marta at right
     show draco at left
     marta "Hejka. [malfoy], tak? Ja jestem Marta. Chciałabym Cię prosić o pomoc. Trochę nie ogarniam tego programowania i 
@@ -331,6 +344,7 @@ label w13:
         show main3:
             xpos 200
     hide marta
+    play music "music/bensound-pianomoment.ogg"
     m "Matko...co za potwór jest z tej dziewczyny. Nie każdy musi być super inteligentny jak ona. Co powinnam zrobić?"
     menu:
         "Uspokój Martę":
@@ -375,6 +389,7 @@ label w13:
     m "Nie ogarniam tego człowieka. Wielka szkoda, że mam z nią zajęcia."
     m "Nienawidzę mieć zajęć od 8 rano. Poniedziałek już udowodnił to, że to źle na mnie wpływa."
     if marta_zostala_uspokojona:
+        play music "music/bensound-sweet.ogg"
         show marta at right
         marta "Hejka. Dzięki jeszcze raz za wczoraj. Ogarnęłam się i jestem gotowa na kolejne uczelniane wyzwania."
         m "Tak trzymać. Cieszę się, że widzę Cię w takim stanie. Chodźmy, bo spóxnimi się na zajęcia."
@@ -384,6 +399,7 @@ label w13:
         m "No nic, lecę na zajęcia. Nie chcę się spóźnić."
     #==================nowa_scena==================
     scene bg a129
+    play music "music/bensound-straight.ogg"
     show ikar at left
     ikar "Dzień dobry uczniownie. Proszę o zajęcie miejsc. Zaraz zaczynamy wykład."
     hide ikar
@@ -495,6 +511,9 @@ label w13:
     show ikar at left
     ikar "Mam nadzieję, że wszyscy zrozumieli to, co im teraz przekazałem Obyście na wykładach mieli też taki 
     zrozumienie. Przejdźmy do tematu zajęć."
+    show black
+    show text "{color=#FFF}Wykład{/color}"
+    pause 2
     #-------------------------------dodokonczenia-------------------------------
     #==================nowa_scena==================
     scene bg korytarz
@@ -505,6 +524,7 @@ label w13:
     elif i == 3:
         show main3
     if marta_zostala_uspokojona:
+        play music "music/bensound-rumble.ogg"
         show marta at left
         m "Ehh....co to były za zajęcia. Podejście tego gościa do studentów jest masakryczne."
         marta "Zgadzam się z Tobą. Muszę Ci się do czegoś przyznać. Mimo tego wszystkiego ogarniałam na tych zajęciach."
@@ -548,6 +568,7 @@ label w13:
             m "Daj spokój. Przez Ciebie zaczynam się rumienić. Chodźmy na następne zajęcia, bo się spóźnimy."
             marta "Mówię tylko to co czuję. Ruszajmy!"
     else:
+        play music "music/bensound-sweet.ogg"
         m "Ehh....co to były za zajęcia. Podejście tego gościa do studentów jest masakryczne. 
         Dopiero początek dnia a już jestem zdenerwowana."
         m "Lepiej od razu ruszę na zajęcia. Nie chcę, by ta [malfoy] jeszcze bardziej popsuła mi dzień."
@@ -564,7 +585,7 @@ label w13:
         show main2
     elif i == 3:
         show main3
-
+    play music "music/bensound-acousticbreeze.ogg"
     if marta_zostala_uspokojona:
         #(dzwonek telefonu)
         m "Hmm sms od Marty. Ne może być na wykładzie bo ma o tej porze denstystę. Spoko, będzie miała 
@@ -617,6 +638,7 @@ label w13:
         hide main2
     elif i == 3:
         hide main3
+    play music "music/bensound-psychedelic.ogg"
     show teresa at left
     teresa "Dzień dobry wszystkim. Widzę, że frekwencja nie jest za duża dzisiaj. No nic, jakoś sobie poradzimy. Nie 
     dziwię się Wam. To najprawdopodobniej najnudniejszy przedmiot w tym semestrze."
@@ -662,6 +684,9 @@ label w13:
     teresa "No dobrze. Skoro wszyscy jesteśmy gotowi to zacznijmy to co nieuniknione." 
     #------------------------------------dodokonczenia----------------------------------------------------------
     #==================nowa_scena==================
+    scene black
+    show text "{color=#FFF}Wykład{/color}"
+    pause 2
     scene bg korytarz
     if i == 1:
         show main1
@@ -669,6 +694,7 @@ label w13:
         show main2
     elif i == 3:
         show main3
+    play music "music/bensound-acousticbreeze.ogg"
     if marta_zostala_uspokojona:
         m "Ehhh aż mnieplecy bolą od tego siedzenia. Prawie usnęłam na tym wykładzie. Dobrze, że wszystko zanotowałam."
         m "Już się nie mogę doczekać tej czekolady od Marty. W pełni na nią zasłużyłam."
@@ -681,6 +707,7 @@ label w13:
         m "Ehhh aż mnieplecy bolą od tego siedzenia. Prawie usnęłam na tym wykładzie. Dobrze, że wszystko zanotowałam."
         m "Teraz musze dowiedzieć się co z tą Martą. Nie wiem, z kim się trzymała. Będzie ciężko zacząć."
         show draco at right
+        play music "music/bensound-scifi.ogg"
         malfoy "Co tam, przegrywie? Wyglądasz jakbyś kogoś szukała. Może mnie? Jak coś to jestem do usług hahahhaha."
         menu:
             "ignoruj ją":
@@ -717,6 +744,8 @@ label w13:
                 m "O nie. Co ja zrobiłam? CO JA ZROBIŁAM? TO NIE TAK MIAŁO BYĆ!!!!!!!!!"
                 #(tlo zaczyna sie sciemniac az do czerni, pojawia sie obserwator)
                 scene black
+                show narrator at left
+                play music "music/bensound-exteremaction.ogg"
                 ob "Z powodu słusznego doniesienia o pobiciu, nasza studentka została wyrzucona z uczelni. 
                 Dodatkowo musi zapłacić wysokie odszkodowanie tamtej dziewczynie. Ojciec bohaterki nigdy tak bardzo
                 nie czuł wstydu z powodu zachowania swojej córki..."
@@ -733,6 +762,7 @@ label w13:
                 pause 2
                 #==================nowa_scena==================
                 scene bg korytarz
+                play music "music/bensound-pianomoment.ogg"
                 if i == 1:
                     show main1
                 elif i == 2:
@@ -771,6 +801,7 @@ label w13:
                 pause 2
                 #==================nowa_scena==================
                 scene bg korytarz
+                play music "music/bensound-scifi.ogg"
                 show draco:
                     xpos 300
                 if i == 1:
@@ -793,6 +824,7 @@ label w13:
     pause 2
     #==================nowa_scena==================
     scene bg korytarz
+    play music "music/bensound-sunny.ogg"
     if i == 1:
         show main1
     elif i == 2:
@@ -837,6 +869,7 @@ label w13:
     hide stud1
     hide stud2
     hide draco
+    play music "music/bensound-house.ogg"
     show iza at left
     Izabella "Dzień dobry. Nie mam pojęcia kto nam dał te zajęcia o 8 rano, ale chyba nie myślał nad tym za długo. 
     By móc przystąpić do matematyki potrzebny jest świeży i czysty umysł."
@@ -884,8 +917,12 @@ label w13:
     hide stud1
     show iza at left
     Izabella "Sądzę, że chyba wszystko powiedziałam Zacznijmy więc zajęcia."
+    scene black
+    show text "{color=#FFF}Granice{/color}"
+    pause 2
 #---------------------------------------------------temat zajęć: Granice------------------------------------------------------ 
     scene bg korytarz
+    play music "music/bensound-sweet.ogg"
     if i == 1:
         show main1:
             xpos 200
@@ -922,6 +959,7 @@ label w13:
         m "Wyszłabym na piwo trochę się wyluzować, ale nie mam zbytnio z kims. Samemu pić to byłoby dziwne."
         m "Mówi się trudno. Spróbuję może następnym razem wkręcić się na jakiś wypad. Teraz będę się uczyć. 
         Mam zadanie do wykonania!"
+        $ piwo_piatek2 = False
     jump chapter3
 
 #strona 26

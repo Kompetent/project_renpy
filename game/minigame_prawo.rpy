@@ -26,7 +26,7 @@ init:
             style "checkbox_button"
             align (0.15, 0.7)
             action ToggleVariable("prawo_q1_button3")
-        textbutton "Następne" xpos 0.9 ypos 0.9 text_color "#000" text_hover_color "#047" action Jump("prawo_question2")
+        textbutton "Następne" xpos 0.8 ypos 0.9 text_color "#000" text_hover_color "#047" action Jump("prawo_question2")
     #gotowe
     screen prawo_question2():
         vbox xpos 310 ypos 100:
@@ -47,7 +47,7 @@ init:
         button xpos 200 ypos 530:
             style "checkbox_button"
             action ToggleVariable("prawo_q2_button4")
-        textbutton "Następne" xpos 0.9 ypos 0.9 text_color "#000" text_hover_color "#047" action Jump("prawo_question3")
+        textbutton "Następne" xpos 0.8 ypos 0.9 text_color "#000" text_hover_color "#047" action Jump("prawo_question3")
     #jeszcze nie gotowe
     screen prawo_question3():
         vbox xpos 310 ypos 100:
@@ -67,7 +67,7 @@ init:
             style "checkbox_button"
             align (0.15, 0.7)
             action ToggleVariable("prawo_q3_button3")
-        textbutton "Następne" xpos 0.9 ypos 0.9 text_color "#000" text_hover_color "#047" action Jump("prawo_question4")
+        textbutton "Następne" xpos 0.8 ypos 0.9 text_color "#000" text_hover_color "#047" action Jump("prawo_question4")
 
     screen prawo_question4():
         vbox xpos 310 ypos 100:
@@ -88,7 +88,7 @@ init:
         button xpos 200 ypos 530:
             style "checkbox_button"
             action ToggleVariable("prawo_q4_button4")
-        textbutton "Następne" xpos 0.9 ypos 0.9 text_color "#000" text_hover_color "#047" action Jump("prawo_question5")
+        textbutton "Następne" xpos 0.8 ypos 0.9 text_color "#000" text_hover_color "#047" action Jump("prawo_question5")
 
     screen prawo_question5():
         vbox xpos 310 ypos 100:
@@ -109,7 +109,7 @@ init:
         button xpos 200 ypos 530:
             style "checkbox_button"
             action ToggleVariable("prawo_q5_button4")
-        textbutton "Następne" xpos 0.9 ypos 0.9 text_color "#000" text_hover_color "#047" action Jump("prawo_question6")
+        textbutton "Następne" xpos 0.8 ypos 0.9 text_color "#000" text_hover_color "#047" action Jump("prawo_question6")
 
     screen prawo_question6():
         vbox xpos 310 ypos 100:
@@ -130,7 +130,7 @@ init:
         button xpos 200 ypos 530:
             style "checkbox_button"
             action ToggleVariable("prawo_q6_button4")
-        textbutton "Następne" xpos 0.9 ypos 0.9 text_color "#000" text_hover_color "#047" action Jump("prawo_end")
+        textbutton "Następne" xpos 0.8 ypos 0.9 text_color "#000" text_hover_color "#047" action Jump("prawo_end")
     screen prawo_conclusion():
         vbox xalign 0.2 yalign 0.2:
             text "Wynik: [sr_prawo] %"
@@ -140,7 +140,7 @@ init:
             text "Pytanie 4: [odp_pyt[3]]" 
             text "Pytanie 5: [odp_pyt[4]]" 
             text "Pytanie 6: [odp_pyt[5]]"
-        textbutton "Zakończ" xpos 0.9 ypos 0.9 text_color "#000" text_hover_color "#047" action Jump("prawo_run")  
+        textbutton "Zakończ" xpos 0.8 ypos 0.9 text_color "#000" text_hover_color "#047" action Jump("prawo_run")  
     #-------------------------------
     default prawo_q1_button1 = False #True
     default prawo_q1_button2 = False #True
@@ -203,29 +203,34 @@ init:
                 
 
 label minigame_prawo:
+    scene bg white
+    show text "{color=#000000}Egzamin z Prawa{/color}"
+    pause 2
+    hide text
+
     scene bg desk
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(10.1, ui.jumps("prawo_question2"))
+    $ ui.timer(30.1, ui.jumps("prawo_question2"))
     call screen prawo_question1
 label prawo_question2:
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(10.1, ui.jumps("prawo_question3"))
+    $ ui.timer(30.1, ui.jumps("prawo_question3"))
     call screen prawo_question2
 label prawo_question3:
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(10.1, ui.jumps("prawo_question4"))
+    $ ui.timer(30.1, ui.jumps("prawo_question4"))
     call screen prawo_question3
 label prawo_question4:
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(10.1, ui.jumps("prawo_question5"))
+    $ ui.timer(30.1, ui.jumps("prawo_question5"))
     call screen prawo_question4
 label prawo_question5:
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(10.1, ui.jumps("prawo_question6"))
+    $ ui.timer(30.1, ui.jumps("prawo_question6"))
     call screen prawo_question5
 label prawo_question6:
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(10.1, ui.jumps("prawo_end"))
+    $ ui.timer(30.1, ui.jumps("prawo_end"))
     call screen prawo_question6
 label prawo_end:
     scene bg desk
@@ -244,6 +249,8 @@ label prawo_end:
         odp_pyt += [ pytanie(odpowiedzi[17], odpowiedzi[14], odpowiedzi[15], odpowiedzi[16]) ]
         odp_pyt += [ pytanie(odpowiedzi[21], odpowiedzi[18], odpowiedzi[19], odpowiedzi[20]) ]
         sr_prawo = srednia_prawo(odp_pyt)
+        ocena_egz_prawo = srednia_egzamin("Dobra", odp_pyt[0], odp_pyt[1], odp_pyt[2], odp_pyt[3], odp_pyt[4], odp_pyt[5])
     call screen prawo_conclusion
 label prawo_run:
+    jump exams_back3
     return

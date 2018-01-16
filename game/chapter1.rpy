@@ -19,14 +19,14 @@ init:
 
     define love_u = "Uczelnia Informatyk Różnych"
     define hate_u = "Uczelnia Informatyczno-matematyczna im. P. Czybyszewa"
-label chapter1:
+label chapter1: #DONE
     #jump chapter2 #pokazujemy tylko progres
     scene bg white
 
     show text "{color=#000000}Chapter 1\nPierwszy dzień na studiach{/color}"
     pause 2
     hide text
-
+    play music "music/bensound-happiness.ogg"
     scene black
     show father at left
     o "Kochanie, obudź się, już 8"
@@ -45,6 +45,7 @@ label chapter1:
                 jump obudzona
     label dalej2:
         #odgłos wylanej wody
+        play sound "music/sounds/water_splash1.mp3"
         o "Wstajemy!!!"
         m "Tato, co ty zrobiłeś?!"
         o "Wybacz młoda panno, ale nie dałaś mi wyboru, biegiem do łazienki."
@@ -120,7 +121,7 @@ label chapter1:
         m "Zapomnij o [love_u], [m]. Musisz wziąć to co dało ci życie. Jeśli dobrze Ci pójdzie to będziesz mogła zrobić
         magisterkę na [love_u]. Skup się na tym co jest tu i teraz."
         m "Przedstawienie czas zacząć. Bądź zdecydowana i dumna."
-
+        stop music
         #wyciemniony ekren, dźwięk otwierania drzwi
         #czarne tło, napis: immatrykulacja uczelnia hate_u
 
@@ -140,7 +141,7 @@ label chapter1:
             show main2
         elif i == 3:
             show main3
-
+        play music "music/bensound-anewbeginning.ogg"
         m "Wow, tylu ludzi w jednym miejscu na żywo jeszcze nie widziałam."
         m "Każdy z nich ma swoje cele i ambicje, każdy ma inny powód dla którego się tutaj znalazł.
         Oni wszyscy są moją przyszłą konkurencją na rynku pracy."
@@ -188,7 +189,7 @@ label chapter1:
             show main2
         elif i == 3:
             show main3
-
+        play music "music/bensound-sweet.ogg"
         m "Hmm...a już myślałam, że będę mogła pójść do domu. Męczą mnie takie uroczystości. 
         W sumie nic dziwnego. Większość czasu spędzam przed komputerem."
         m "Może jak będzie już na studiach WF to się zapiszę na jakąś siłownię lub fitness. 
@@ -219,6 +220,12 @@ label chapter1:
             scene bg korytarz
             menu:
                 "A123":
+                    if i == 1:
+                        show main1
+                    elif i == 2:
+                        show main2
+                    elif i == 3:
+                        show main3
                     m "O...k... to była ta sala? No nic przekonajmy sie."
                     #sala wykladowa
                     show bg a123
@@ -234,6 +241,12 @@ label chapter1:
                         wrong = True
                     jump back
                 "A129":
+                    if i == 1:
+                        show main1
+                    elif i == 2:
+                        show main2
+                    elif i == 3:
+                        show main3
                     m "O...k... to była ta sala? No nic przekonajmy sie."
                     #sala wykladowa
                     show bg a129
@@ -252,6 +265,7 @@ label chapter1:
                     jump go
         label go:
             #sala wykladowa
+            play music "music/bensound-scifi.ogg"
             show bg a128
             if wrong:
                 
@@ -301,6 +315,7 @@ label chapter1:
                 elif i == 3:
                     hide main3
         #pokaz opiekuna roku
+        play music "music/bensound-jazzcomedy.ogg"
         show opiekun at left
         opiekunroku "Mam nadzieję, że to już wszyscy. W tym roku naprawdę dużo ludzi dostało się na ten 
         kierunek. Mam nadzieję, że ta sala ogarnie nas wszystkich. Inaczej wykłady będziecie mieli na 
@@ -308,23 +323,34 @@ label chapter1:
         #dżwięk masowego śmiechu
         opiekunroku "Na początek chciałabym się wam przedstawić. Jestem doktor Matylda Kostrzewska i 
         jestem opiekunem waszego roku. Równocześnie będę miała z wami zajęcia z Podstaw Programowania."
+        hide opiekun
+        show stud1 at left
         "Student1" "Slyszalem, ze starsze roczniki mówią na nią \"Doktor Kosa\""
+        show stud2 ar right
         "Student2" "Czemu? Aż tak ciężko zaliczyć ten przedmiot?"
         "Student2" "Taa...słyszałem, że do programowania podchodzi bardzo poważnie. Jedna z najbardziej 
         uzdolnionych osob tutaj."
         "Student3" "Dajcie spokój. Ja tam nie wierzę starszym rocznikom. Później okazuje się, że połowa to kłamstwo."
+        hide stud1
+        hide stud2
+        show opiekun at left
         opiekunroku "...na uroczystości poznaliście jeszcze jedną osobę, z którą będziecie mieli zajęcia w 
         tym semestrze. Nasz dziekan będzie z wami miał Historię Informatyki."
+        hide opiekun
+        show stud1 at right
         "Student1" "Co? Dopiero pierwszy semestr a już mamy jakieś wypełniacze w planie."
+        hide stud1
+        show opiekun at left
         opiekunroku "Polecam chodzić, gdyż dziekan bardzo ciekawie prowadzi zajęcia. Z tego co pamiętam to w 
         tamtym roku prawie wszyscy chodzili na zajęcia."
+        hide opiekun
+        show stud2 at right
         "Student2" "Chyba jednak przesadzasz, chłopie. Coś czuję, że będzie ciekawie."
+        hide stud2
+        show opiekun at left
         opiekunroku "Plan zajęć zaraz wam przedstawię na tablicy."
         show plan_zajec: 
             xalign 0.8 yalign 0.25
-        
-        "Stundent1" "Zaczynamy tydzień zajęciami o 8 rano? Matko, już mi się to nie podoba..."
-        "Student2" "Matematyka w piątek? Nie ma to jak zepsuć sobie koniec tygodnia."
         opiekunroku "Oooo... najwidoczniej widzę się z wami już w poniedziałek. Też mi się nie podoba ta godzina, 
         ale nie ja mam na to wpływ."
         opiekunroku "Na pierwszych zajęciach poznacie zasady prowadzenia i zaliczenia przedmiotu. 
@@ -340,6 +366,7 @@ label chapter1:
             show main2
         elif i == 3:
             show main3
+        play music "music/bensound-scifi.ogg"
         m "Kobitka nie wydaje się zła. Nie sądzę, że będę z nia miała jakieś problemy. Uczyłam sę na własną rękę 
         programowanie jeszcze jak chodziłam do liceum."
         show draco at right
@@ -348,11 +375,12 @@ label chapter1:
         malfoy "Mimo to, nie jest aż tak źle. Mój ojciec zna tu wielu ludzi. Kiedyś tu wykładal. 
         Z palcem w nosie zrobię magistra, a potem doktorat w USA."
         "Student3" "Wow...aale masz fajnie."
+        show stud1 at left
         "Student4" "Prawda. W sumie jesteś ustawiona przez całe studia."
         malfoy "Niby tak, ale to nie oznacza, że nie dam z siebie wszystkiego. Dziwię się, że aż tylu się 
         dostało. Nie jest to problemem."
         malfoy "Rozłożę tych cieniasów tak, że zmienią studia i pójdą na zarządzanie."
-        "Student3" "Hhahhaha. Ty to masz gadane, Malfoy."
+        "Student3" "Hhahhaha. Ty to masz gadane, Amanda."
         m "Jezu....i z kimś takim mam studiować. Gorszej baby jeszcze nie widziałam w swoim życiu. Pewnie jest 
         tylko mocna w gębie ale nic praktycznego zrobić nie potrafi."
         malfoy "Hej, ty. Czemu się na mnie gapisz?"
@@ -407,13 +435,15 @@ label chapter1:
             malfoy "Mi tam nie zależy aż tak. Po prostu nie nawidzę ludzi, którzy boja się sprawdzić swoje umiejętności!"
             m "Dobra, już dobra. Zgadzam sę. Zetrę ten durny uśmiech z Twojej twarzy."
         label powszystkim:
-            malfoy "Hahahahahaha. No to ustalone. Pozwól, że zdradze Ci, kim jestem. Nazywam się [malfoy] (nazwisko_w_trakcie_wymyślania) i 
+            malfoy "Hahahahahaha. No to ustalone. Pozwól, że zdradze Ci, kim jestem. Nazywam się [malfoy] i 
             wiedz, że ze mną tak łatwo nie wygrasz."
+            play music "music/bensound-jazzcomedy.ogg"
             m "Ja jestem [m] Kowalska. Już Ci współczuje przegranej."
             opiekunroku "Pani Kowalska, do mnie!"
             malfoy "Wołają Cię. No to do zobaczenia na zajęciach \"rywalko\". Tylko nie chwal się bardzo, 
             że się założyłyśmy. Wieść o tym, że zadaję się z taką ofiarą zepsuje mi reputację. Hahahahahha."
             hide draco
+            hide stud1
             #chowaj malfoya
             #pokaz opiekuna roku
             show opiekun at left
@@ -421,13 +451,14 @@ label chapter1:
             opiekunroku "Proszę tylko podpis i legitymacja jest już pani."
             m "Dobrze, już podpisuję."
 
-            #(odglos pisania)
+            play sound "music/sounds/writing.mp3"
 
             opiekunroku "Oto legitymacja studencka. Powodzenia w studiowaniu i do zobaczenia w poniedziałek."
-            m "Dziękuję... napewno się przyda... "
-            #hide opiekun roku
+            m "Dziękuję... na pewno się przyda... "
+            hide opiekun roku
             m "Mam już dość tego dnia. Lecz prawdziwy koszmar zacznie sę w poniedziałek. Nie daruję tej babie, 
             że już zrujnowała mi studia. Pokażę na co mnie stać."
             m "Najpierw jednak wrócę do wygodnego wyrka. Wstawanie o tak wczesnej porze jest nieludzkie."
+            stop music
             jump chapter2
             return

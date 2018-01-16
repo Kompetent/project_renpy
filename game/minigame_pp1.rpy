@@ -9,7 +9,7 @@ init:
             else:
                 return anim.Blink(Text("0.0", color="#f00", size=72)), None
     
-    image countdown = DynamicDisplayable(countdown, length=10.0)
+    image countdown = DynamicDisplayable(countdown, length=30.0)
     
     image bg pp1_q1 = "mini1_pp1/question1/question.jpg"
     image bg pp1_q2 = "mini1_pp1/question2/question.png"
@@ -84,93 +84,113 @@ init:
             text "Odpowiedź na 6: [pp1_q6]"
             text "Odpowiedź na 7: [pp1_q7]"
             text "Odpowiedź na 8: [pp1_q8]"
+            text "Wynik: [ocena_egz_pp1]"
             textbutton "Wyjście" action Return()
+    python:
+        def srednia_egzamin(t,*args):
+            suma = 0
+            for a in args:
+                if a == t:
+                    suma += 1
+            print(args.__len__())
+            procent = round(float(suma) / args.__len__() *100, 2)
+            if procent < 50:
+                return 2
+            elif procent <65:
+                return 3
+            elif procent < 80:
+                return 4
+            else:
+                return 5
 label minigame_pp1:
+    scene bg white
     show text "{color=#000000}Egzamin z PP1{/color}"
     pause 2
     hide text
 
     scene bg pp1_q1
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(10.1, ui.jumps("next_pp1_q1_wrong"))
+    $ ui.timer(30.1, ui.jumps("next_pp1_q1_wrong"))
     call screen pp1_question1
     label next_pp1_q1_good:
-        $ pp1_q1 = "{color=#0f0}Dobrze{/color}"
+        $ pp1_q1 = "Dobrze"
         jump next_pp1_q2
     label next_pp1_q1_wrong:
         $ pp1_q1 = "{color=#f00}Źle{/color}"
 label next_pp1_q2:
     scene bg pp1_q2
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(10.1, ui.jumps("next_pp1_q2_wrong"))
+    $ ui.timer(30.1, ui.jumps("next_pp1_q2_wrong"))
     call screen pp1_question2
     label next_pp1_q2_good:
-        $ pp1_q2 = "{color=#0f0}Dobrze{/color}"
+        $ pp1_q2 = "Dobrze"
         jump next_pp1_q3
     label next_pp1_q2_wrong:
         $ pp1_q2 = "{color=#f00}Źle{/color}"
 label next_pp1_q3:
     scene bg pp1_q3
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(10.1, ui.jumps("next_pp1_q3_wrong"))
+    $ ui.timer(30.1, ui.jumps("next_pp1_q3_wrong"))
     call screen pp1_question3
     label next_pp1_q3_good:
-        $ pp1_q3 = "{color=#0f0}Dobrze{/color}"
+        $ pp1_q3 = "Dobrze"
         jump next_pp1_q4
     label next_pp1_q3_wrong:
         $ pp1_q3 = "{color=#f00}Źle{/color}"
 label next_pp1_q4:
     scene bg pp1_q4
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(10.1, ui.jumps("next_pp1_q4_wrong"))
+    $ ui.timer(30.1, ui.jumps("next_pp1_q4_wrong"))
     call screen pp1_question4
     label next_pp1_q4_good:
-        $ pp1_q4 = "{color=#0f0}Dobrze{/color}"
+        $ pp1_q4 = "Dobrze"
         jump next_pp1_q5
     label next_pp1_q4_wrong:
         $ pp1_q4 = "{color=#f00}Źle{/color}"
 label next_pp1_q5:
     scene bg pp1_q5
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(10.1, ui.jumps("next_pp1_q5_wrong"))
+    $ ui.timer(30.1, ui.jumps("next_pp1_q5_wrong"))
     call screen pp1_question5
     label next_pp1_q5_good:
-        $ pp1_q5 = "{color=#0f0}Dobrze{/color}"
+        $ pp1_q5 = "Dobrze"
         jump next_pp1_q6
     label next_pp1_q5_wrong:
         $ pp1_q5 = "{color=#f00}Źle{/color}"
 label next_pp1_q6:
     scene bg pp1_q6
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(10.1, ui.jumps("next_pp1_q6_wrong"))
+    $ ui.timer(30.1, ui.jumps("next_pp1_q6_wrong"))
     call screen pp1_question6
     label next_pp1_q6_good:
-        $ pp1_q6 = "{color=#0f0}Dobrze{/color}"
+        $ pp1_q6 = "Dobrze"
         jump next_pp1_q7
     label next_pp1_q6_wrong:
         $ pp1_q6 = "{color=#f00}Źle{/color}"
 label next_pp1_q7:
     scene bg pp1_q7
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(10.1, ui.jumps("next_pp1_q7_wrong"))
+    $ ui.timer(30.1, ui.jumps("next_pp1_q7_wrong"))
     call screen pp1_question7
     label next_pp1_q7_good:
-        $ pp1_q7 = "{color=#0f0}Dobrze{/color}"
+        $ pp1_q7 = "Dobrze"
         jump next_pp1_q8
     label next_pp1_q7_wrong:
         $ pp1_q7 = "{color=#f00}Źle{/color}"
 label next_pp1_q8:
     scene bg pp1_q8
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(10.1, ui.jumps("next_pp1_q8_wrong"))
+    $ ui.timer(30.1, ui.jumps("next_pp1_q8_wrong"))
     call screen pp1_question8
     label next_pp1_q8_good:
-        $ pp1_q8 = "{color=#0f0}Dobrze{/color}"
+        $ pp1_q8 = "Dobrze"
         jump next_pp1_end
     label next_pp1_q8_wrong:
         $ pp1_q8 = "{color=#f00}Źle{/color}"
 label next_pp1_end:
     scene bg white
+    python:
+        ocena_egz_pp1 = srednia_egzamin("Dobrze", pp1_q1, pp1_q2, pp1_q3, pp1_q4, pp1_q5, pp1_q6, pp1_q7, pp1_q8)
     call screen pp1_conclusion
-    #jump minigame_pe
+    jump exams_back1
     return
