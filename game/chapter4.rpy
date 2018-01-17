@@ -27,7 +27,7 @@ label chapter4:
     m "Co raz ciężej jest na tych studiach. Na początku myślałam, że nie będę mieć żadnych problemów. 
     Teraz muszę zweryfikować swoje poglądy."
     m "To prawda, zajęcia są bardzo ciekawe i dużo się z nich dowiedziałam, ale..."
-    m "...ta presja powoli mnie wykończa. Jeszcze ten zakład dodaje mi stresu."
+    m "...ta presja powoli mnie wykańcza. Jeszcze ten zakład dodaje mi stresu."
     m "Może dać sobie z tym spokój i skupić się na tym co tak naprawdę ważne? Olać 
     Amandę i ściągnąć z siebie jeden ciężar?"
     m "Gdyby to było takie łatwe. Obiecałam sobie, że ją pokonam. Zniszczę jej pewność 
@@ -53,7 +53,7 @@ label chapter4:
         adam "Nad dzisiejszą kartkówką? Powinniśmy ją rozwalić! Sama mówiłaś, że cały weekend będziesz się do niej uczyć."
         m "O to się nie martwię. Z tym sobie na pewno poradzimy. Rozmyślam na temat Amandy..."
         adam "Coś Ci zrobiła? Co się stało?"
-        m "Wiesz...jest wredna, pyszałkowata, denerwuje mnie strasznie...ale zastanawiałaś się o co jej chodzi? Czemu jest taka wredna? Każdy człowiek ma jakiś powód lub motywację." 
+        m "Wiesz...jest wredna, pyszałkowata, denerwuje mnie strasznie...ale zastanawiałeś się o co jej chodzi? Czemu jest taka wredna? Każdy człowiek ma jakiś powód lub motywację." 
         adam "Pochodzi z bogatej rodziny. Pewnie ją rozpieszczają strasznie i stąd takie efekty. Myślę, że zadręczasz się niepotrzebnymi rzeczami. Pośpieszmy się, bo spóźnimy się na zajęcia."
         m "Chyba masz rację..."
     
@@ -103,7 +103,7 @@ label back_wyklad_pp1_3_cd:
     hide stud1
     hide adam_view
     show opiekun at left
-    opiekunroku "Proszę już wszystkich o spokój. Przejdźmy już do dzisiejszego wykładu!"
+    opiekunroku "Proszę wszystkich o spokój. Przejdźmy już do dzisiejszego wykładu!"
 
     scene black
     show text "{color=#FFF}Wykład...{/color}"
@@ -145,7 +145,7 @@ label back_wyklad_pp1_3_cd:
         marta "A Tobie ja poszło?"
         if ocena_kart2_pp1 >= 3:
             m "To była bułka z masłem! Osiągnęłam kolejny poziom! Czasem chciałabym, żeby nad 
-            głowami ludzi była pasek postępu jak w grach, hahahaha"
+            głowami ludzi był pasek postępu jak w grach, hahahaha"
             marta "Wiedziałam, że dobrze Ci pójdzie. Razem możemy mieć wszystko, moja droga!"
             adam "Gratuluję Wam obu. Dzisiejszy dzień należy do tych udanych."
             marta "To prawda! Chodźmy już. Spóźnimy się na następne zajęcia. Ostatnio kobitka 
@@ -168,7 +168,7 @@ label back_wyklad_pp1_3_cd:
         Jak Tobie ja poszło?"
         if ocena_kart2_pp1 >= 3:
             m "To była bułka z masłem! Osiągnęłam kolejny poziom! Czasem chciałabym, żeby nad 
-            głowami ludzi była pasek postępu jak w grach, hahahaha"
+            głowami ludzi był pasek postępu jak w grach, hahahaha"
             adam "Wiedziałem, że dobrze Ci pójdzie. Dużo się uczyłaś i zasłużyłaś na zwycięstwo!"
             m "Dzięki! Chodźmy już. Spóźnimy się na następne zajęcia. Ostatnio kobitka groziła, że 
             za spóźnienia będzie odejmować punkty z egzaminu!"
@@ -229,7 +229,7 @@ label back_wyklad_pp1_3_cd:
         "Jest dobrze":
             m "Wszystko jest w porządku. Razem z kolegą z powodzeniem rozkręcają swoją firmę MOCRAX. Nie 
             ma w tej chwili na co narzekać!"
-            dziekan "Pewnie z Sobocińskim, co? Oni oboje od początku studiów mieli pociąg do systemów sieciowych."
+            dziekan "Pewnie z Sobocińskim, co? Oni obaj od początku studiów mieli pociąg do systemów sieciowych."
             dziekan "Twój ojciec dobrych parę lat uczył tutaj sieciowych przedmiotów. Miał jednak wyższe ambicje 
             i dlatego wkroczył do świata biznesu."
             jump znam_dziekana
@@ -487,7 +487,7 @@ label back_wyklad_tpi_3_cd:
             marta "Oczywiście! Niestety nie chce mi uwierzyć. Nie mam żadnego dowodu, ze to była ona. 
             Powiedział, że zrobi mi wielką łaskę i przepyta mnie niedługo, ale nie wierzę, że się uda."
             m "Razem Ci pomożemy. Wyuczysz się tego na blachę!"
-            adam "Dokładnie! Jesteśmy z Toba."
+            adam "Dokładnie! Jesteśmy z Tobą."
             marta "Dziękuję Wam, ale teraz chcę o tym zapomnieć. Idę do domu. Zobaczymy się jutro."
             #(odglos krokow)
             m "Jeżeli Nam się uda to zrobimy wielką imprezę"
@@ -561,7 +561,7 @@ label back_wyklad_tpi_3_cd:
         marta "Ty wredna małpo! Zapłacisz za to wszystko!"
         malfoy "Nie wiem o czym mówisz. Nie moja wina, że nie zaliczyłaś. Mogłabyś uczciwie przyznać, że zawaliłaś, a nie wymyślać jakieś bajeczki." 
         malfoy "Podobno Ikar po Twojej wizycie przez pół godziny nie mógł powstrzymać śmiechu, hahaha"
-        marta "Już ja Ci pokaże, zołzo!"
+        marta "Już ja Ci pokażę, zołzo!"
         m "Marta, uspokój się! Nie jest tego warta. Czego chcesz, Amanda? Pośmiać się, czy może dla odmiany coś mądrego powiesz."
         malfoy "Przynajmniej jedna potrafi trzymać nerwy na wodzy. Mam dla Ciebie wiadomość, Kowalska. Ty i ja jedziemy jutro na seminarium do Mainsoftu."
         m "My? Czemu? O co Ci chodzi?"
@@ -596,7 +596,7 @@ label back_wyklad_tpi_3_cd:
         m "My? Czemu? O co Ci chodzi?"
         adam "Znowu jakieś sztuczki?"
         malfoy "Z Tobą nie gadam, wieśniaku. Dr Matylda powiedziała, że jesteśmy najlepsze w grupie na laboratoriach i dlatego chce Nas zabrać na wykład dotyczący inżynierii programowania."
-        malfoy "Wierz mi, nie uśmiecha mi się z Tobą tam jechać. Mimo to, warto tam przybyć Takie seminarium może Cię wiele nauczyć."
+        malfoy "Wierz mi, nie uśmiecha mi się z Tobą tam jechać. Mimo to, warto tam przybyć. Takie seminarium może Cię wiele nauczyć."
         m "Czy Ty aby nie wkręcasz mnie? Może chcesz mnie wyrolować?"
         malfoy "Jak mi nie wierzysz to idź do dr Matyldy. Ja tylko przekazuję. 8:30 pod budynkiem szkoły. Na razie, frajerzy. "
         hide draco
@@ -618,7 +618,7 @@ label back_wyklad_tpi_3_cd:
     show teresa at left
     teresa "Ok, JD3.0 jest już gotowy do działania. Prawda, JD? "
     "JD3.0 ""BIP BOOOP BIB BOOOP BIP!"
-    teresa "No to możemy zaczynać. Specjalnie dałem prosty przykład ze względu na zmianę terminu zajęć. 
+    teresa "No to możemy zaczynać. Specjalnie dałam prosty przykład ze względu na zmianę terminu zajęć. 
     Do roboty, kochani!"
     stop music
     jump mat_kart2
@@ -650,8 +650,8 @@ label back_wyklad_mat_3_cd:
 
     scene bg a123
     show teresa at left
-    teresa "Rozprawiliśmy się z tematem szybciej nim myślałem. Dobrze, że w tym roku mam tak fajną grupę"
-    teresa "JD już sprawdził Wasze prace. Zaraz Wam je pokaże. Widzę że większość zaliczyła. Tak trzymać! Dajesz,  JD!"
+    teresa "Rozprawiliśmy się z tematem szybciej nim myślałam. Dobrze, że w tym roku mam tak fajną grupę"
+    teresa "JD już sprawdził Wasze prace. Zaraz Wam je pokażę. Widzę że większość zaliczyła. Tak trzymać! Dajesz,  JD!"
     "JD3.0" "BIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIP BOOP!"
     teresa "Do całek wrócimy dopiero w następnym tygodniu. Trzymajcie się i do zobaczenia!"
     
@@ -825,7 +825,7 @@ label wstajemy:
     show draco at right
     malfoy "Nie drzyj się tak! Bębenki mi zaraz pękną."
     m "Amanda, Ty żyjesz. Nigdy nie spodziewałam się, że będę się cieszyć, że cię słyszę."
-    malfoy "Bardzo zabawne...musimy się stąd wydostać i zadzwonić o pomoc."
+    malfoy "Bardzo zabawne...musimy się stąd wydostać i zadzwonić po pomoc."
     m "Wytłumacz mi, co się stało!"
     malfoy "Tak w dużym skrócie: piorun walnął w drzewo, a drzewo w Nas. Wyciągnijmy dr Matyldę. 
     Mam nadzieję, że jest tylko nieprzytomna. Arghhhh!"
@@ -908,8 +908,8 @@ label nieistony_x:
     #(cisza)
     malfoy "Osobiście nic do Ciebie tak naprawdę nie mam. Nawet Cię dobrze nie znam. Nie lubię Cię, bo nienawidzę samej siebie."
     m "Jesteś pewna, że nie uderzyłaś się w głowę podczas wypadku?"
-    malfoy "Ehhh....od początku wiedziałam kim jesteś. Mój ojciec pracował kiedyś z Twoimi. To są w sumie wielkie szychy w świecie IT."
-    malfoy "Mnie ojciec od samego początku widział przy sobie jako jego przyszła prawa ręka. Chciał miec idealnego spadkobiercę swojej firmy."
+    malfoy "Ehhh....od początku wiedziałam kim jesteś. Mój ojciec pracował kiedyś z Twoim. To są w sumie wielkie szychy w świecie IT."
+    malfoy "Mnie ojciec od samego początku widział przy sobie jako jego przyszłą prawą rękę. Chciał miec idealnego spadkobiercę swojej firmy."
     malfoy "Tata zawsze dążył do perfekcji. ZAWSZE. W moim przypadku było tak samo. Żadnych ustepstw od normy. Kiedy coś szło nie tak, surowo mnie karał."
     malfoy "Lubię branżę IT. Widzę się w bazach danych. Od dawna mnie to interesuje. Tylko ja nie mam wolnego wyboru.  Jeśli mam kiedyś zastąpić ojca to muszę robić to, co on każe."
     malfoy "Kiedy zobaczyłam Ciebie....poczułam zazdrość. Sama wybrałaś sobie cel w życiu. Nie miałaś nad sobą wiecznie spoglądającego na Ciebie ojca. Sama decydujesz, kim chcesz być."
@@ -925,7 +925,7 @@ label nieistony_x:
     #(cisza)
     m "Wierzę Ci. Poważnie."
     malfoy "Przepraszam za wszystkie obelgi i kpiny. Teraz jestem w pełni świadoma swoich czynów. Zazdrość potrafi 
-    porządnie oślepić człowieka. "
+    porządnie zaślepić człowieka. "
     if pomoglas_amandzie:
         malfoy "Chciałabym też Ci podziękować. Za nogę..."
         m "To nic takiego, naprawdę"
@@ -987,14 +987,14 @@ label nieistony_x:
     if marta_zostala_uspokojona:
         m "Nigdy nie zapomnę miny Marty, kiedy musiała przepraszać Amandę, za błędne oskarżenia"
     else:
-        m "Nigdy nie zapomnę miny Adama, kiedy musiała przepraszać Amandę, za błędne oskarżenia"
+        m "Nigdy nie zapomnę miny Adama, kiedy musiał przepraszać Amandę, za błędne oskarżenia"
     m "Amanda w sumie jest całkiem w porządku, jak się ją lepiej pozna. Sądzę, że warto utrzymywać z nią więź. Ona potrzebuje pomocy. Mojej pomocy. Chyba tylko ja mogę to zrobić."
     if marta_zostala_uspokojona:
         m "Miałeś rację tato. Potrzebowałam zobaczyć co się w niej kryje, by ją w pełni zrozumieć. 
-        Może Marta też się do niej przekonają... kiedyś."
+        Może Marta też się do niej przekona... kiedyś."
     else:
         m "Miałeś rację tato. Potrzebowałam zobaczyć co się w niej kryje, by ją w pełni zrozumieć. 
-        Może Adam też się do niej przekonają... kiedyś."
+        Może Adam też się do niej przekona... kiedyś."
     m "To był zwariowany semsestr...hehehe"
     m "Teraz przyszedł czas na ostateczny sprawdzian mojej wiedzy. Nadeszła SESJA!"
     #(odglos grzmotu)
@@ -1005,7 +1005,7 @@ label nieistony_x:
     elif i == 3:
         hide main3
     show narrator at left
-    ob "Witaj mój graczu. Widzimy się ponownie. Nadszedł czas by sprawdzić wiedzę, jaką zdobyłeś podczas tego semestru"
+    ob "Witaj, mój graczu. Widzimy się ponownie. Nadszedł czas by sprawdzić wiedzę, jaką zdobyłeś podczas tego semestru"
     ob "Jeszcze z Tobą nie skonczyłem. Zobaczymy się na końcu naszej podróży. Powodzenia!"
     jump exams
     #TO CO POTEM BEDZIE DOGRAMY WSPOLNIE WRAZ Z MINIGIERKAMI(CHODZI GLOWNIE O ACHI I TEKSTY OBSERWATORA)

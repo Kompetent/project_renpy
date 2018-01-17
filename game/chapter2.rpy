@@ -59,7 +59,7 @@ label chapter2: #DONE
     Matylda Kostrzewska i będę miała z wami Podstawy Programowania."
     opiekunroku "Zasady zaliczenia przedmiotu są proste. Na każdych zajęciach(nie licząc tych) będzie króciutka 
     kartkówka z ostatniego wykładu. Łącznie będzie ich 4."
-    opiekunroku "Jeżeli będziecie mieli minimum 2 zaliczone to będziecie mogli podejść do egzaminu. W innym razie 
+    opiekunroku "Jeżeli będziecie mieli minimum 2 zaliczone to będziecie mogli podejść do egzaminu. W przeciwnym razie 
     będziecie musieli ten przedmiot powtarzać."
     hide opiekun
     show stud1 at left
@@ -70,7 +70,7 @@ label chapter2: #DONE
     hide stud2
     show opiekun:
         xpos 200
-    opiekunroku "Widzę, że nie za bardzo cieszycie się z tych reguł. Uwierzcie mi, że są one tylko da waszego dobra. 
+    opiekunroku "Widzę, że nieszczególnie cieszycie się z tych reguł. Uwierzcie mi, że są one tylko da waszego dobra. 
     Chodzi o motywację!"
     opiekunroku "Umiejętność programowania jest najważniejsza dla informatyka. Dlatego chcę żebyście przyłożyli się 
     do nauki tego przedmiotu. Tutaj nie ma miejsca dla leniów."
@@ -93,7 +93,7 @@ label chapter2: #DONE
     opiekunroku "Nie martwcie się na zapas. Postaram się z wami wszystko na spokojnie przerobić. Głęboko wierzę, 
     że każde z was sobie poradzi."
     opiekunroku "Na dzisiejszych zajęciach zrobimy wstęp do języka C. Edukację w dziedzinie programowania najlepiej 
-    zacząć właśnie od niego albo Pascala. Na tej uczelni jednak uważamy, że język C bardziej was przygotuje do dalszego 
+    zacząć właśnie od niego albo Pascala. Na tej uczelni jednak uważamy, że język C lepiej was przygotuje do dalszej 
     przygody z programowaniem."
     opiekunroku "No to zaczynamy zajęcia!"
     #==================nowa_scena==================
@@ -119,11 +119,11 @@ label chapter2: #DONE
     malfoy "Hej, Kowalska! Jak tam po pierwszym wykładzie? Już nie dajesz sobie rady?"
     menu:
         "Rozmawiaj":
-            m "Widzę, że się bardzo o mnie martwisz. Niepotrzebnie. Nie mogłabym być gorsza od kogoś takiego jak Ty!"
-            malfoy "Hahahahaha. Gadkę to Ty masz niezłą. Oby Twoje wyniki były takie same."
+            m "Widzę, że się bardzo o mnie martwisz. Niepotrzebnie. Nie mogłabym być gorsza od kogoś takiego jak ty!"
+            malfoy "Hahahahaha. Gadkę to ty masz niezłą. Oby twoje wyniki były takie same."
             jump wybor12
         "Spław ją":
-            m "Daj mi spokój kobieto.  Nie chcę mi się z Tobą gadać."
+            m "Daj mi spokój kobieto.  Nie chcę mi się z tobą gadać."
             malfoy "Hahhaha.  Chyba jednak coś jest na rzeczy. Zaczynam wygrywać a nawet się nie staram."
             jump wybor12
     #(odglos chodu)
@@ -148,14 +148,14 @@ label chapter2: #DONE
     Nie wiem, czy będzie mi to potrzebne do życia."
     m "Może w następnych semestrach będziemy projektować i programować układy elektroniczne? Nie byłam nigdy 
     dobra w robótkach ręcznych. Oj będzie ciężko."
-    m "Pamiętaj to co Ci powiedział kiedyś tata."
+    m "Pamiętaj to co ci powiedział kiedyś tata."
     #==================nowa_scena==================
     scene bg pokoj
     play music "music/bensound-memories.ogg"
     show father:
         xpos 200
-    o "Nie ważne co będzie w przyszłości. Skup się na tym to co tu i teraz. Reszta przyjdzie w swoim czasie."
-    m "Mój tata mógły pisać książki z mądrościami w stylu Paulo Coelho. Dobra, wchodzimy."
+    o "Nie ważne co będzie w przyszłości. Skup się na tym co tu i teraz. Reszta przyjdzie w swoim czasie."
+    m "Mój tata mógłby pisać książki z mądrościami w stylu Paulo Coelho. Dobra, wchodzimy."
     #==================nowa_scena==================
     #(jezeli da rade to dobre bylyby tu drzwi w tle, jak je nacisniesz to otwieraja sie i pojawia sie tlo uczelni)
     scene bg korytarz
@@ -174,7 +174,7 @@ label chapter2: #DONE
     malfoy "Na pewno przekażę mu te słowa. Ucieszy się, że go tu pamiętają."
     dziekan "Oczywiście, że pamiętam. Jego firma po części finansuje naszą uczelnię. Dzieki niemu w tym roku otworzyliśmy 5 
     zaawansowanych pracowni.  Złoty człowiek z niego."
-    dziekan "O, to już ta godzina. Trzeba zacząć już zajęcia. Wchodzimy, studenciaki, Wchodzimy, hehehe."
+    dziekan "O, to już ta godzina. Trzeba już zacząć zajęcia. Wchodzimy, studenciaki, Wchodzimy, hehehe."
     hide dziekan casual
     if i == 1:
         show main1:
@@ -187,10 +187,10 @@ label chapter2: #DONE
             xpos 200
     play music "music/bensound-scifi.ogg"
     m "Oho, dodatkowo jej ojciec jest sponsorem. Naprawdę szkoda, że nie dostałam się do [love_u]."
-    malfoy "No co wieśniaro. Masz jakiś problem?"
+    malfoy "No co, wieśniaro. Masz jakiś problem?"
     menu:
         "reagujesz":
-            m "Żaden. Patrzę z politowaniem na Twój wielce zadufany nos. Jeszcze więcej wywyższania się i osiągnie 
+            m "Żaden. Patrzę z politowaniem na twój wielce zadufany nos. Jeszcze więcej wywyższania się i osiągnie 
             on rozmiary piłki tenisowej."
             malfoy "Grrr....jesteś mocna tylko w gębie. Daruj sobie riposty i bardziej skup się na nauce."
             m "Haha. Nie umiesz odszczekać, więc punkt idzie do mnie. Wchodźmy do sali. Jeżeli masz mnie pokonać to lepiej byś uważała na zajęciach."
@@ -198,7 +198,7 @@ label chapter2: #DONE
             jump w13
         "idziesz do sali":
             m "..."
-            malfoy "Muszę Ci jakiś pseudonim wymyślić. Nie możesz mnie ciągle ignorować, hahaha."
+            malfoy "Muszę ci jakiś pseudonim wymyślić. Nie możesz mnie ciągle ignorować, hahaha."
             jump w13
     #(tlo sali wykladowej)
     #==================nowa_scena==================
@@ -215,8 +215,8 @@ label w13:
     "Student1" "Z wielką szychą mamy te zajęcia. Będzie ciekawie."
     show stud2:
         xpos 800
-    "Student2" "O czym Ty mówisz?"
-    "Student1" "Widać, że mało Cię obchodzi świat zawodowy, ziom. Ekipa Meistera ma na swoim koncie wiele interesujących patentów. 
+    "Student2" "O czym ty mówisz?"
+    "Student1" "Widać, że mało cię obchodzi świat zawodowy, ziom. Ekipa Meistera ma na swoim koncie wiele interesujących patentów. 
     Z tego co słyszałem to sam Meister pomagał przy tworzeniu niebieskiego laseru."
     "Student3" "Wow, to niesamowite. Ta uczelnia ma dużo ciekawych ludzi. Czym się obecnie zajmują."
     "Student1" "Z tego co pamiętam, to pracują nad własnym procesorem grafenowym, jako odpowiedź na procesor IBMu."
@@ -224,16 +224,16 @@ label w13:
     hide stud1
     hide stud2
     show dziekan casual at left
-    dziekan "Zapewne wielu z Was zastanawia się po co ten kierunek ma taki przedmiot. Być może traktują go jako wypełniacz 
+    dziekan "Zapewne wielu z was zastanawia się po co ten kierunek ma taki przedmiot. Być może traktują go jako wypełniacz 
     albo sposób na ograniczenie listy studentów."
-    dziekan "Ci, którzy tak myślą są oczywiście w błędzie. Informatyka jest bardzo szeroką dziedziną. Każdy z Was na pewnym 
+    dziekan "Ci, którzy tak myślą są oczywiście w błędzie. Informatyka jest bardzo szeroką dziedziną. Każdy z was na pewnym 
     etapie zdcecyduje w jakim kierunku będzie się dalej kształcić, ale nauka podstaw Wam pomoże."
-    dziekan "Dzięki takim przedmiotom jak ten będziecie mogli zdecydować co Was bardziej rajcuje w informatyce. Osobiście też 
-    uważam, że znanie podstaw elektroniki jest obowiązkowe dla tych co z nią pracują."
+    dziekan "Dzięki takim przedmiotom jak ten będziecie mogli zdecydować co was bardziej rajcuje w informatyce. Osobiście też 
+    uważam, że znajomość podstaw elektroniki jest obowiązkowa dla tych co z nią pracują."
     dziekan "Nie martwcie się też o poziom trudności. Dopiero na odpowiednich specjalizacjach bardziej się zagłębicie w ten 
-    temat. Dlatego radziłbym Wam na spokojnie podejść do tego przedmiotu."
+    temat. Dlatego radziłbym wam na spokojnie podejść do tego przedmiotu."
     dziekan "Zasady zaliczenia są proste: nie robię żadnych kartkówek w trakcie wykładu. Istnieje tylko jedno kolokwium na koniec 
-    semestru. Tylko te rzeczy co będą na wykładzie. Nie wymagam od Was nadprogramowej wiedzy. To dopiero pierwszy semestr."
+    semestru. Tylko te rzeczy co będą na wykładzie. Nie wymagam od was nadprogramowej wiedzy. To dopiero pierwszy semestr."
     hide dziekan casual
     if i == 1:
         show main1
@@ -250,7 +250,7 @@ label w13:
         hide main3
     show dziekan casual at left
     dziekan "Dodatkowo będę sprawdzał obecność na wykładzie. Jeśli będziecie mieli obecność na wszystkich to automatycznie 3. 
-    Ci, którzy chcą większą ocenę lub lubią dłużej pospać będą musieli napisać kolokwium."
+    Ci, którzy chcą wyższą ocenę lub lubią dłużej pospać będą musieli napisać kolokwium."
     hide dziekan casual
     show stud1:
         xpos 200
@@ -279,7 +279,7 @@ label w13:
         hide main3
     show dziekan casual at left
     dziekan "Robię to z tego powodu, że chcę Was czegoś dodatkowego nauczyć. Jeśli chcecie wyjść poza tłum zawsze narażacie 
-    się na pewne ryzyko. Musicie umieć oceniać swoje możliwości. To Wam się przyda w dorosłym życiu."
+    się na pewne ryzyko. Musicie umieć oceniać swoje możliwości. To wam się przyda w dorosłym życiu."
     hide dziekan casual
     if i == 1:
         show main1
@@ -287,7 +287,7 @@ label w13:
         show main2
     elif i == 3:
         show main3
-    m "To rzeczywiście ma sens. Ten Meister dobrze sobie to przemyślał. Widać, że zależy mu na Nas..."
+    m "To rzeczywiście ma sens. Ten Meister dobrze sobie to przemyślał. Widać, że zależy mu na nas..."
     if i == 1:
         hide main1
     elif i == 2:
@@ -323,15 +323,15 @@ label w13:
     play music "music/bensound-scifi.ogg"
     show marta at right
     show draco at left
-    marta "Hejka. [malfoy], tak? Ja jestem Marta. Chciałabym Cię prosić o pomoc. Trochę nie ogarniam tego programowania i 
-    myślałam, ze może pomogłabyś mi w zrozumieniu tego."
+    marta "Hejka. [malfoy], tak? Ja jestem Marta. Chciałabym cię prosić o pomoc. Trochę nie ogarniam tego programowania i 
+    myślałam, ze może pomogłabyś mi w zrozumieniu go."
     marta "Widziałam jak dobrze radziłaś sobie na wykładach. Oczywiście odwdzięczyłabym się..."
-    malfoy "Co? Hahhahahhaha. Takie proste rzeczy i ich nie ogarniasz? Co Ty robisz na tych studiach kobieto? Może powinnaś się przepisać na pedagogikę?"
+    malfoy "Co? Hahhahahhaha. Takie proste rzeczy i ich nie ogarniasz? Co ty robisz na tych studiach kobieto? Może powinnaś się przepisać na pedagogikę?"
     marta "Dopiero zaczynam swoją przygodę z informatyką. Jeśli nie chcesz mi pomóc to wystarczyło powiedzieć nie. Nie musisz być taka niemiła."
-    malfoy "Oczywiście, że nie chcę. Po pierwsze, nie mam zamiaru użerać się z takimi nieogarami. Po drugie, nie  byłoby Cię stać na moje korepetycje."
+    malfoy "Oczywiście, że nie chcę. Po pierwsze, nie mam zamiaru użerać się z takimi nieogarami. Po drugie, nie byłoby cię stać na moje korepetycje."
     marta "Jesteś zepsutą osobą, [malfoy]."
-    malfoy "Mogę być. Przynajmniej nie jestem takim nieukiem jak Ty. Na kogoś takiego czekają tylko wózki widłowe a nie poważana uczelnia. 
-    Spadam, bo jeszcze Twoja głupota na mnie przejdzie."
+    malfoy "Mogę być. Przynajmniej nie jestem takim nieukiem jak ty. Na kogoś takiego czekają tylko wózki widłowe a nie poważana uczelnia. 
+    Spadam, bo jeszcze twoja głupota na mnie przejdzie."
     hide draco
     marta "Chlip....Jak ona śmiała....Chlip. Nikt mnie w życiu jeszcze tak nie potraktował...."
     if i == 1:
@@ -345,7 +345,7 @@ label w13:
             xpos 200
     hide marta
     play music "music/bensound-pianomoment.ogg"
-    m "Matko...co za potwór jest z tej dziewczyny. Nie każdy musi być super inteligentny jak ona. Co powinnam zrobić?"
+    m "Matko...co za potwór z tej dziewczyny. Nie każdy musi być super inteligentny jak ona. Co powinnam zrobić?"
     menu:
         "Uspokój Martę":
             python:
@@ -356,21 +356,21 @@ label w13:
             m "Hej. Jesteś Marta, tak? Nie przejmuj się tą jędzą. Ona jest taka dla wszystkich. Nawet ja poczułam na sobie kim ona jest."
             marta "Chlip...jak ona może sobie tak pozwalać? Ja wiem, że to moja wina, że nie ogarniam jeszcze wszystkiego. Tylko dlaczego 
             musiała mnie tak potraktować."
-            m "Chce się poczuć lepsza, tyle. Takimi ludźmi nie warto się przejmować. Ja Ci pomogę zrozumieć materiał."
-            marta "Nie musisz się nade mną litować, serio. Dziękuję Ci za te słowa, ale to chyba nie ma sensu."
-            m "Oczywiscie, ze jest sens. Od teraz będziemy siedzieć razem na wykładach i będę Ci pomagać. Jeżeli będzie trzeba to i po 
-            zajęciach Ci będę tłumaczyc."
-            m "Pokażesz jej, że guzik wie o Tobie i jeszcze ją kiedyś zmasakrujesz. Nie możesz się mazać z jej powodu."
-            marta "Masz rację! Taka gnida nie zasługuje na moje łzy. Jeszcze zobaczy z kim zadarła. Dziękuję Ci za pomoc. Na pewno Ci się 
+            m "Chce się poczuć lepsza, tyle. Takimi ludźmi nie warto się przejmować. Ja ci pomogę zrozumieć materiał."
+            marta "Nie musisz się nade mną litować, serio. Dziękuję ci za te słowa, ale to chyba nie ma sensu."
+            m "Oczywiscie, ze jest sens. Od teraz będziemy siedzieć razem na wykładach i będę ci pomagać. Jeżeli będzie trzeba to i po 
+            zajęciach ci będę tłumaczyc."
+            m "Pokażesz jej, że guzik wie o tobie i jeszcze ją kiedyś zmasakrujesz. Nie możesz się mazać z jej powodu."
+            marta "Masz rację! Taka gnida nie zasługuje na moje łzy. Jeszcze zobaczy z kim zadarła. Dziękuję ci za pomoc. Na pewno ci się 
             odwdzięczę. Jak się nazywasz?"
             m "Nazywam się [m]. Już coś nas łączy. Też mam na pieńku z tą babą."
-            marta "Widzę, że nie jestem jedyna. Jeszcze raz Ci dziękuję. Coś czuję, że to początek dobrej przyjaźni."
+            marta "Widzę, że nie jestem jedyna. Jeszcze raz dziękuję. Coś czuję, że to początek dobrej przyjaźni."
             m "Wiesz co, Marto? Czuję dokładnie to samo."
             jump w14
         "Idziesz do domu":
             python:
                 marta_zostala_uspokojona = False
-            m "Nie wiem, czy jej potrafię pomóc. To chyba nie moja sprawa. Bidulka. Mam nadzieję, że sobie poradzi..."
+            m "Nie wiem, czy potrafię jej pomóc. To chyba nie moja sprawa. Bidulka. Mam nadzieję, że sobie poradzi..."
             jump w14
     label w14:
     #==================nowa_scena==================
@@ -392,7 +392,7 @@ label w13:
         play music "music/bensound-sweet.ogg"
         show marta at right
         marta "Hejka. Dzięki jeszcze raz za wczoraj. Ogarnęłam się i jestem gotowa na kolejne uczelniane wyzwania."
-        m "Tak trzymać. Cieszę się, że widzę Cię w takim stanie. Chodźmy, bo spóxnimi się na zajęcia."
+        m "Tak trzymać. Cieszę się, że widzę cię w takim stanie. Chodźmy, bo spóźnimy się na zajęcia."
         marta "Dobrze, chodźmy."
     else:
         m "To dziwne, nie widzę Marty. Może nie mogła dzisiaj przyjść."
@@ -413,7 +413,7 @@ label w13:
     hide stud1
     hide stud2
     show ikar at left
-    ikar "Wydaje mi się, że już wszyscy przyszli. Chciałbym się Wam przedstawić. Jestem dr Grzegorz Ikar 
+    ikar "Wydaje mi się, że już wszyscy przyszli. Chciałbym się wam przedstawić. Jestem dr Grzegorz Ikar 
     i prowadzę zajęcia z Teoretycznych Podstaw Informatyki."
     $ ikar = Character("dr Grzegorz Ikar",what_slow_cps=20)
     hide ikar
@@ -441,7 +441,7 @@ label w13:
     elif i == 3:
         hide main3
     show ikar at left
-    ikar "Moim zadaniem jest Was nauczyć tych rzeczy, które każdy, kto chce wiązać przyszłość z informatyką powinien wiedziec."
+    ikar "Moim zadaniem jest was nauczyć tych rzeczy, które każdy, kto chce wiązać przyszłość z informatyką powinien wiedzieć."
     hide ikar
     show stud1 at right
     "Student1" "Czy każdy przedmiot nie powinien być taki, panie doktorze?"
@@ -449,7 +449,7 @@ label w13:
     show ikar at left
     ikar "Mój przedmiot prawdopodobnie jest najważniejszy ze wszystkich na pierwszym semestrze. Bez podstaw, 
     które poznacie tutaj nie poradzicie sobie z innymi przedmiotami."
-    ikar "Proszę też o nie przerywanie mi podczas wykładu. Kiedy będę chciał byście byli aktywni, dam Wam znać. 
+    ikar "Proszę też o nie przerywanie mi podczas wykładu. Kiedy będę chciał byście byli aktywni, dam wam znać. 
     Przerywanie mi oznacza koniec wykładu dla takiego delikwenta."
     ikar "Moje zajęcia są nieobowiązkowe. Wy musicie je tylko zaliczyć. Nie musicie przychodzić. Ja poświęcam 
     czas tylko dla tych, którzy poważnie traktują te studia."
@@ -482,10 +482,10 @@ label w13:
     show ikar at left
     ikar "Ta kartkówka ma pokazać jedną rzecz: czy uczycie się na bieżąco. Temat nie będzie trudny. Tutaj chodzi 
     tylko o sprawdzenie jakości waszego uczenia się."
-    ikar "Kiedyś ta kartkówka była niezapowiedziana, ale niewiele ludzi dzięki temu mogło podejść do egzaminu, 
+    ikar "Kiedyś ta kartkówka była niezapowiedziana, ale w efekcie niewielu ludzi mogło podejść do egzaminu, 
     więc szefostwo zadecydowało bym zmienił swój zwyczaj.  Osobiście uważam, że tamta metoda była lepsza niż ta."
     ikar "Jeżeli nie nauczycie się samodyscypliny to nie poradzicie sobie w świecie IT. Moim zadaniem jest nie 
-    tylko nauczyć Was teorii informatyki, ale też i podstawowych zasad dorosłego życia."
+    tylko nauczyć was teorii informatyki, ale też i podstawowych zasad dorosłego życia."
     hide ikar
     #show studentka
     if i == 1:
@@ -509,7 +509,7 @@ label w13:
     elif i == 3:
         hide main3
     show ikar at left
-    ikar "Mam nadzieję, że wszyscy zrozumieli to, co im teraz przekazałem Obyście na wykładach mieli też taki 
+    ikar "Mam nadzieję, że wszyscy zrozumieli to, co im teraz przekazałem. Obyście na wykładach mieli też takie 
     zrozumienie. Przejdźmy do tematu zajęć."
     scene black
     show text "{color=#FFF}Wykład{/color}"
@@ -527,45 +527,45 @@ label w13:
         play music "music/bensound-rumble.ogg"
         show marta at left
         m "Ehh....co to były za zajęcia. Podejście tego gościa do studentów jest masakryczne."
-        marta "Zgadzam się z Tobą. Muszę Ci się do czegoś przyznać. Mimo tego wszystkiego ogarniałam na tych zajęciach."
+        marta "Zgadzam się z tobą. Muszę ci się do czegoś przyznać. Mimo tego wszystkiego ogarniałam na tych zajęciach."
         menu:
             "Naprawdę? Jak to?":
                 jump w17
             "No ba. Wiedziałam, że zaczniesz sobie radzić":
                 jump w17
         label w17:
-        marta "Hmm...myślę, że to dzięki Tobie. Poprawiłaś mi samoocenę. Zaczynam wierzyć, że będę sobie radzić."
-        m "I o to chodzi! Jestem z Ciebie dumna."
+        marta "Hmm...myślę, że to dzięki tobie. Poprawiłaś mi samoocenę. Zaczynam wierzyć, że będę sobie radzić."
+        m "I o to chodzi! Jestem z ciebie dumna."
         show draco at right
         malfoy "Co ja tu słyszę? Czyżby niedorajda zaczęła sobie radzić?"
         marta "Odczep się ode mnie, [malfoy]."
-        malfoy "Współczuję Ci, [marta], że musisz użerać się z kimś takim. Ile Ci zajęło by zrozumiała jak się 
+        malfoy "Współczuję ci, [marta], że musisz użerać się z kimś takim. Ile ci zajęło by zrozumiała jak się 
         pisze Hello world w C?"
-        m "Zapewne mniej niż Tobie. Zaczynasz mnie męczyć, kobieto. Weź zatruwaj życie komuś innemu."
+        m "Zapewne mniej niż tobie. Zaczynasz mnie męczyć, kobieto. Weź zatruwaj życie komuś innemu."
         malfoy "Biedactwa nie radzą sobie z prawdą. W pracy będziecie miały jeszcze gorzej. Lepiej od razu 
         przepiszcie się na Zarządzanie zanim stres was do reszty zje hahahahaha."
         hide draco
-        marta "Mówiłaś, że z Toba też ma na pieńku. O co chodzi?"
-        m "Nic takiego. Wkurzała mnie swoja wyniosłością i tak wyszło, że się założyłyśmy. Tak która będzie miała 
+        marta "Mówiłaś, że z toba też ma na pieńku. O co chodzi?"
+        m "Nic takiego. Wkurzała mnie swoja wyniosłością i tak wyszło, że się założyłyśmy. Ta, która będzie miała 
         lepsze oceny, wygra."
-        marta "W niezły bigos się wpakowałaś. Słyszałam, że ona jest na prawdę dobra. Będziesz miała ciężko."
+        marta "W niezły bigos się wpakowałaś. Słyszałam, że ona jest naprawdę dobra. Będziesz miała ciężko."
         m "Dam sobie radę. Nie pozwolę, by dalej zachowywała się tak, jakby ta uczelnia należała do niej."
         marta "Jeżeli ją pokonasz, to ona nie zniesie tej porażki. Wierzę, że dasz radę ją pokonać."
-        marta "Skoro postawiłaś sobie taki cel to chyba nie powinnam prosić Cię tak często o pomoc. Marnuję Twój czas, 
-        który mogłabyś spożytkować na nauce."
+        marta "Skoro postawiłaś sobie taki cel to chyba nie powinnam prosić cię tak często o pomoc. Marnuję twój czas, 
+        który mogłabyś spożytkować na naukę."
         menu:
             "Masz rację":
-                m "Masz chyba trochę racji, ale nie chcę zostawiać Cię na lodzie. Mam pomysł. Może będę Ci pomagać wtedy, 
+                m "Masz chyba trochę racji, ale nie chcę zostawiać cię na lodzie. Mam pomysł. Może będę ci pomagać wtedy, 
                 kiedy ostatecznie nie będziesz sobie dawać rady."
                 m "Dzięki temu poćwiczysz swoje zdolności i umiejętności rozwiązywania problemów."
                 jump w15
             "Nie masz racji":
-                m "Zgłupiałaś? Możesz na mnie liczyć. Chcę byś Ty też utarła nosa tej [malfoy].
+                m "Zgłupiałaś? Możesz na mnie liczyć. Chcę byś ty też utarła nosa tej [malfoy].
                 Jak razem ją pokonamy to będzie to dla niej podwójna klęska."
                 jump w15
         label w15:
-            marta "Sądzę, że to jest genialny pomysł. Dziękuję Ci, za chęć pomocy. Jesteś dla mnie za dobra"
-            m "Daj spokój. Przez Ciebie zaczynam się rumienić. Chodźmy na następne zajęcia, bo się spóźnimy."
+            marta "Sądzę, że to jest genialny pomysł. Dziękuję ci, za chęć pomocy. Jesteś dla mnie za dobra"
+            m "Daj spokój. Przez ciebie zaczynam się rumienić. Chodźmy na następne zajęcia, bo się spóźnimy."
             marta "Mówię tylko to co czuję. Ruszajmy!"
     else:
         play music "music/bensound-sweet.ogg"
@@ -608,7 +608,7 @@ label w13:
     elif i == 3:
         show main3
     if marta_zostala_uspokojona:
-        m "Zbytnio dziś nie chce mi się siedzieć i notować. Przedmiot wydaje się nudny. Marta będzie mi 
+        m "Dziś nie chce mi się siedzieć i notować. Przedmiot wydaje się nudny. Marta będzie mi 
         musiała dużą czekoladę kupić za te notatki."
         m "Skoro postawiłam sobie motywację, to muszę iść na wykład. Nie ma bata."
     else:
@@ -643,18 +643,18 @@ label w13:
     teresa "Dzień dobry wszystkim. Widzę, że frekwencja nie jest za duża dzisiaj. No nic, jakoś sobie poradzimy. Nie 
     dziwię się Wam. To najprawdopodobniej najnudniejszy przedmiot w tym semestrze."
     teresa "Mimo to sądzę, że warto go wykładać. Wielu inżynierów ma nikła wiedzę o prawie technicznym co potem owocuje 
-    nieprzyjemnościami. Będę z Was dumna jeśli zapamiętacie to co tu Wam wyłożę."
+    nieprzyjemnościami. Będę z was dumna jeśli zapamiętacie to co wam tutaj wyłożę."
     hide teresa
     show stud1:
         xpos 200
     "Student2" "W sumie ma rację. Prawo to rzecz święta w cywilizowanym społeczeństwie."
     show stud2:
         xpos 800
-    "Student3" "Zabrało Ci się na mądrości, chłopie? Daj sobie spokój."
+    "Student3" "Zabrało ci się na mądrości, chłopie? Daj sobie spokój."
     hide stud1
     hide stud2
     show teresa at left
-    teresa "Miejmy formalności za sobą. Jestem Teresa Lowerska i mam z Wami w tym semestrze Prawo Inżynierskie. Mam 
+    teresa "Miejmy formalności za sobą. Jestem Teresa Lowerska i mam z wami w tym semestrze Prawo Inżynierskie. Mam 
     nadzieję, że wszyscy zaliczą ten przedmiot by potem nie musieć go niepotrzebnie powtarzać."
     $ teresa = Character("dr Teresa Lowerska", what_slow_cps=20)
     teresa "Moje zaliczenie jest proste. Na koniec semestru odbędzie się krótkie kolokwium. Jeżeli będziecie sumiennie 
@@ -675,7 +675,7 @@ label w13:
         hide main3
     show teresa at left
     teresa "Choćbym nie wiem jak chciała nie uda mi się uatrakcyjnić wykładu o prawie. To jest teoria i nic więcej z 
-    Wami nie zrobię. Mam jednak nadzieję, że czegoś ciekawego się dowiecie."
+    wami nie zrobię. Mam jednak nadzieję, że czegoś ciekawego się dowiecie."
     hide teresa
     show stud2
     "Student1" "Ciekawego? Dajcie spokój..."
@@ -696,11 +696,11 @@ label w13:
         show main3
     play music "music/bensound-acousticbreeze.ogg"
     if marta_zostala_uspokojona:
-        m "Ehhh aż mnieplecy bolą od tego siedzenia. Prawie usnęłam na tym wykładzie. Dobrze, że wszystko zanotowałam."
+        m "Ehhh aż mnie plecy bolą od tego siedzenia. Prawie usnęłam na tym wykładzie. Dobrze, że wszystko zanotowałam."
         m "Już się nie mogę doczekać tej czekolady od Marty. W pełni na nią zasłużyłam."
-        m "Mam pomysł. Może zrobimy tak, ze na przemiennie będziemy chodzić na ten wykład. Więcej godzin spania co dwa 
+        m "Mam pomysł. Może zrobimy tak, ze naprzemiennie będziemy chodzić na ten wykład. Więcej godzin spania co dwa 
         tygodnie brzmi obiecująco. Napisze później do niej."
-        m "[malfoy] nie było na wykładzie. Pewnie uznała, że to nie jest warte zachodu. Zastanawiam się kto 
+        m "[malfoy] nie przyszła na wykład. Pewnie uznała, że to nie jest warte zachodu. Zastanawiam się kto 
         wyszedł na plus po tym wykładzie: ja czy ona?"
         m "No nic. Następne zajęcia mam w innym budynku. Trochę się rozruszam po tym wykładzie..."
     else:
@@ -711,23 +711,23 @@ label w13:
         malfoy "Co tam, przegrywie? Wyglądasz jakbyś kogoś szukała. Może mnie? Jak coś to jestem do usług hahahhaha."
         menu:
             "ignoruj ją":
-                m "Nie Twój interes. Przestań mnie nachodzić, bo gorzko tego pożałujesz."
-                malfoy "Oj, bo się Ciebie wystraszę. Mam nadzieję, że się nie popłaczesz z emocji tak jak tamta. 
+                m "Nie twój interes. Przestań mnie nachodzić, bo gorzko tego pożałujesz."
+                malfoy "Oj, bo się ciebie wystraszę. Mam nadzieję, że się nie popłaczesz z emocji tak jak tamta. 
                 Chociaż to już jest nieistotne."
-                m "Mowisz o Marcie, tak? O co Ci chodzi?"
-                malfoy "Wali mnie jak się ona nazywa. Na szczęście już jej nie zobaczymy tutaj. To nie moja liga....ani Twoja."
+                m "Mowisz o Marcie, tak? O co ci chodzi?"
+                malfoy "Wali mnie jak się ona nazywa. Na szczęście już jej nie zobaczymy tutaj. To nie moja liga....ani twoja."
                 m "Co masz na myśli mówiąc \"już jej nie zobaczymy\"?"
                 jump w16
             "zapytaj o Martę":
                 m "Chcę się dowiedzieć co się stała z Martą. Tą dziewczyną, która tak chamsko potraktowałaś."
-                malfoy "Tamta? Oj, obawiam się, że Twoje poszukiwania nie mają sensu. Już nie."
+                malfoy "Tamta? Oj, obawiam się, że twoje poszukiwania nie mają sensu. Już nie."
                 m "Co masz na myśli?"
                 jump w16
         label w16:
         malfoy "Ta kretynka wreszcie pomyślała i uznała, że nie ma sensu by tutaj dalej studiowała. Z tego co 
         słyszałam miała złożyć podanie o wykreślenie."
-        m "Klamiesz. To nie jest prawda. Nie może być."
-        malfoy "Nie mam interesu w tym by Cię oszukiwać. Czym się przejmujesz? Dobrze zrobiła według mnie."
+        m "Kłamiesz. To nie jest prawda. Nie może być."
+        malfoy "Nie mam interesu w tym by cię oszukiwać. Czym się przejmujesz? Dobrze zrobiła według mnie."
         m "Nie....nie...to niemożliwe.....mogłam pomóc....coś zrobić....."
         malfoy "A to tym się przejmujesz. Jakby było czym. Jak chcesz, to jej szukaj. Widziałam ją w kolejce do 
         dziekanatu. Według mnie dobrze jest jak jest."
@@ -737,7 +737,7 @@ label w13:
         malfoy "Wreszcie nadajesz na podobnych falach co ja. Może jesteś mi bliższa niż myślisz?"
         menu:
             "Uderz ją":
-                m "Nigdy mnie do siebie nie porównój. To wszystko twoja wina! >TRZASK<"
+                m "Nigdy mnie do siebie nie porównuj. To wszystko twoja wina! >TRZASK<"
                 #(oglos uderzenia)
                 malfoy "Czy Ty jesteś wariatką? Ja...krwawię...z nosa....krew. Pożałujesz tego. Twoja kariera na 
                 tej uczelni...jest już skończona!"
@@ -748,7 +748,7 @@ label w13:
                 play music "music/bensound-exteremaction.ogg"
                 ob "Z powodu słusznego doniesienia o pobiciu, nasza studentka została wyrzucona z uczelni." 
                 ob "Dodatkowo musi zapłacić wysokie odszkodowanie tamtej dziewczynie. Ojciec bohaterki nigdy tak bardzo nie czuł wstydu z powodu zachowania swojej córki..."
-                ob "Zawiodła go na każdej linii. Obawiam się, że to Twoja wina. Zawiodłem się na Tobie. Gra została skończona!"
+                ob "Zawiodła go na całej linii. Obawiam się, że to Twoja wina. Zawiodłem się na Tobie. Gra została skończona!"
 
                 show text "{color=#FF0000}GAME OVER{/color}"
                 pause 2
@@ -772,16 +772,16 @@ label w13:
                 show marta at right
                 m "Dzieki Bogu, jesteś. Marta, nie rób tego!"
                 marta "Słucham?"
-                m "Jestem [m]. Z Twojego rocznika. Widziałam, jak [malfoy] Cię potraktowała. Chciałam do Ciebie podejśc, pomóc jakoś. 
+                m "Jestem [m]. Z Twojego rocznika. Widziałam, jak [malfoy] cię potraktowała. Chciałam do ciebie podejśc, pomóc jakoś. 
                 Nie potrafiłam. Nie wiem czemu...."
-                m "Wybacz, że do Ciebie nie podeszłam. Mogłabym Ci wtedy pomóc...Błagam, zostań na uczelni..."
-                marta "Wiem kim jesteś, mimo że nie pomogłaś mi wtedy to bardzo Ci dziękuje za te słowa. Bardzo ich potrzebowałam."
+                m "Wybacz, że nie podeszłam. Mogłabym ci wtedy pomóc...Błagam, zostań na uczelni..."
+                marta "Wiem kim jesteś, mimo że nie pomogłaś mi wtedy to bardzo ci dziękuje za te słowa. Bardzo ich potrzebowałam."
                 marta "Mimo tego wszystkiego [malfoy] jednak miała rację. Ja serio nie nadaję się tutaj."
-                m "Daj spokój. Jakbym pomogła Ci w nauce to w mig byś wszystko....."
+                m "Daj spokój. Jakbym pomogła ci w nauce to w mig byś wszystko....."
                 marta "Może tak, może nie...nie dowiemy się tego. Poprawię maturę i jeszcze raz postaram się złożyć papiery do 
                 wymarzonej uczelni. Nic straconego."
                 m "Przepraszam....nigdy sobie tego nie wybaczę."
-                marta "Przestań. Nie obwiniaj się. Dzięki Twojej interwencji poprawiłaś moją wiarę w siebie. Dziękuję."
+                marta "Przestań. Nie obwiniaj się. Dzięki twojej interwencji poprawiłaś moją wiarę w siebie. Dziękuję."
                 m "Powiedz co mogę zrobic byś zmieniła zdanie."
                 marta "Prawdopodobnie nic. Jeśli jednak serio chcesz coś dla mnie zrobić to zrób jedno: pokonaj [malfoy]."
                 marta "Cały rocznik wie o waszym zakładzie. Nie pozwól jej zwyciężyć. Jeśli ją pokonasz to wreszcie może przejrzy 
@@ -792,8 +792,8 @@ label w13:
                 marta"Zaśmiałam się. To chyba dobry znak. [m] nie przejmuj się mną. Ja sobie ułożę życie tak jak powinnam. Ty natomiast 
                 nie poddawaj się i dąż do spełnienia swoich celów. Daj znać kiedy pokonasz tę [malfoy]."
                 m "Możesz na mnie liczyć. Kiedy będą ferie może pójdziemy na piwo czy coś?"
-                marta "Trzymam Cię za słowo. Obalimy Twój sukces. Życzę Ci powodzenia."
-                m "Dziękuję. Tym razem Cię nie zawiodę."
+                marta "Trzymam cię za słowo. Obalimy twój sukces. Życzę ci powodzenia."
+                m "Dziękuję. Tym razem cię nie zawiodę."
                 #==================nowa_scena==================
                 scene bg white
                 show text "{color=#000000}Kilka chwil później{/color}"
@@ -813,7 +813,7 @@ label w13:
                     show main3:
                         xpos 800
                 malfoy "I co tam? Znalazłaś tę niedojdę?"
-                m "[malfoy]! Mam Ci tylko jedno do powiedzenia. Brzydzę się Toba i Twoim zachowaniem. Nie przegram z kimś takim jak Ty. 
+                m "[malfoy]! Mam ci tylko jedno do powiedzenia. Brzydzę się tobą i twoim zachowaniem. Nie przegram z kimś takim jak ty. 
 				Usunę ten paskudny uśmiech z tej paskudnej twarzy."
                 malfoy "Zobaczymy, zobaczymy. Mimo to podtrzymuję swoje słowa. Jesteśmy do siebie podobne. Czas pokaże kto będzie górą."
                 m "Nawet nie wiesz jak bardzo nie mogę się tego doczekać...."
@@ -837,7 +837,7 @@ label w13:
         m "O hej. Po prostu nie wysypiam się na tych zajęciach. Chyba muszę do tego przywyknąć. Jak dentysta?"
         marta "Kobieto, to był horror. Leczenie kanałowe to istny koszmar. Dodatkowo dentystka skopała znieczulenie 
         i strasznie mnie bolało podczas zabiegu."
-        m "Nie żartuj. Aż tak? Rany...współczuję Ci bardzo. Dzielna jesteś skoro to wytrzymałaś."
+        m "Nie żartuj. Aż tak? Rany...współczuję ci bardzo. Dzielna jesteś skoro to wytrzymałaś."
         marta "Daj spokój. Nic takiego. Jeszcze raz dzięki za notatki. Po zajęciach pójdziemy do sklepu i wybierzesz sobie taką czekoladę jaką chcesz."
         m "Yay. Od razu poprawił mi się humor. Dzięki, jesteś kochana."
         marta "Nic takiego. Ty dla mnie więcej zrobiłaś. O, jest już 8:14. Wchodźmy do sali."
@@ -864,7 +864,7 @@ label w13:
         xpos 500
     malfoy "Możecie się przesunąć? Od waszego pitolenia rozbolała mnie głowa."
     "Student1" "Nie jest za miła, co? Tylko do wykładowców potrafi się uśmiechnąć. Przyjaciół tutaj chyba nie znajdzie..."
-    "Student2" "Teraz mogę w 100 procentach się z Tobą zgodzić. Dawaj, zajmijmy dobre miejsca."
+    "Student2" "Teraz mogę w 100 procentach się z tobą zgodzić. Dawaj, zajmijmy dobre miejsca."
     hide stud1
     hide stud2
     hide draco
@@ -881,11 +881,11 @@ label w13:
         show main3 at left
     if marta_zostala_uspokojona:
         show marta at right
-        marta "Widzisz? Nawet ona Cię popiera!"
-        m "Taa...ale zobaczmy najpierw z jakiej gliny jest ona ulepiona."
+        marta "Widzisz? Nawet on cię popiera!"
+        m "Taa...ale zobaczmy najpierw z jakiej gliny jest ona ulepiony."
         hide marta
     else:
-        m "O, chociaż jedyna podziela moje poglądy na ten temat."
+        m "O, chociaż podziela moje poglądy na ten temat."
     if i == 1:
         hide main1
     elif i == 2:
@@ -893,7 +893,7 @@ label w13:
     elif i == 3:
         hide main3
     show iza at left
-    Izabella "Od razu przejdę do rzeczy. Nazywam się Miguel Anajewski i będę Wam wykładać Analizę Matematyczną. 
+    Izabella "Od razu przejdę do rzeczy. Nazywam się Miguel Anajewski i będę wam wykładać Analizę Matematyczną. 
 	Możecie narzekać na ten przedmiot, ale nie martwcie się: następne matematyczne przedmioty będą o wiele trudniejsze."
     $ Izabella = Character("dr hab. Miguel Anajewski",what_slow_cps=20)
     hide iza
@@ -909,13 +909,13 @@ label w13:
     Izabella "Zaliczenie jest następujące. Co zajęcia będziecie mieli na początku wykładu kartkówkę. Będzie to jedno 
     zadanie do policzenia. Ma to sprawdzić, czy uczycie się na bieżąco."
     Izabella "Musicie zaliczyć 2 by móc podejść do egzaminu. Egzamin będzie naturalnie trudniejszy od tych kartkówek, 
-    ale jeśli przyłożycie się do nich to egzamin będzie dla Was o wiele łatwiejszy."
+    ale jeśli przyłożycie się do nich to egzamin będzie dla was o wiele łatwiejszy."
     hide iza
     show stud1 at left
     "Student1" "Zachciało mi się inżyniera..."
     hide stud1
     show iza at left
-    Izabella "Sądzę, że chyba wszystko powiedziałam Zacznijmy więc zajęcia."
+    Izabella "Sądzę, że chyba wszystko powiedziałam. Zacznijmy więc zajęcia."
     scene black
     show text "{color=#FFF}Granice{/color}"
     pause 2
@@ -934,13 +934,13 @@ label w13:
     if marta_zostala_uspokojona:
         show marta at right
         marta "Jejku, to było męczące. Czy mi się wydaje, czy nudziłaś się na tym wykładzie."
-        m "W sumie, tak. Miałam już to w liceu. Byłam na profilu matematyczno-przyrodniczym."
+        m "W sumie, tak. Miałam już to w liceum. Byłam na profilu matematyczno-przyrodniczym."
         marta "Jejku, Ty to musisz mieć łeb. Te granice nie wydają się aż tak trudne."
         m "Bo nie są. Jak dojdziemy do całek to zaczniemy narzekać."
         marta "Weź nie strasz mnie na zapas, co?"
         m "Hhahahahaha, wybacz. Tylko żartowałam. Co planujesz na weekend?"
-        marta "Jadę do mojej babci. Dawno się z nią nie widziałam. Potrzebuje pomocy w remoncie i muszę jej pomóc."
-        m "Pozdrów babcię, czy coś. Ja w ten weekend powtórze sobie cały tygodniowy materiał."
+        marta "Jadę do babci. Dawno się z nią nie widziałam. Potrzebuje pomocy w remoncie i muszę jej pomóc."
+        m "Pozdrów babcię, czy coś. Ja w ten weekend powtórzę sobie cały tygodniowy materiał."
         marta "Pamiętaj, że odpoczynek jest również ważny. Może skoczyłybyśmy na piwo na koniec dnia. Trochę się wyluzujemy?"
         menu:
             "Tak":
@@ -955,7 +955,7 @@ label w13:
                 jump chapter3
     else:
         m "Matko, co za nudy. Miałam już to w liceum. No nic, mniej do nauki mi zostało."
-        m "Wyszłabym na piwo trochę się wyluzować, ale nie mam zbytnio z kims. Samemu pić to byłoby dziwne."
+        m "Wyszłabym na piwo trochę się wyluzować, ale nie mam z kim. Samemu pić to byłoby dziwne."
         m "Mówi się trudno. Spróbuję może następnym razem wkręcić się na jakiś wypad. Teraz będę się uczyć. 
         Mam zadanie do wykonania!"
         $ piwo_piatek2 = False
