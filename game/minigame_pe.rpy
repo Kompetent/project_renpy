@@ -148,6 +148,7 @@ init:
             text "Pytanie 4: [odp_pe_q4]" 
             text "Pytanie 5: [odp_pe_q5]" 
             text "Pytanie 6: [odp_pe_q6]"
+            text "Ocena : [ocena_egz_pe]"
         textbutton "Zakończ" xpos 0.8 ypos 0.9 text_color "#000" text_hover_color "#047" action Jump("pe_run_next")
 label minigame_pe:
     scene bg white
@@ -206,7 +207,7 @@ label pe_end:
     else:
         $ odp_pe_q6 = "Zła"
     python:
-        ocena_egz_pe = srednia_egzamin("Dobra", [odp_pe_q1], [odp_pe_q2], [odp_pe_q3], [odp_pe_q4], [odp_pe_q5], [odp_pe_q6])
+        ocena_egz_pe = srednia_egzamin("Dobra", odp_pe_q1, odp_pe_q2, odp_pe_q3, odp_pe_q4, odp_pe_q5, odp_pe_q6)
     call screen pe_conclusion
 label pe_run_next:
     jump exams_back5

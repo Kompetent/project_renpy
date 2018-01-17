@@ -1,4 +1,7 @@
 label exams:
+    scene black
+    show text "{color=#FFF}{size=+30}SESJA{/size}{/color}"
+    pause 2
     scene bg white
     play music "music/bensound-dance.ogg"
     show narrator at left

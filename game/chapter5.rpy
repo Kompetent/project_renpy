@@ -1,6 +1,9 @@
 init:
     image bg niebo = "niebo3.jpg"
 label chapter5:
+    scene black
+    show text "{color=#FFF}{size=+30}Chapter 5\nZakończenie{/size}{/color}"
+    pause 2
     #ważne zmienne:
     #--- zyciowe:
     #piwo_piatek2

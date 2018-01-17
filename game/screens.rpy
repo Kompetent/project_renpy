@@ -343,9 +343,10 @@ style navigation_button_text:
 ## Used to display the main menu when Ren'Py starts.
 ##
 ## http://www.renpy.org/doc/html/screen_special.html#main-menu
+#image main_menu = Movie(channel="main_menu", play="video/Intro.ogv")
 
 screen main_menu():
-
+    #add "main_menu"    
     ## This ensures that any other menu screen is replaced.
     tag menu
 
@@ -1414,8 +1415,8 @@ screen quick_menu():
         xalign 0.5
         yalign 1.0
 
-        textbutton _("Back") action Rollback()
-        textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
+        #textbutton _("Back") action Rollback()
+        #textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
         textbutton _("Auto") action Preference("auto-forward", "toggle")
         textbutton _("Menu") action ShowMenu()
 

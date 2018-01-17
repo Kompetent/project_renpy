@@ -21,9 +21,8 @@ init:
     define hate_u = "Uczelnia Informatyczno-matematyczna im. P. Czybyszewa"
 label chapter1: #DONE
     #jump chapter2 #pokazujemy tylko progres
-    scene bg white
-
-    show text "{color=#000000}Chapter 1\nPierwszy dzień na studiach{/color}"
+    scene black
+    show text "{color=#FFF}{size=+30}Chapter 1\nPierwszy dzień na studiach{/size}{/color}"
     pause 2
     hide text
     play music "music/bensound-happiness.ogg"
@@ -265,10 +264,9 @@ label chapter1: #DONE
                     jump go
         label go:
             #sala wykladowa
-            play music "music/bensound-scifi.ogg"
             show bg a128
             if wrong:
-                
+                play music "music/bensound-scifi.ogg"
                 #pokazywanie naszej studentki
                 if i == 1:
                     show main1
@@ -437,13 +435,13 @@ label chapter1: #DONE
         label powszystkim:
             malfoy "Hahahahahaha. No to ustalone. Pozwól, że zdradze Ci, kim jestem. Nazywam się [malfoy] i 
             wiedz, że ze mną tak łatwo nie wygrasz."
-            play music "music/bensound-jazzcomedy.ogg"
             m "Ja jestem [m] Kowalska. Już Ci współczuje przegranej."
             opiekunroku "Pani Kowalska, do mnie!"
             malfoy "Wołają Cię. No to do zobaczenia na zajęciach \"rywalko\". Tylko nie chwal się bardzo, 
             że się założyłyśmy. Wieść o tym, że zadaję się z taką ofiarą zepsuje mi reputację. Hahahahahha."
             hide draco
             hide stud1
+            play music "music/bensound-jazzcomedy.ogg"
             #chowaj malfoya
             #pokaz opiekuna roku
             show opiekun at left

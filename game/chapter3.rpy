@@ -3,8 +3,8 @@ init:
     image adam_view = "przyjaciel.png"
 label chapter3: #DONE
     play music "music/bensound-sunny.ogg"
-    scene bg white
-    show text "{color=#000000}Chapter 3\nTydzień drugi{/color}"
+    scene black
+    show text "{color=#FFF}{size=+30}Chapter 3\nTydzień drugi{/size}{/color}"
     pause 2
 
     scene bg white

@@ -14,8 +14,8 @@ init:
     image marta = "kumpela.png"
 
 label chapter2: #DONE
-    scene bg white
-    show text "{color=#000000}Chapter 2\nPierwszy tydzień zajęć{/color}"
+    scene black
+    show text "{color=#FFF}{size=+30}Chapter 2\nPierwszy tydzień zajęć{/size}{/color}"
     pause 2
     #==================nowa_scena==================
     scene bg white
@@ -511,7 +511,7 @@ label w13:
     show ikar at left
     ikar "Mam nadzieję, że wszyscy zrozumieli to, co im teraz przekazałem Obyście na wykładach mieli też taki 
     zrozumienie. Przejdźmy do tematu zajęć."
-    show black
+    scene black
     show text "{color=#FFF}Wykład{/color}"
     pause 2
     #-------------------------------dodokonczenia-------------------------------
@@ -746,9 +746,8 @@ label w13:
                 scene black
                 show narrator at left
                 play music "music/bensound-exteremaction.ogg"
-                ob "Z powodu słusznego doniesienia o pobiciu, nasza studentka została wyrzucona z uczelni. 
-                Dodatkowo musi zapłacić wysokie odszkodowanie tamtej dziewczynie. Ojciec bohaterki nigdy tak bardzo
-                nie czuł wstydu z powodu zachowania swojej córki..."
+                ob "Z powodu słusznego doniesienia o pobiciu, nasza studentka została wyrzucona z uczelni." 
+                ob "Dodatkowo musi zapłacić wysokie odszkodowanie tamtej dziewczynie. Ojciec bohaterki nigdy tak bardzo nie czuł wstydu z powodu zachowania swojej córki..."
                 ob "Zawiodła go na każdej linii. Obawiam się, że to Twoja wina. Zawiodłem się na Tobie. Gra została skończona!"
 
                 show text "{color=#FF0000}GAME OVER{/color}"

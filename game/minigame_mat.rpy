@@ -136,7 +136,7 @@ label next_mat_q6_good:
 label next_mat_end:
     call screen analiza_conclusion
 label analiza_run:
-	python:
+    python:
         ocena_egz_mat = srednia_egzamin("Dobra", analiza_q1, analiza_q2, analiza_q3, analiza_q4, analiza_q5, analiza_q6)
     jump exams_back4
     return

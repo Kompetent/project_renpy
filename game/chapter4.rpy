@@ -5,8 +5,8 @@ init:
     image bg szpital = "szpital.jpg"
     define Lekarz = Character("Pani Doktor", what_slow_cps=20)
 label chapter4:
-    scene bg white
-    show text "{color=#000000}Chapter 4\nTydzień trzeci{/color}"
+    scene black
+    show text "{color=#FFF}{size=+30}Chapter 4\nTydzień trzeci{/size}{/color}"
     pause 2
     play music "music/bensound-rumble.ogg"
     scene bg white
@@ -857,6 +857,12 @@ label wstajemy:
         hide main3
     menu:
         "Pomóż Amandzie":
+            if i == 1:
+                show main1
+            elif i == 2:
+                show main2
+            elif i == 3:
+                show main3
             m "Nie udawaj takiej twardej. Mi o dziwo nic nie jest. Dawaj tę nogę. Ostrzegam, może boleć"
             python:
                 pomoglas_amandzie = True
