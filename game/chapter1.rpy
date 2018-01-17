@@ -47,11 +47,11 @@ label chapter1: #DONE
         play sound "music/sounds/water_splash1.mp3"
         o "Wstajemy!!!"
         m "Tato, co ty zrobiłeś?!"
-        o "Wybacz młoda panno, ale nie dałaś mi wyboru, biegiem do łazienki."
+        o "Wybacz, młoda damo, ale nie dałaś mi wyboru, biegiem do łazienki."
     label obudzona:
         scene bg pokoj
         show father at left
-        o "Wyglądasz ślicznie córeczko, gdyby tylko mama mogła Cię zobaczyć."
+        o "Wyglądasz ślicznie, córeczko, gdyby tylko mama mogła Cię zobaczyć."
         
         #pokazywanie naszej studentki
         if i == 1:
@@ -91,7 +91,7 @@ label chapter1: #DONE
                 o "Ostatnimi czasy ma dość słabą reputację. Znam tych ludzi, dobrze się stało, że dostałaś się jednak tutaj.
                 Uczelnia jest w naszym mieście i dodatkowo jest pełna wielu wartościowych specjalistów."
 
-        o "Zapamiętaj, [m]. Cieszę się że jesteś bardzo ambitna i chcesz iść w moje ślady. Jestem z ciebie taki dumny..."
+        o "Zapamiętaj, [m]. Cieszę się, że jesteś bardzo ambitna i chcesz iść w moje ślady. Jestem z ciebie taki dumny..."
         o "Studia to najlepszy okres życia, wykorzystaj to!"
         menu:
             "pasywnie":
@@ -115,9 +115,9 @@ label chapter1: #DONE
         elif i == 3:
             show main3
 
-        m "Mam jeszcze 15 minut, tempo mam dobre. Całe szczęście to mam w miarę blisko tutaj."
+        m "Mam jeszcze 15 minut, tempo mam dobre. Całe szczęście mam tutaj w miarę blisko."
         m "Nawet ładny ten budynek. Co prawda nie umywa się do [love_u], ale ten wygląda na bardziej zadbany."
-        m "Zapomnij o [love_u], [m]. Musisz wziąć to co dało ci życie. Jeśli dobrze Ci pójdzie to będziesz mogła zrobić
+        m "Zapomnij o [love_u], [m]. Musisz wziąć to co dało ci życie. Jeśli dobrze ci pójdzie to będziesz mogła zrobić
         magisterkę na [love_u]. Skup się na tym co jest tu i teraz."
         m "Przedstawienie czas zacząć. Bądź zdecydowana i dumna."
         stop music
@@ -144,8 +144,8 @@ label chapter1: #DONE
         m "Wow, tylu ludzi w jednym miejscu na żywo jeszcze nie widziałam."
         m "Każdy z nich ma swoje cele i ambicje, każdy ma inny powód dla którego się tutaj znalazł.
         Oni wszyscy są moją przyszłą konkurencją na rynku pracy."
-        m "Chciałabym mieć jakiś znajomych. Większość moich kolegów i koleżanek
-        wyjechało z miasta albo z kraju."
+        m "Chciałabym mieć jakichś znajomych. Większość moich kolegów i koleżanek
+        wyjechała z miasta albo z kraju."
         m "Czy serio potrzebuje kogoś mieć? Czy nie powinnam skupić się na własnej karierze?
         Ojciec chyba ma rację, nie mogę zmarnować tego czasu, który mam. Będziesz ze mnie
         dumny tato i... mamo. "
@@ -160,7 +160,7 @@ label chapter1: #DONE
 
         #podniosła muzyka
         show dziekan at left
-        dziekan "Witam świeżo upieczonych studentów. Nazywam się prof. Roman Kosior i jestem
+        dziekan "Witam świeżo upieczonych studentów. Nazywam się prof. Stanisław Meister i jestem
         dziekanem Wydziału Informatycznego."
         dziekan "Nasza uczelnia z roku na rok dokłada starań by każdy jej absolwent
          dumnie nas reprezentował poza murami tej instytucji."
@@ -178,7 +178,7 @@ label chapter1: #DONE
         hide dziekan
         #schowaj dziekana
         "Komunikat głosowy" "Informacja dla kierunków pierwszego roku. Zaraz rozpocznie się podpisywanie 
-        umów studenckich i odbierania legitymacji. Podaję numery sal: Mechatronika A123, Informatyka A128, 
+        umów studenckich i odbieranie legitymacji. Podaję numery sal: Mechatronika A123, Informatyka A128, 
         BHP A129, Automatyka i Robotyka A130,  BHP A132..."
 
         #pokazywanie naszej studentki
@@ -193,8 +193,8 @@ label chapter1: #DONE
         W sumie nic dziwnego. Większość czasu spędzam przed komputerem."
         m "Może jak będzie już na studiach WF to się zapiszę na jakąś siłownię lub fitness. 
         Trzeba będzie trochę popracować nad kondycją."
-        m "Teraz nie pora na takie rzeczy. Trzeba się udać na odbiór legitymacji.. Mam nadzieję, 
-        że jakoś przeżyje w tym tłumie."
+        m "Teraz nie pora na takie rzeczy. Trzeba się udać po odbiór legitymacji.. Mam nadzieję, 
+        że jakoś przeżyję w tym tłumie."
         label zmiany:
         #odgłos tłumu
         scene black
@@ -211,7 +211,7 @@ label chapter1: #DONE
         elif i == 3:
             show main3
 
-        m "WRESZCIE! Jejku, myślałam, że uduszę się tam. Jestem już na odpowiednim piętrze."
+        m "WRESZCIE! Jejku, myślałam, że się tam uduszę. Jestem już na odpowiednim piętrze."
         m "Hmm....która to była sala?" 
         python:
             wrong = False
@@ -225,7 +225,7 @@ label chapter1: #DONE
                         show main2
                     elif i == 3:
                         show main3
-                    m "O...k... to była ta sala? No nic przekonajmy sie."
+                    m "O...k... to była ta sala? No nic, przekonajmy sie."
                     #sala wykladowa
                     show bg a123
                     #pokazywanie naszej studentki
@@ -246,7 +246,7 @@ label chapter1: #DONE
                         show main2
                     elif i == 3:
                         show main3
-                    m "O...k... to była ta sala? No nic przekonajmy sie."
+                    m "O...k... to była ta sala? No nic, przekonajmy sie."
                     #sala wykladowa
                     show bg a129
                     #pokazywanie naszej studentki
@@ -276,17 +276,17 @@ label chapter1: #DONE
                     show main3
                 #pokaz opiekuna
                 show opiekun at left
-                opiekunroku "Ludzie kochani. Ilu Was się jeszcze spóźni? Coś kiepsko wróżę Waszą punktualność 
+                opiekunroku "Ludzie kochani. Ilu was się jeszcze spóźni? Coś kiepsko wróżę waszą punktualność 
                 na przyszłych zajęciach."
                 hide opiekun
                 #schowaj opiekuna
                 #pokaz draco
                 show draco at right
-                malfoy "Same nieogary na tym kierunku. widać, że moja konkurencja nie zapewni mi nawet żdżbła 
+                malfoy "Same nieogary na tym kierunku. Widać, że moja konkurencja nie zapewni mi nawet źdźbła 
                 ekscytacji w \"rywalizacji\". "
                 #pokaz studentke
                 m "Mogłam lepiej zapamiętać numer sali. Jestem na siebie potwornie zła. Pierwszy 
-                dzien na uczelni i już mi coś nie wychodzi. Muszę się bardziej starac."
+                dzień na uczelni i już mi coś nie wychodzi. Muszę się bardziej starać."
                 hide draco
                 if i == 1:
                     hide main1
@@ -316,15 +316,15 @@ label chapter1: #DONE
         play music "music/bensound-jazzcomedy.ogg"
         show opiekun at left
         opiekunroku "Mam nadzieję, że to już wszyscy. W tym roku naprawdę dużo ludzi dostało się na ten 
-        kierunek. Mam nadzieję, że ta sala ogarnie nas wszystkich. Inaczej wykłady będziecie mieli na 
+        kierunek. Mam nadzieję, że ta sala pomieści nas wszystkich. Inaczej wykłady będziecie mieli na 
         podwórku."
         #dżwięk masowego śmiechu
         opiekunroku "Na początek chciałabym się wam przedstawić. Jestem doktor Matylda Kostrzewska i 
         jestem opiekunem waszego roku. Równocześnie będę miała z wami zajęcia z Podstaw Programowania."
         hide opiekun
         show stud1 at left
-        "Student1" "Slyszalem, ze starsze roczniki mówią na nią \"Doktor Kosa\""
-        show stud2 ar right
+        "Student1" "Słyszałem, ze starsze roczniki mówią na nią \"Doktor Kosa\""
+        show stud2 at right
         "Student2" "Czemu? Aż tak ciężko zaliczyć ten przedmiot?"
         "Student2" "Taa...słyszałem, że do programowania podchodzi bardzo poważnie. Jedna z najbardziej 
         uzdolnionych osob tutaj."
@@ -353,7 +353,7 @@ label chapter1: #DONE
         ale nie ja mam na to wpływ."
         opiekunroku "Na pierwszych zajęciach poznacie zasady prowadzenia i zaliczenia przedmiotu. 
         Teraz będę wyczytywać alfabetycznie nazwiska. Kiedy kogoś wyczytam ma do mnie podejść by 
-        podpisać umowe i odebrać legitymację."
+        podpisać umowę i odebrać legitymację."
         hide plan_zajec
         #(odglos tlumu)
         hide opiekun
@@ -365,12 +365,12 @@ label chapter1: #DONE
         elif i == 3:
             show main3
         play music "music/bensound-scifi.ogg"
-        m "Kobitka nie wydaje się zła. Nie sądzę, że będę z nia miała jakieś problemy. Uczyłam sę na własną rękę 
-        programowanie jeszcze jak chodziłam do liceum."
+        m "Kobitka nie wydaje się zła. Nie sądzę, że będę z nią miała jakieś problemy. Uczyłam sę na własną rękę 
+        programowania jak jeszcze chodziłam do liceum."
         show draco at right
         malfoy "...ojciec poważnie rozważał by mnie wysłać na studia do Stanów. Dzięki temu nauczyłabym się więcej 
-        niż w tym kraju, ale matka nie chciała bym tak daleko była od domu."
-        malfoy "Mimo to, nie jest aż tak źle. Mój ojciec zna tu wielu ludzi. Kiedyś tu wykładal. 
+        niż w tym kraju, ale matka nie chciała bym była tak daleko od domu."
+        malfoy "Mimo to, nie jest aż tak źle. Mój ojciec zna tu wielu ludzi. Kiedyś tu wykładał. 
         Z palcem w nosie zrobię magistra, a potem doktorat w USA."
         "Student3" "Wow...aale masz fajnie."
         show stud1 at left
@@ -384,8 +384,8 @@ label chapter1: #DONE
         malfoy "Hej, ty. Czemu się na mnie gapisz?"
         menu:
             "To tylko przypadek":
-                m "Zwykly przypadek. Przewidziało Ci się najwidoczniej."
-                malfoy "Nie udawaj. Widziałam, jak się na mnie lampisz. Czyżbym Cię czymś zdenerwowała?"
+                m "Zwykly przypadek. Przewidziało ci się najwidoczniej."
+                malfoy "Nie udawaj. Widziałam, jak się na mnie lampisz. Czyżbym cię czymś zdenerwowała?"
                 menu:
                     "tak":
                         jump bezznaczenia
@@ -393,21 +393,21 @@ label chapter1: #DONE
                         jump bezznaczenia
             "Masz coś do mnie???":
                 m "Patrzę z politowaniem na twoje przechwałki."
-                malfoy "Patrzcie kogo my tu mamy. Masz cięty język. Możesz sobie gadać zdrów, ale i tak przemawia przez Ciebie zazdrość."
-                m "Chyba coś Ci się pomyliło, kobieto."
+                malfoy "Patrzcie kogo my tu mamy. Masz cięty język. Możesz sobie gadać zdrowa, ale i tak przemawia przez ciebie zazdrość."
+                m "Chyba coś ci się pomyliło, kobieto."
     label bezznaczenia:
-        malfoy "Dostrzegłam to. Te spojrzenie. Spojrzenie pełne zazdrości. Mnie nie zwiedziesz."
-        malfoy "Masz czego mi zazdrościć, moja droga. Patrząc na Ciebie uważam, że i bez tego wszystkiego jestem 
-        lepsza od Ciebie. Wydajesz się być zdeterminowana, ale ja i tak będe górą."
-        m "Daj sobie na wstrzymanie, ok? Możesz sobie gadać zdrów, ale mnie to nie obchodzi. Jesteś tylko mocna w gębie."
-        malfoy "Tak uważasz? Widzę, że mamy tutaj bojowniczkę. Mam pomysł. Zalóżmy się."
+        malfoy "Dostrzegłam to. To spojrzenie. Spojrzenie pełne zazdrości. Mnie nie zwiedziesz."
+        malfoy "Masz czego mi zazdrościć, moja droga. Patrząc na ciebie uważam, że i bez tego wszystkiego jestem 
+        lepsza. Wydajesz się być zdeterminowana, ale ja i tak będe górą."
+        m "Daj sobie na wstrzymanie, ok? Możesz sobie gadać zdrowa, ale mnie to nie obchodzi. Jesteś tylko mocna w gębie."
+        malfoy "Tak uważasz? Widzę, że mamy tutaj bojowniczkę. Mam pomysł. Załóżmy się."
         m "Hę? Jaki zakład?"
         malfoy "O to, kto będzie miał lepszą średnią na koniec semestru."
         m "To trochę dziecinne. Jaka niby miałaby być nagroda."
-        malfoy "Jeśli wygrasz, przyznam, że jesteś ode mnie lepsza i dam Ci spokój do konca studiów. 
+        malfoy "Jeśli wygrasz, przyznam, że jesteś ode mnie lepsza i dam ci spokój do konca studiów. 
         Może nawet jakiś projekt grupowy razem zrobimy."
         m "Zabawne. Co jeśli ty wygrasz?"
-        malfoy "To proste. Udowodnię swoją wyższość i to, że nie jesteś godzien zainteresowania. Coś czuję, 
+        malfoy "To proste. Udowodnię swoją wyższość i to, że nie jesteś godna zainteresowania. Coś czuję, 
         że porażka dla każdej z nas będzie bolesna a wygrana słodkim triumfem."
         malfoy "To jak? Zakładamy się?"
         python:
@@ -415,12 +415,12 @@ label chapter1: #DONE
     label back_malfoy:    
         menu:
             "tak":
-                m "Niech Ci będzie. Skoro myślisz, że możesz ze mną rywalizować to próbuj. Nie bronię Ci."
+                m "Niech ci będzie. Skoro myślisz, że możesz ze mną rywalizować to próbuj. Nie bronię ci."
                 jump powszystkim
             "nie":
                 m "Nie mam po co się zakładać. Nie jesteś godna by ze mną konkurować."
                 malfoy "Czcze gadanie. Widzę, że najwyraźniej boisz się ze mną zmierzyć."
-                m "Kogo jak kogo, ale Ciebie nie zamierzam się bać."
+                m "Kogo jak kogo, ale ciebie nie zamierzam się bać."
                 malfoy "To udowodnij to. Samymi słowami raczej tego nie zrobisz."
                 if a < 2:
                     python:
@@ -430,14 +430,14 @@ label chapter1: #DONE
                     jump zdenerwowana_studentka
         label zdenerwowana_studentka:
             m "Zaczynasz mnie denerwować. Jeżeli w końcu zdecyduję się na ten zakład to przestaniesz?"
-            malfoy "Mi tam nie zależy aż tak. Po prostu nie nawidzę ludzi, którzy boja się sprawdzić swoje umiejętności!"
-            m "Dobra, już dobra. Zgadzam sę. Zetrę ten durny uśmiech z Twojej twarzy."
+            malfoy "Mi tam aż tak nie zależy. Po prostu nienawidzę ludzi, którzy boja się sprawdzić swoje umiejętności!"
+            m "Dobra, już dobra. Zgadzam sę. Zetrę ten durny uśmiech z twojej twarzy."
         label powszystkim:
-            malfoy "Hahahahahaha. No to ustalone. Pozwól, że zdradze Ci, kim jestem. Nazywam się [malfoy] i 
+            malfoy "Hahahahahaha. No to ustalone. Pozwól, że zdradzę ci, kim jestem. Nazywam się [malfoy] i 
             wiedz, że ze mną tak łatwo nie wygrasz."
-            m "Ja jestem [m] Kowalska. Już Ci współczuje przegranej."
+            m "Ja jestem [m] Kowalska. Już ci współczuję przegranej."
             opiekunroku "Pani Kowalska, do mnie!"
-            malfoy "Wołają Cię. No to do zobaczenia na zajęciach \"rywalko\". Tylko nie chwal się bardzo, 
+            malfoy "Wołają cię. No to do zobaczenia na zajęciach \"rywalko\". Tylko nie chwal się bardzo, 
             że się założyłyśmy. Wieść o tym, że zadaję się z taką ofiarą zepsuje mi reputację. Hahahahahha."
             hide draco
             hide stud1
