@@ -45,9 +45,9 @@ label chapter3: #DONE
             xpos 600
         play music "music/bensound-scifi.ogg"
         malfoy "O jejku. Popatrzcie na te biedne dziewczynki. Już studia zaczęły boleć?"
-        marta "Idealne zaczęcie nowego tygodnia. Dzięki, Amanda."
-        malfoy "Do usług. Mam nadzieję, że nauczyłyście się na kartkówkę. Chcę chociaż 
-        trochę poczuć ekscytacji związanej z naszym wykładem"
+        marta "Idealne rozpoczęcie nowego tygodnia. Dzięki, Amanda."
+        malfoy "Do usług. Mam nadzieję, że nauczyłyście się na kartkówkę. Chcę poczuć chociaż 
+        trochę ekscytacji związanej z naszym wykładem"
         marta "O kurde...zupełnie o tym zapomniałam. Pamiętałaś?"
         menu:
             "Tak":
@@ -58,7 +58,7 @@ label chapter3: #DONE
                 jump wyklad_pp1_2 
             "Nie":
                 m "Eee...wypadło mi. Skupiłam się w weekend nad czymś zupełnie innym"
-                marta "Myślałam, ze chociaż Ty będziesz pamiętać. Mam nadzieję, że nic z naszych 
+                marta "Myślałam, ze chociaż ty będziesz pamiętać. Mam nadzieję, że nic z naszych 
                 głów nie wyleciało przez ten weekend"
                 malfoy "To się robi co raz bardziej załosne. Spadam stąd. Powodzenia, frajerki."
                 marta "Przynajmniej ją mamy z głowy. Chodź, trzeba obalić tę kartkówkę."
@@ -77,7 +77,7 @@ label chapter3: #DONE
             show main3
         m "Dzisiaj mam pierwszą kartkówkę. Rywalizacja oficjalnie się zaczęła. Muszę 
         dotrzymać obietnicy. O tak!!!!!"
-        m "Nie dam sobie pomiatać tej Amandzie."
+        m "Nie dam sobą pomiatać tej Amandzie."
 label wyklad_pp1_2:
     play music "music/bensound-jazzcomedy.ogg"
     scene bg a123
@@ -88,13 +88,13 @@ label wyklad_pp1_2:
     show stud1 at left
     "Random1" "Myślałem, ze zapomni. Boli mnie głowa od wczorajszej libacji."
     show stud2 at right
-    "Random2" "Imprezować w niedzielę? Chłopie, gdzie Ty masz głowę?"
+    "Random2" "Imprezować w niedzielę? Chłopie, gdzie ty masz głowę?"
     "Random1" "Sądząc po tym jak się czuję to chyba w betoniarce..."
     hide stud1
     hide stud2
     show opiekun at left
     opiekunroku "Nie martwcie się, dzisiaj zrobiłam w miarę proste polecenia. Czuję, ze większość 
-    z Was to zaliczy"
+    z was to zaliczy"
     hide opiekun
     show stud1 at left
     "Random1" "Poproszę o lód na głowę i dam radę..."
@@ -111,7 +111,7 @@ label back_wyklad_pp1_2_cd:
     show stud2 at right
     "Random2" "Przepraszam, skoro pani będzie prowadzić wykład, to kto je teraz sprawdzi?"
     hide stud2
-    opiekunroku "Hahaha, dobrze, że pan pyta. Czas Wam przedstawić system JD3.0"
+    opiekunroku "Hahaha, dobrze, że pan pyta. Czas wam przedstawić system JD3.0"
     "JD3.0" "BIP BOOP BIP BOOOOP"
     opiekunroku "Tworzony 5 lat przez studentów naszego działu komputerowy system JD3.0 nie służy tylko 
     do sprawdzania kolokwiów i prac domowych."
@@ -135,7 +135,7 @@ label back_wyklad_pp1_2_cd:
     show opiekun at left
     opiekunroku "Na tym chyba dziś zakończymy.  JD! Pokaż wyniki kartkówek."
     "JD3.0 BIP" "BIIIIIIIIIIIIIIIIIIIIP"
-    opiekunroku "Hmmm....miałam rację. Większość z Was zaliczyła. Jestem z Was dumna. 
+    opiekunroku "Hmmm....miałam rację. Większość z was zaliczyła. Jestem z was dumna. 
     Dla tych, co nie zaliczyli mam jedną radę: Więcej pracy!  Dziękuję za wykład. Do zobaczenia!"
     #testowanie wariant1
     #python:
@@ -154,7 +154,7 @@ label back_wyklad_pp1_2_cd:
         show main3
     if marta_zostala_uspokojona:
         show marta at left
-        marta "Ufff....jakimś cudem mi się udało. Dzięki Ci, Boże. Jak u Ciebie?"
+        marta "Ufff....jakimś cudem mi się udało. Dzięki Ci, Boże. Jak u ciebie?"
         if ocena_kart1_pp1 == 3:
             m "Też mi się udało, ale powinnam lepiej wypaść, by pokonać Amandę..."
             marta "Daj spokój. Ona pewnie tego nie zaliczyła..."
@@ -169,7 +169,7 @@ label back_wyklad_pp1_2_cd:
             show draco at right
             malfoy "Nienajgorzej Ci poszło. Ja dostałam 4. Nie sądzę, żebyśmy musiały porównywać 
             każdą kartkówkę. Egzaminy są najważniejsze."
-            malfoy "Chociaż, kto wie? Może takie proste kartkóweczki poprawiają Twoją samoocenę? Trzymajcie się frajerki."
+            malfoy "Chociaż, kto wie? Może takie proste kartkóweczki poprawiają twoją samoocenę? Trzymajcie się frajerki."
             hide draco
             marta "Ona nawet zwycięstwo potrafi zepsuć. Jest dobrze. Idziesz na szczyt, moja droga."
             m "Dzięki, Marta. Chodźmy na następne zajęcia."
@@ -179,7 +179,7 @@ label back_wyklad_pp1_2_cd:
             play music "music/bensound-scifi.ogg"
             show draco at right
             malfoy "Jednak nie, dostałam 4. Kurde, ta rywalizacja idzie łatwiej niż sądziłam. Hahahahaha"
-            malfoy "Jeśli chceszs ię już poddać to nie ma problemu. Widać, że już na starcie Ci nie idzie."
+            malfoy "Jeśli chcesz się już poddać to nie ma problemu. Widać, że już na starcie ci nie idzie."
             hide draco
             marta "Nie słuchaj jej. To dopiero początek. Spójrz na to inaczej. Masz większą motywacje, by ją prześcignąć. 
             Pamiętaj też, że najważniejsze są egzaminy! Możesz jeszcze to zaliczyć!"
@@ -188,7 +188,7 @@ label back_wyklad_pp1_2_cd:
         if ocena_kart1_pp1 == 3:
             m " Udało mi się, ale powinnam lepiej wypaść, by pokonać Amandę..."
             show draco at right
-            malfoy "Jednak nie, dostałam 4. Kurde, ta rywalizacja idzie łatwiej niż sądziłam. Hahahahaha"
+            malfoy "Dostałam 4. Kurde, ta rywalizacja idzie łatwiej niż sądziłam. Hahahahaha"
             m "Zdobyłaś pierwszy punkt w naszej rywalizacji. Czas na kolejne!"
         elif ocena_kart1_pp1 > 3:
             m "Nawet wysoką ocenę dostałam. Ciekawe co na to Amanda?"
@@ -202,7 +202,7 @@ label back_wyklad_pp1_2_cd:
             play music "music/bensound-scifi.ogg"
             show draco at right
             malfoy "Jednak nie, dostałam 4. Kurde, ta rywalizacja idzie łatwiej niż sądziłam. Hahahahaha"
-            malfoy "Jeśli chcesz się już poddać to nie ma problemu. Widać, że już na starcie Ci nie idzie."
+            malfoy "Jeśli chcesz się już poddać to nie ma problemu. Widać, że już na starcie ci nie idzie."
             hide draco
             m "Nie mogę zawieść Marty. Dam sobie radę. Czas na następne zajęcia."
 
@@ -236,7 +236,7 @@ label back_wyklad_pp1_2_cd:
     scene bg a128
     play music "music/bensound-thejazzpiano.ogg"
     show dziekan casual at left
-    dziekan "Witajcie, studenci. Widzę, że coś mało Was dzisiaj. Trochę się tego nie spodziewałem, po ostatnim wykładzie."
+    dziekan "Witajcie, studenci. Widzę, że coś mało was dzisiaj. Trochę się tego nie spodziewałem, po ostatnim wykładzie."
     dziekan "Przekażcie reszcie, by jednak na ten wykład chodzili. W tym semestrze mam zdecydowanie za wiele na głowie i nie będę miał czasu sprawdzać wszystkim zaliczenia"
     
     play sound "music/sounds/audience_laughter1.mp3"
@@ -254,7 +254,7 @@ label back_wyklad_pp1_2_cd:
     show stud1 at left
     "Random2" "Super...straszcie nas dalej. Nie wiadomo nawet czy przejdziemy na drugi semestr..."
     show stud2 at right
-    "Random3" "Zawsze byłeś bardzo optymistycznie nastawiony do życia. Radość aż z Ciebie się wylewa."
+    "Random3" "Zawsze byłeś bardzo optymistycznie nastawiony do życia. Radość aż się z ciebie wylewa."
     hide stud1
     hide stud2
     show dziekan casual at left
@@ -282,14 +282,14 @@ label back_wyklad_pp1_2_cd:
         marta "Uch och.....hejka. Wybacz, że mnie nie było. Zaspałam."
         m "Witaj. Spoko, mam notatki jak coś. Uważaj następnym razem. Jeśli chcesz mieć gwarantowane 3 to powinnaś chodzić na te wykłady."
         marta "Wiem, wiem. Budzik ostatnio mi w telefonie wariuje. Raz dzwoni a raz nie."
-        m "Jeśli chcesz, to mogę do Ciebie dzwonić rano, do czasu, aż wszystko wróci do normy."
+        m "Jeśli chcesz, to mogę do ciebie dzwonić rano, do czasu, aż wszystko wróci do normy."
         marta "Naprawdę? Dzięki, kochana. Idziemy na następne zajęcia?"
-        m "Tak, chodźmy. Mam dla Ciebie dobrą wiadomość. Chyba Amandy dzisiaj nie będzie..."
+        m "Tak, chodźmy. Mam dla ciebie dobrą wiadomość. Chyba Amandy dzisiaj nie będzie..."
     else:
         m "Wykład znowu bardzo ciekawy. Mam nadzieję, że moje notatki będą dobre"
         m "Czas na kolejne zajęcia. Chociaż tak się dziś czuję, że wróciłabym do domu"
         m "Jedyne co dziś mnie trzyma to moja motywacja. Nie mogę mieć żadnych zaległości."
-        m "Chyba Amandy dzisiaj nie będzie. Warto wykorzystać jakoś ten cud..."
+        m "Chyba Amandy dzisiaj nie będzie. Warto jakoś wykorzystać ten cud..."
 
     scene bg white
     show text "{color=#000000}Środa{/color}"
@@ -309,28 +309,28 @@ label back_wyklad_pp1_2_cd:
         marta "Ikar...nie lubię tego gościa. Czuję, że będziemy mieli za tydzień przewalone u niego"
         m "Z takim podejściem to na pewno. Musimy wziąć się w garść. Trzeba to obalić."
         show adam_view at right
-        adam "Podziwiam Wasze zaparcie, ale musicie być bardzo czujne podczas zaliczenia u niego."
+        adam "Podziwiam wasze zaparcie, ale musicie być bardzo czujne podczas zaliczenia u niego."
         menu:
             "Kim jesteś?":
                 m "Dzięki za ostrzeżenie...kimkolwiek jesteś..."
                 marta "O, cześć Adam. Wy się jeszcze nie znacie. To jest Adam. Poznaliśmy się na WFie."
                 $ adam = Character("Adam", what_slow_cps=20) 
                 m "Miło mi poznać. Wybacz, za takie przywitanie. Miało być żartobliwe."
-                adam "Hahaha, załapałem od razu. Mnie też miło Cię poznać."
+                adam "Hahaha, załapałem od razu. Mnie też miło cię poznać."
                 jump po_przywitanie_adam
             "Chyba nie może być aż tak źle?":
                 m " Chyba nie może być aż tak źle, co?"
                 marta "O, cześć Adam. Wy się jeszcze nie znacie. To jest Adam. Poznaliśmy się na WFie."
                 $ adam = Character("Adam",what_slow_cps=20)
                 m "Miło mi Cie poznać, Adamie."
-                adam "Mnie również miło. Zaintrygowała mnie Wasza rozmowa dlatego dołączyłem."
+                adam "Mnie również miło. Zaintrygowała mnie wasza rozmowa dlatego dołączyłem."
         label po_przywitanie_adam:
-            adam "O Ikarze mnóstwo złych rzeczy słyszałem Podobno uczy tu z przymusu."
+            adam "O Ikarze mnóstwo złych rzeczy słyszałem. Podobno uczy tu z przymusu."
             marta "Jakoś mnie to nie dziwi, wiesz..."
-            adam "Nie wiem o co poszło, ale podobno przez parę przewinień Rektor kazał mu nauczać kilku przedmiotów. Wcześniej tylko realizował się tutaj naokoło."
+            adam "Nie wiem o co poszło, ale podobno przez parę przewinień Rektor kazał mu nauczać kilku przedmiotów. Wcześniej tylko realizował się tutaj naukowo."
             m "Sądzisz, że chce tak na odwal się prowadzić te zajęcia by szefostwo dało mu spokój."
-            adam "Tak się mówi. Nawet wśród wykładowców nie jest on lubiany. Facet za wielkie mniemanie o sobie."
-            marta "Warto wiedzieć. Będziemy musieli bardziej się przyłożyć na tych zajęciach..."
+            adam "Tak się mówi. Nawet wśród wykładowców nie jest lubiany. Facet zbyt wielkie mniemanie o sobie."
+            marta "Warto wiedzieć. Będziemy musieli bardziej się przyłożyć do tych zajęć..."
     else:
         m "Środa....a co to oznacza? Ikar..."
         m "Nie lubię tego gościa. Czuję, że będę miała za tydzień przewalone u niego"
@@ -338,13 +338,13 @@ label back_wyklad_pp1_2_cd:
         show adam_view at right
         adam "Podziwiam determinację, ale musisz być bardzo czujna podczas zaliczenia u niego."
         m "Dzięki za ostrzeżenie...kimkolwiek jesteś..."
-        adam "Wybacz, jestem Adam. Słyszałem Twoje narzekania i dlatego się wtrąciłem."
+        adam "Wybacz, jestem Adam. Słyszałem twoje narzekania i dlatego się wtrąciłem."
         $ adam = Character("Adam",what_slow_cps=20)
         m "Miło mi poznać. Wybacz, za takie przywitanie. Miało być żartobliwe."
-        adam "Hahaha, załapałem od razu. Mnie też miło Cię poznać."
-        adam "O Ikarze mnóstwo złych rzeczy słyszałem Podobno uczy tu z przymusu."
+        adam "Hahaha, załapałem od razu. Mnie też miło cię poznać."
+        adam "O Ikarze mnóstwo złych rzeczy słyszałem. Podobno uczy tu z przymusu."
         m "Jakoś mnie to nie dziwi, wiesz..."
-        adam "Nie wiem o co poszło, ale podobno przez parę przewinień Rektor kazał mu nauczać kilku przedmiotów. Wcześniej tylko realizował się tutaj naokoło."
+        adam "Nie wiem o co poszło, ale podobno przez parę przewinień Rektor kazał mu nauczać kilku przedmiotów. Wcześniej tylko realizował się tutaj naukowo."
         m "Sądzisz, że chce tak na odwal się prowadzić te zajęcia by szefostwo dało mu spokój."
         adam "Tak się mówi. Nawet wśród wykładowców nie jest on lubiany. Facet za wielkie mniemanie o sobie."
         m "Warto wiedzieć. Będziemy musieli bardziej się przyłożyć na tych zajęciach..."
@@ -352,8 +352,8 @@ label back_wyklad_pp1_2_cd:
     scene bg a129
     play music "music/bensound-straight.ogg"
     show ikar at left
-    ikar "Jakże miło mi Was znów widzieć. Jestem zaszczycony. Chciałbym przypomnieć, że za tydzień kolokwium decydujące o Waszym podejsciu do egzaminu."
-    ikar "Mam nadzieję, że do tego się przyłożycie Nie będę później wysłuchiwał błagań o podwyższenie oceny i innych takich. Brakuje punkta? No to trudno."
+    ikar "Jakże miło mi was znów widzieć. Jestem zaszczycony. Chciałbym przypomnieć, że za tydzień kolokwium decydujące o waszym podejsciu do egzaminu."
+    ikar "Mam nadzieję, że do tego się przyłożycie. Nie będę później wysłuchiwał błagań o podwyższenie oceny i innych takich. Brakuje punktu? No to trudno."
     hide ikar
     show stud1 at left
     "Random2" "Nie mogę patrzeć na tego gościa. Dziwne, że nikt go jeszcze nie zgłosił."
@@ -363,7 +363,7 @@ label back_wyklad_pp1_2_cd:
     hide stud1
     hide stud2
     show ikar at left
-    ikar "Hahhhahahaha, nie. Osobiście będę sprawdzał Wasze wypociny. Sprzęt Zawadzkiego może i jest dobry, ale nie sądzę by podołał doczytaniu się to studenckich wywijasów."
+    ikar "Hahhhahahaha, nie. Osobiście będę sprawdzał Wasze wypociny. Sprzęt Zawadzkiego może i jest dobry, ale nie sądzę by podołał doczytaniu się studenckich wywijasów."
     hide ikar
     #pokazywanie głównej postaci
     if i == 1:
@@ -419,9 +419,9 @@ label back_wyklad_pp1_2_cd:
         malfoy "Bardzo miłe...siostrzyczki sierotki."
         menu:
             "zareaguj":
-                m "Jak ja bardzo za Tobą tęskniłam. Już myślałam, że może ten Twój charakter uległ zmianie"
-                malfoy "Daruj sobie takie teksty. Zobaczymy jak sobie poradzicie za tydzień. nie mogę się doczekać 
-                Waszych zapłakanych min"
+                m "Jak ja bardzo za tobą tęskniłam. Już myślałam, że może ten twój charakter uległ zmianie"
+                malfoy "Daruj sobie takie teksty. Zobaczymy jak sobie poradzicie za tydzień. Nie mogę się doczekać 
+                waszych zapłakanych min"
                 jump sprzeczka_draco_11
             "nic nie rób":
                 hide marta
@@ -430,9 +430,9 @@ label back_wyklad_pp1_2_cd:
                 malfoy "Brawo. Dorobiłyście się własnego obrońcy. Czyżbyście już nie radziły sobie ze mną same?"
                 hide adam_view
                 show marta at left
-                marta "Amanda,  ja bardzo za Tobą tęskniłam. Już myślałam, że może ten Twój charakter uległ zmianie"
-                malfoy "Daruj sobie takie teksty. Zobaczymy jak sobie poradzicie za tydzień. nie mogę się doczekać 
-                Waszych zapłakanych min."
+                marta "Amanda,  ja bardzo za tobą tęskniłam. Już myślałam, że może ten twój charakter uległ zmianie"
+                malfoy "Daruj sobie takie teksty. Zobaczymy jak sobie poradzicie za tydzień. Nie mogę się doczekać 
+                waszych zapłakanych min."
                 jump sprzeczka_draco_11
         label sprzeczka_draco_11:
             hide draco
@@ -442,15 +442,15 @@ label back_wyklad_pp1_2_cd:
             show adam_view at right
             marta "Chodźmy. Rzygać mi się chcę, jak ją widzę."
             adam "Macie dosyć ciekawego wroga. Uważajcie. Ta dziewczyna ma tutaj niezłe wpływy."
-            m "Wiemy, wiemy. Chody nie pomogą jej zaliczyć ten przedmiot. Ikar nikogo nie będzie faworyzował."
-            marta "Jedyna rzecz, za którą można go lubić. Adam, skąd Ty taki obeznany w uczelnianych plotkach?"
+            m "Wiemy, wiemy. Chody nie pomogą jej zaliczyć tego przedmiotu. Ikar nikogo nie będzie faworyzował."
+            marta "Jedyna rzecz, za którą można go lubić. Adam, skąd ty taki obeznany w uczelnianych plotkach?"
             adam "Akademik. Jedno słowo, a mówi tak wiele."
             m "Hahaha...taka wiedza też się przydaje. Oprócz wiedzy technicznej uczymy się jak przetrwać."
-            marta "Przyda Nam się to, jak będziemy pracować w jakimś korpo. Dobra, to co teraz mamy?"
+            marta "Przyda nam się to, jak będziemy pracować w jakimś korpo. Dobra, to co teraz mamy?"
     else:
         show adam_view at left
         m "Gościu nawet się z nami nie pożegnał. Trochę kiepski przykład daje innym."
-        adam "Coś czuję, że dzień przed kolosem będę miała srogie koszmary."
+        adam "Coś czuję, że dzień przed kolosem będę miał srogie koszmary."
         m "Musimy zmaksymalizować nasze szanse na zdanie. Jak zaczniemy się wcześniej uczyć, to damy rade"
         adam "Słowo daję, Jesteś największą optymistką jaką znam."
         m "Jeżeli to komplement to bardzo za niego dziękuję. To miłe."
@@ -459,16 +459,16 @@ label back_wyklad_pp1_2_cd:
         malfoy "Heyo. Grupa wsparcia przed nieuchronnym oblaniem?"
         adam "Daj nam spokój, kobieto. Idź być toksyczna gdzie indziej."
         malfoy "Brawo. Dorobiłaś się własnego obrońcy. Czyżbyś już nie radziła sobie ze mną sama?"
-        m "Amanda,  ja bardzo za Tobą tęskniłam. Już myślałam, że może ten Twój charakter uległ zmianie"
-        malfoy "Daruj sobie takie teksty. Zobaczymy jak sobie poradzicie za tydzień. nie mogę się doczekać Waszych zapłakanych min."
+        m "Amanda,  ja bardzo za tobą tęskniłam. Już myślałam, że może ten twój charakter uległ zmianie"
+        malfoy "Daruj sobie takie teksty. Zobaczymy jak sobie poradzicie za tydzień. Nie mogę się doczekać Waszych zapłakanych min."
         m "Chodźmy. Rzygać mi się chcę, jak ją widzę."
         hide draco
         adam "Macie dosyć ciekawego wroga. Uważaj. Ta dziewczyna ma tutaj niezłe wpływy."
-        m "Wiem, wiem. Chody nie pomogą jej zaliczyć ten przedmiot. Ikar nikogo nie będzie faworyzował."
-        m "Heh...jedyna rzecz, za którą można go lubić. Adam, skąd Ty taki obeznany w uczelnianych plotkach?"
+        m "Wiem, wiem. Chody nie pomogą jej zaliczyć tego przedmiotu. Ikar nikogo nie będzie faworyzował."
+        m "Heh...jedyna rzecz, za którą można go lubić. Adam, skąd ty taki obeznany w uczelnianych plotkach?"
         adam "Akademik. Jedno słowo, a mówi tak wiele."
         m "Hahaha...taka wiedza też się przydaje. Oprócz wiedzy technicznej uczymy się jak przetrwać."
-        adam "Taa...Przyda Nam się to, jak będziemy pracować w jakimś korpo. Dobra, to co teraz mamy?"
+        adam "Taa...Przyda nam się to, jak będziemy pracować w jakimś korpo. Dobra, to co teraz mamy?"
     #KONIEC ŚRODY
     #CZWARTEK
     scene bg white
@@ -500,7 +500,7 @@ label back_wyklad_pp1_2_cd:
     play music "music/bensound-psychedelic.ogg"
     show teresa at left
     teresa "O widzę, że znowu mała frekwencja na wykładzie. Dalej mnie to nie dziwi."
-    teresa "Szczerze? Dałabym Wam ten skrypt i kazała nie przychodzic, no ale za coś mi płacą, tak?"
+    teresa "Szczerze? Dałabym wam ten skrypt i kazała nie przychodzic, no ale za coś mi płacą, tak?"
     play sound "music/sounds/audience_laughter1.mp3"
     teresa "Lekki żart na poprawę humoru i jedziemy z następnym tematem"
     
@@ -509,7 +509,7 @@ label back_wyklad_pp1_2_cd:
     pause 2
     scene bg a123
     show teresa at left 
-    teresa "Ok, dłużej męczyć Was nie będę. Do zobaczenia w następnym tygoniu!"
+    teresa "Ok, dłużej was męczyć nie będę. Do zobaczenia w następnym tygoniu!"
     hide teresa
     show stud1 at right
     "Random1" "Mimo, że wykład nudny jak flaki z olejem, to kobitka całkiem w porządku."
@@ -558,10 +558,10 @@ label back_wyklad_pp1_2_cd:
         show draco at right
         malfoy "Na moje oko wyglądacie na takie co nawet tabliczki mnożenia nie potrafią się nauczyć."
         marta "Musisz irytować? Próbuję się skupić na powtarzaniu."
-        malfoy "To i tak Ci nic nie da. Lepiej myśl już o zapłaceniu za powtarzanie."
+        malfoy "To i tak ci nic nie da. Lepiej myśl już o zapłaceniu za powtarzanie."
         menu:
             "Zareaguj":
-                m "Musisz nam przeszkadzać bo inaczej bys z niami przegrała, co?"
+                m "Musisz nam przeszkadzać bo inaczej bys z nami przegrała, co?"
                 malfoy "Nie rozśmieszaj mnie. Lat świetlnych by wam nie starczyło do osiągnięcia mojego poziomu."
                 m "Lata świetlne to jednostka odległości..."
                 malfoy "Argh....dajcie mi spokój..."
@@ -575,15 +575,15 @@ label back_wyklad_pp1_2_cd:
         show adam_view at left
 
         m "Zieeeew....Uczyłam się całą noc na matmę. Mam nadzieję, że sobie poradzę."
-        adam "Damy radę, trzeba zetrzeć ten uśmiech z twarzy Amandy. Nie sądzę byśmy miały jakieś trudności z tym."
+        adam "Damy radę, trzeba zetrzeć ten uśmiech z twarzy Amandy. Nie sądzę byśmy mieli z tym jakieś trudności."
         play music "music/bensound-scifi.ogg"
         show draco at right
         malfoy "Na moje oko wyglądacie na takich co nawet tabliczki mnożenia nie potrafią się nauczyć."
         m "Musisz irytować? Próbuję się skupić na powtarzaniu."
-        malfoy "To i tak Ci nic nie da. Lepiej myśl już o zapłaceniu za powtarzanie."
+        malfoy "To i tak ci nic nie da. Lepiej myśl już o zapłaceniu za powtarzanie."
         menu:
             "Zareaguj":
-                m "Musisz nam przeszkadzać bo inaczej bys z niami przegrała, co?"
+                m "Musisz nam przeszkadzać bo inaczej bys z nami przegrała, co?"
                 malfoy "Nie rozśmieszaj mnie. Lat świetlnych by wam nie starczyło do osiągnięcia mojego poziomu."
                 m "Lata świetlne to jednostka odległości..."
                 malfoy "Argh....dajcie mi spokój..."
@@ -618,8 +618,8 @@ label back_wyklad_mat_2_cd:
     
     scene bg a128
     show iza at left
-    Izabella "Widzę, że wszyscy już skończyli. Teram możemy zająć się kolejnym tematem zajęć."
-    Izabella "Radzę Wam się skupić, gdyż temat jest dosyć istotny. Zacznijmy więc."
+    Izabella "Widzę, że wszyscy już skończyli. Teraz możemy zająć się kolejnym tematem zajęć."
+    Izabella "Radzę wam się skupić, gdyż temat jest dosyć istotny. Zacznijmy więc."
 
     scene black
     show text "{color=#FFF}Wykład...{/color}"
@@ -629,8 +629,8 @@ label back_wyklad_mat_2_cd:
     show iza at left
     Izabella "No dobrze. Myślę, że możemy na dziś zakończyć. Jak tam kartkówki, JD?"
     "JD3.0" "BiP BIP BIP BOOOOOOOOOOOOOOOOOOP"
-    Izabella "Wszystko jest już sprawdzone. Nawet nieźle Wam poszło. Mam nadzieję, że następna pójdzie jeszcze 
-    lepiej. Trzymajcie ciepło moje kruszynki się."
+    Izabella "Wszystko jest już sprawdzone. Nawet nieźle wam poszło. Mam nadzieję, że następna pójdzie jeszcze 
+    lepiej. Trzymajcie się ciepło moje kruszynki."
     
     #testowa wartosc
     #python:
@@ -653,11 +653,11 @@ label back_wyklad_mat_2_cd:
         show marta at left
         marta "Jak Ci poszło?"
         if ocena_kart1_mat > 2:
-            m "Bez problemu zaliczone. Nie było to aż takie trudne. Jak u Ciebie?"
+            m "Bez problemu zaliczone. Nie było to aż takie trudne. Jak u ciebie?"
             marta "No, tym razem mi nie poszło. Nie przejmuj się. Na następnej sobie poradzę"
-            m "Na następnej to będziesz lepiej przygotowana. Pomogę Ci."
+            m "Na następnej to będziesz lepiej przygotowana. Pomogę ci."
             if piwo_piatek2 == False:
-                marta "Jesteś kochana. Chciałabyś wyjść na piwo? Uczcimy Twój sukces."
+                marta "Jesteś kochana. Chciałabyś wyjść na piwo? Uczcimy twój sukces."
                 menu:
                     "tak":
                         $ piwo_piatek3 = True
@@ -676,7 +676,7 @@ label back_wyklad_mat_2_cd:
             m "Nie udało się. Najwidoczniej za mało umiem. A Tobie?"
             marta "No, tym razem mi nie poszło. Nie przejmuj się. Na następnej sobie poradzimy"
             show draco at right
-            malfoy "Słyszałam, że podwyższyli opłatę za powtarzanie, wiesz? Na Twoim miejscu bym już zbierała forsę, hehehe...."
+            malfoy "Słyszałam, że podwyższyli opłatę za powtarzanie, wiesz? Na twoim miejscu bym już zbierała forsę, hehehe...."
             hide draco
             m "Na następnej będziemy lepiej przygotowane! Nie damy się tak łatwo. Razem będziemy się uczyć"
             if piwo_piatek2 == False:
@@ -698,10 +698,10 @@ label back_wyklad_mat_2_cd:
         show adam_view at left
         adam "Jak Ci poszło?"
         if ocena_kart1_mat > 2:
-            m "Bez problemu zaliczone. Nie było to aż takie trudne. Jak u Ciebie?"
+            m "Bez problemu zaliczone. Nie było to aż takie trudne. Jak u ciebie?"
             adam "Mi też. Nie było problemu. Dosyć łatwe dziś dał."
-            m "Cieszę się, że Nam się udało. Kolejny stopień do zwycięstwa!"
-            adam "Super!  Dzień można uznać za udany. Chciałabyś wyjść na piwo? Uczcimy Twój sukces."
+            m "Cieszę się, że nam się udało. Kolejny stopień do zwycięstwa!"
+            adam "Super!  Dzień można uznać za udany. Chciałabyś wyjść na piwo? Uczcimy twój sukces."
             menu:
                 "tak":
                     $ piwo_piatek3 = True
@@ -712,8 +712,8 @@ label back_wyklad_mat_2_cd:
                     adam "Też się chyba zdrzemnę. Trzymaj się. Widzimy się w poniedziałek!"
                     jump end_chapter3
         else:
-            m "Nie udało się. Najwidoczniej za mało umiem. A Tobie?"
-            adam "Mi się jakoś udało. Nie bierz tego aż tak do siebie. musisz po prostu więcej popracować."
+            m "Nie udało się. Najwidoczniej za mało umiem. A tobie?"
+            adam "Mi się jakoś udało. Nie bierz tego aż tak do siebie. Musisz po prostu więcej popracować."
             show draco at right
             malfoy "Słyszałam, że podwyższyli opłatę za powtarzanie, wiesz? Na Twoim miejscu bym już zbierała forsę, hehehe...."
             hide draco
