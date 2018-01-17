@@ -9,7 +9,7 @@ init:
             else:
                 return anim.Blink(Text("0.0", color="#f00", size=72)), None
     
-    image countdown = DynamicDisplayable(countdown, length=30.0)
+    image countdown = DynamicDisplayable(countdown, length=45.0)
     
     image bg pp1_q1 = "mini1_pp1/question1/question.jpg"
     image bg pp1_q2 = "mini1_pp1/question2/question.png"
@@ -110,7 +110,7 @@ label minigame_pp1:
 
     scene bg pp1_q1
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("next_pp1_q1_wrong"))
+    $ ui.timer(45.1, ui.jumps("next_pp1_q1_wrong"))
     call screen pp1_question1
     label next_pp1_q1_good:
         $ pp1_q1 = "Dobrze"
@@ -120,7 +120,7 @@ label minigame_pp1:
 label next_pp1_q2:
     scene bg pp1_q2
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("next_pp1_q2_wrong"))
+    $ ui.timer(45.1, ui.jumps("next_pp1_q2_wrong"))
     call screen pp1_question2
     label next_pp1_q2_good:
         $ pp1_q2 = "Dobrze"
@@ -130,7 +130,7 @@ label next_pp1_q2:
 label next_pp1_q3:
     scene bg pp1_q3
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("next_pp1_q3_wrong"))
+    $ ui.timer(45.1, ui.jumps("next_pp1_q3_wrong"))
     call screen pp1_question3
     label next_pp1_q3_good:
         $ pp1_q3 = "Dobrze"
@@ -140,7 +140,7 @@ label next_pp1_q3:
 label next_pp1_q4:
     scene bg pp1_q4
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("next_pp1_q4_wrong"))
+    $ ui.timer(45.1, ui.jumps("next_pp1_q4_wrong"))
     call screen pp1_question4
     label next_pp1_q4_good:
         $ pp1_q4 = "Dobrze"
@@ -150,7 +150,7 @@ label next_pp1_q4:
 label next_pp1_q5:
     scene bg pp1_q5
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("next_pp1_q5_wrong"))
+    $ ui.timer(45.1, ui.jumps("next_pp1_q5_wrong"))
     call screen pp1_question5
     label next_pp1_q5_good:
         $ pp1_q5 = "Dobrze"
@@ -160,7 +160,7 @@ label next_pp1_q5:
 label next_pp1_q6:
     scene bg pp1_q6
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("next_pp1_q6_wrong"))
+    $ ui.timer(45.1, ui.jumps("next_pp1_q6_wrong"))
     call screen pp1_question6
     label next_pp1_q6_good:
         $ pp1_q6 = "Dobrze"
@@ -170,7 +170,7 @@ label next_pp1_q6:
 label next_pp1_q7:
     scene bg pp1_q7
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("next_pp1_q7_wrong"))
+    $ ui.timer(45.1, ui.jumps("next_pp1_q7_wrong"))
     call screen pp1_question7
     label next_pp1_q7_good:
         $ pp1_q7 = "Dobrze"
@@ -180,7 +180,7 @@ label next_pp1_q7:
 label next_pp1_q8:
     scene bg pp1_q8
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("next_pp1_q8_wrong"))
+    $ ui.timer(45.1, ui.jumps("next_pp1_q8_wrong"))
     call screen pp1_question8
     label next_pp1_q8_good:
         $ pp1_q8 = "Dobrze"

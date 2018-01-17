@@ -288,14 +288,14 @@ label minigame_tpi:
         lista_odp_tpi = []
     $ answer = "wrong"
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("next_tpi_q2"))
+    $ ui.timer(45.1, ui.jumps("next_tpi_q2"))
     call screen tpi_question1
 label next_tpi_q2:
     python:
         checker_tpi(lista_odp_tpi, answer)
     scene bg desk
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("next_tpi_q3"))
+    $ ui.timer(45.1, ui.jumps("next_tpi_q3"))
     call screen tpi_question2
 label next_tpi_q3:
     python:
@@ -305,7 +305,7 @@ label next_tpi_q3:
         lista_odp_tpi += [ pytanie(lista_odp_tpi_q2[0],lista_odp_tpi_q2[1],lista_odp_tpi_q2[2],lista_odp_tpi_q2[3]) ]
     scene bg desk
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("next_tpi_q3_wrong"))
+    $ ui.timer(45.1, ui.jumps("next_tpi_q3_wrong"))
     call screen tpi_question3
 label next_tpi_q3_wrong:
     python:
@@ -319,14 +319,14 @@ label next_tpi_q4:
     scene bg desk
     $ answer = "wrong"
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("next_tpi_q5"))
+    $ ui.timer(45.1, ui.jumps("next_tpi_q5"))
     call screen tpi_question4
 label next_tpi_q5:
     python:
         checker_tpi(lista_odp_tpi, answer)
     scene bg desk
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("next_tpi_q6"))
+    $ ui.timer(45.1, ui.jumps("next_tpi_q6"))
     call screen tpi_question5    
 label next_tpi_q6:
     python:
@@ -336,7 +336,7 @@ label next_tpi_q6:
         lista_odp_tpi += [ pytanie(lista_odp_tpi_q5[0],lista_odp_tpi_q5[1],lista_odp_tpi_q5[2],lista_odp_tpi_q5[3]) ]
     scene bg desk
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("next_tpi_q6_wrong"))
+    $ ui.timer(45.1, ui.jumps("next_tpi_q6_wrong"))
     call screen tpi_question6
 label next_tpi_q6_wrong:
     python:
@@ -350,7 +350,7 @@ label next_tpi_q7:
     scene bg desk
     $ answer = "wrong"
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("next_tpi_q2"))
+    $ ui.timer(45.1, ui.jumps("next_tpi_q2"))
     call screen tpi_question7
     #niegotowe
 label next_tpi_q8:
@@ -358,7 +358,7 @@ label next_tpi_q8:
         checker_tpi(lista_odp_tpi, answer)
     scene bg desk
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("next_tpi_q9"))
+    $ ui.timer(45.1, ui.jumps("next_tpi_q9"))
     call screen tpi_question8
 label next_tpi_q9:
     python:
@@ -368,7 +368,7 @@ label next_tpi_q9:
         lista_odp_tpi += [ pytanie(lista_odp_tpi_q8[0],lista_odp_tpi_q8[1],lista_odp_tpi_q8[2],lista_odp_tpi_q8[3]) ]
     scene bg desk
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("next_tpi_q9_wrong"))
+    $ ui.timer(45.1, ui.jumps("next_tpi_q9_wrong"))
     call screen tpi_question9
 label next_tpi_q9_wrong:
     python:
@@ -381,7 +381,7 @@ label next_tpi_q9_good:
 label next_tpi_q10:
     scene bg desk
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("tpi_end"))
+    $ ui.timer(45.1, ui.jumps("tpi_end"))
     call screen tpi_question10
 label tpi_end:
     python:

@@ -28,7 +28,7 @@ label pp1_kart2: #DONE
     hide text
 
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("next_pp1_kart2_q1_wrong"))
+    $ ui.timer(45.1, ui.jumps("next_pp1_kart2_q1_wrong"))
     call screen pp1_kart2_question1
     label next_pp1_kart2_q1_good:
         $ pp1_q1 = "Dobrze"
@@ -38,7 +38,7 @@ label pp1_kart2: #DONE
 
 label next_pp1_kart2_q2:
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("next_pp1_kart2_q2_wrong"))
+    $ ui.timer(45.1, ui.jumps("next_pp1_kart2_q2_wrong"))
     call screen pp1_kart2_question2
     label next_pp1_kart2_q2_good:
         $ pp1_q2 = "Dobrze"
@@ -48,7 +48,7 @@ label next_pp1_kart2_q2:
 
 label next_pp1_kart2_q3:
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("next_pp1_kart2_q3_wrong"))
+    $ ui.timer(45.1, ui.jumps("next_pp1_kart2_q3_wrong"))
     call screen pp1_kart2_question3
     label next_pp1_kart2_q3_good:
         $ pp1_q3 = "Dobrze"

@@ -91,12 +91,12 @@ label minigame_mat:
     scene bg white
     #Twierdzenie Bolzana-Weierstrassa albo Weierstrassa
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("next_mat_q2"))
+    $ ui.timer(45.1, ui.jumps("next_mat_q2"))
     call screen mat_question1
 label next_mat_q2:
     $ analiza_q1 = analiza_correct_answer(_return, "Bolzana-Weierstrassa",  "Weierstrassa")
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("next_mat_q2_wrong"))
+    $ ui.timer(45.1, ui.jumps("next_mat_q2_wrong"))
     call screen mat_question2
 label next_mat_q2_wrong:
     $ analiza_q2 = "Zla"
@@ -105,19 +105,19 @@ label next_mat_q2_good:
     $ analiza_q2 = "Dobra"
 label next_mat_q3:
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("next_mat_q4"))
+    $ ui.timer(45.1, ui.jumps("next_mat_q4"))
     call screen mat_question3
 label next_mat_q4:
     python:
         analiza_q3_list = varargs([True, True, False], mat_q3_button1, mat_q3_button2, mat_q3_button3)
         analiza_q3 = pytanie(analiza_q3_list[0], analiza_q3_list[1], analiza_q3_list[2])
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("next_mat_q2_wrong"))
+    $ ui.timer(45.1, ui.jumps("next_mat_q2_wrong"))
     call screen mat_question4
 label next_mat_q5:
     $ analiza_q4 = analiza_correct_answer(_return, "maksimum",  "max")
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("next_mat_q5_wrong"))
+    $ ui.timer(45.1, ui.jumps("next_mat_q5_wrong"))
     call screen mat_question5
 label next_mat_q5_wrong:
     $ analiza_q5 = "Zla"
@@ -126,7 +126,7 @@ label next_mat_q5_good:
     $ analiza_q5 = "Dobra"
 label next_mat_q6:
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("next_mat_q6_wrong"))
+    $ ui.timer(45.1, ui.jumps("next_mat_q6_wrong"))
     call screen mat_question6
 label next_mat_q6_wrong:
     $ analiza_q6 = "Zla"

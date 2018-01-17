@@ -2,6 +2,7 @@ init:
     image bg przed_weeia = "weeia.jpg"
     image bg las1 = "las1.jpg"
     image bg las2 = "las2.jpg"
+    image bg droga = "droga.jpg"
     image bg szpital = "szpital.jpg"
     define Lekarz = Character("Pani Doktor", what_slow_cps=20)
 label chapter4:
@@ -791,7 +792,7 @@ label wstajemy:
     show text "{color=#FFF}PÓŁ GODZINY PÓŹNIEJ{/color}"
     pause 2
     
-    scene bg las1
+    scene bg droga
     if i == 1:
         show main1
     elif i == 2:

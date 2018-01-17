@@ -210,27 +210,27 @@ label minigame_prawo:
 
     scene bg desk
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("prawo_question2"))
+    $ ui.timer(45.1, ui.jumps("prawo_question2"))
     call screen prawo_question1
 label prawo_question2:
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("prawo_question3"))
+    $ ui.timer(45.1, ui.jumps("prawo_question3"))
     call screen prawo_question2
 label prawo_question3:
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("prawo_question4"))
+    $ ui.timer(45.1, ui.jumps("prawo_question4"))
     call screen prawo_question3
 label prawo_question4:
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("prawo_question5"))
+    $ ui.timer(45.1, ui.jumps("prawo_question5"))
     call screen prawo_question4
 label prawo_question5:
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("prawo_question6"))
+    $ ui.timer(45.1, ui.jumps("prawo_question6"))
     call screen prawo_question5
 label prawo_question6:
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("prawo_end"))
+    $ ui.timer(45.1, ui.jumps("prawo_end"))
     call screen prawo_question6
 label prawo_end:
     scene bg desk

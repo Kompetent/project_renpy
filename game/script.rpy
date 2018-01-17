@@ -120,9 +120,9 @@ label onelabel:
     ob "Hmm... Zacznijmy może od początku. Możesz nazywać mnie obserwatorem. Jestem tu po to by wprowadzić Cię w ten świat
     i obserwować Twoje postępy. Witaj w Wonderful Time."
     voice "music/tutorial/5.ogg"
-    ob "To może najpierw powiem na czym to bedzie polegać."
+    ob "To może najpierw powiem na czym to bedzie polegac."
     voice "music/tutorial/6.ogg"
-    ob "Ty, mój drogi/moja droga (wybacz, nie wziąłem ze sobą okularów), będziesz mógł wcielić się w świeżo upieczoną studentkę informatyki oraz pokierować
+    ob "Ty mój drogi/moja droga (wybacz, nie wziąłem ze sobą okularów) będziesz mógł wcielić się w świeżo upieczoną studentkę informatyki oraz pokierować
     jej poczynani podczas tego szalonego okresu jakim jest studiowanie."
     voice "music/tutorial/7.ogg"
     ob "Wybierz sobie teraz jedną z trzech dostępnych w grze postaci."
@@ -187,7 +187,7 @@ label next1:
         return
     show narrator at left
     voice "music/tutorial/8.ogg"
-    ob "Posłuchaj mnie bardzo uważnie. Nasza [m] ma swoją historię i powody dla których zaczyna swoją przygodę z informatyką, ale to od Ciebie, mój graczu, zależy jak jej pójdzie."
+    ob "Posłuchaj mnie bardzo uważnie. Nasza [m] ma swoją historię i powody dla których zaczyna swoją przygodę z informatyką, ale to od Ciebie mój graczu zależy jak jej pójdzie."
     voice "music/tutorial/9.ogg"
     ob "Wykłady, stosunki z rówieśnikami, zabawy w akademiku, nauka i egzaminy... to wszystko jest w Twoich rękach. Za pomocą Twoich decyzji i postanowień ta rozgrywka i
     przygody naszej bohaterki będą coraz bardziej intrygujące."

@@ -27,7 +27,7 @@ label mat_kart2:
     hide text
 
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("next_mat_kart2_q1_wrong"))
+    $ ui.timer(45.1, ui.jumps("next_mat_kart2_q1_wrong"))
     call screen mat_kart2_question1
     label next_mat_kart2_q1_good:
         $ mat_q1 = "Dobrze"
@@ -37,7 +37,7 @@ label mat_kart2:
 
 label next_mat_kart2_q2:
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("next_mat_kart2_q2_wrong"))
+    $ ui.timer(45.1, ui.jumps("next_mat_kart2_q2_wrong"))
     call screen mat_kart2_question2
     label next_mat_kart2_q2_good:
         $ mat_q2 = "Dobrze"
@@ -47,7 +47,7 @@ label next_mat_kart2_q2:
 
 label next_mat_kart2_q3:
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("next_mat_kart2_q3_wrong"))
+    $ ui.timer(45.1, ui.jumps("next_mat_kart2_q3_wrong"))
     call screen mat_kart2_question3
     label next_mat_kart2_q3_good:
         $ mat_q3 = "Dobrze"

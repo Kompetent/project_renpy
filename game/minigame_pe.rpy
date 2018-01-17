@@ -159,7 +159,7 @@ label minigame_pe:
     $ answer = "wrong"
     scene bg pe_q1
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("next_pe_q2"))
+    $ ui.timer(45.1, ui.jumps("next_pe_q2"))
     call screen pe_question1
 label next_pe_q2:
     scene bg white
@@ -168,14 +168,14 @@ label next_pe_q2:
     else:
         $ odp_pe_q1 = "Zła"
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("next_pe_q3"))
+    $ ui.timer(45.1, ui.jumps("next_pe_q3"))
     call screen pe_question2
 label next_pe_q3:
     $ odp_pe_q2 = analiza_correct_answer(_return, "Ohma","Ohma ", " Ohma")
     scene bg white
     $ answer = "wrong"
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("next_pe_q4"))
+    $ ui.timer(45.1, ui.jumps("next_pe_q4"))
     call screen pe_question3
 label next_pe_q4:
     scene bg white
@@ -184,7 +184,7 @@ label next_pe_q4:
     else:
         $ odp_pe_q3 = "Zła"
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("next_pe_q4_wrong"))
+    $ ui.timer(45.1, ui.jumps("next_pe_q4_wrong"))
     call screen pe_question4
 label next_pe_q4_wrong:
     $ odp_pe_q4 = "Zła"
@@ -193,13 +193,13 @@ label next_pe_q4_good:
     $ odp_pe_q4 = "Dobra"
 label next_pe_q5:
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("next_pe_q6"))
+    $ ui.timer(45.1, ui.jumps("next_pe_q6"))
     call screen pe_question5
 label next_pe_q6:
     $ odp_pe_q5 = analiza_correct_answer(_return, "II Kirchhoffa", "2 Kirchhoffa", "Drugie Kirchhoffa")
     $ answer = "wrong"
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(30.1, ui.jumps("pe_end"))
+    $ ui.timer(45.1, ui.jumps("pe_end"))
     call screen pe_question6
 label pe_end:
     if answer == "good":

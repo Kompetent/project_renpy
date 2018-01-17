@@ -4,6 +4,7 @@ init:
     define teresa = Character("Teresa",what_slow_cps=20)
     define Izabella = Character("Pan dr",what_slow_cps=20)
     image bg park = "park2.jpg"
+    image bg dziekanat = "dziekanat2.jpg"
 
     image stud1 = "noname1.png"
     image stud2 = "noname2.png"
@@ -760,7 +761,7 @@ label w13:
                 show text "{color=#000000}Parę chwil później{/color}"
                 pause 2
                 #==================nowa_scena==================
-                scene bg korytarz
+                scene bg dziekanat
                 play music "music/bensound-pianomoment.ogg"
                 if i == 1:
                     show main1
