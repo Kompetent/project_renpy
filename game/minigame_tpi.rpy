@@ -350,7 +350,7 @@ label next_tpi_q7:
     scene bg desk
     $ answer = "wrong"
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(45.1, ui.jumps("next_tpi_q2"))
+    $ ui.timer(45.1, ui.jumps("next_tpi_q8"))
     call screen tpi_question7
     #niegotowe
 label next_tpi_q8:

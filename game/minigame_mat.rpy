@@ -112,7 +112,7 @@ label next_mat_q4:
         analiza_q3_list = varargs([True, True, False], mat_q3_button1, mat_q3_button2, mat_q3_button3)
         analiza_q3 = pytanie(analiza_q3_list[0], analiza_q3_list[1], analiza_q3_list[2])
     show countdown at Position(xalign=.9, yalign=.1)
-    $ ui.timer(45.1, ui.jumps("next_mat_q2_wrong"))
+    $ ui.timer(45.1, ui.jumps("next_mat_q5"))
     call screen mat_question4
 label next_mat_q5:
     $ analiza_q4 = analiza_correct_answer(_return, "maksimum",  "max")
