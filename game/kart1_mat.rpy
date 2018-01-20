@@ -22,11 +22,11 @@ init:
             textbutton "Jest ciągła w dziedzinie" text_color "#000000" text_hover_color "#0000FF" action Jump("next_mat_kart1_q3_good")
 
 label mat_kart1: 
-    scene bg white
-    show text "{color=#000000}Kartkówka pierwsza z Analizy Matematycznej{/color}"
-    pause 2
+    scene black
+    show text "{color=#FFF}{size=+30} Kartkówka pierwsza z analizy matematycznej {/size}{/color}"
+    pause 5
     hide text
-
+    scene bg white
     show countdown at Position(xalign=.9, yalign=.1)
     $ ui.timer(45.1, ui.jumps("next_mat_kart1_q1_wrong"))
     call screen mat_kart1_question1

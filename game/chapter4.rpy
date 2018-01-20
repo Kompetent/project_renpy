@@ -10,8 +10,8 @@ label chapter4:
     show text "{color=#FFF}{size=+30}Chapter 4\nTydzień trzeci{/size}{/color}"
     pause 2
     play music "music/bensound-rumble.ogg"
-    scene bg white
-    show text "{color=#000000}Poniedziałek{/color}"
+    scene black
+    show text "{color=#FFF}{size=+30}Poniedziałek{/size}{/color}"
     pause 2
     
     scene bg park
@@ -107,7 +107,7 @@ label back_wyklad_pp1_3_cd:
     opiekunroku "Proszę wszystkich o spokój. Przejdźmy już do dzisiejszego wykładu!"
 
     scene black
-    show text "{color=#FFF}Wykład...{/color}"
+    show text "{color=#FFF}{size=+30}Funkcje a procedury, dokładne omówienie{/color}"
     pause 2
 
     scene bg a123
@@ -185,8 +185,8 @@ label back_wyklad_pp1_3_cd:
             odejmować punkty z egzaminu!"
             adam "No ok. Nie poddawaj mi się tylko!"
 
-    scene bg white
-    show text "{color=#000000}Wtorek{/color}"
+    scene black
+    show text "{color=#FFF}{size=+30}Wtorek{/size}{/color}"
     pause 2
     play music "music/bensound-sweet.ogg"
     scene bg korytarz
@@ -283,7 +283,7 @@ label sprzeczka_malfoy123:
     dziekan "No nic. Zacznijmy jak najszybciej, to mniej będziemy musieli nadrabiać za tydzień!"
     
     scene black
-    show text "{color=#FFF}Wykład...{/color}"
+    show text "{color=#FFF}{size=+30}Twierdzenia w układach elektrycznych{/size}{/color}"
     pause 2
 
     scene bg a128
@@ -322,8 +322,8 @@ label sprzeczka_malfoy123:
         najlepiej. Będę mógł się trochę odstresować."
         m "Prawda. Po zajęciach od razu do nauki. Nie chcę by ten Ikar mnie uwalił..."
     
-    scene bg white
-    show text "{color=#000000}Środa{/color}"
+    scene black
+    show text "{color=#FFF}{size=+30}Środa{/size}{/color}"
     pause 2
     
     scene bg a129
@@ -383,6 +383,7 @@ label back_wyklad_tpi_3_cd:
 
     show stud1 at right
     "Random1" "Wystrzelił jak burza. Ciekawe czego dziekan chce od niego?"
+    stop sound
     show stud2 at left
     "Random2" "Może go wreszcie wywali?"
     show adam_view
@@ -406,7 +407,7 @@ label back_wyklad_tpi_3_cd:
     opiekunroku "No dobrze. Możemy już zacząć wykład."
     
     scene black
-    show text "{color=#FFF}Wykład...{/color}"
+    show text "{color=#FFF}{size=+30}Podstawowe automaty w informatyce{/color}"
     pause 2
 
     scene bg a129
@@ -536,8 +537,8 @@ label back_wyklad_tpi_3_cd:
             m "Może tym razem dam sobie spokój ze świętowaniem. Przełożę to na inny termin. Mam nadzieję, że Adam 
             razem ze mną będzie mógł świętować..."
 
-    scene bg white
-    show text "{color=#000000}Czwartek{/color}"
+    scene black
+    show text "{color=#FFF}{size=+30}Czwartek{/size}{/color}"
     pause 2
     play music "music/bensound-sunny.ogg"
     scene bg korytarz
@@ -607,19 +608,19 @@ label back_wyklad_tpi_3_cd:
         adam "I oto chodzi. Gratuluję Ci, że zostałaś wybrana. Zasłużyłaś na to!"
     scene bg a123
     play music "music/bensound-house.ogg"
-    show teresa at left
-    teresa "Witajcie, wszyscy. Mam nadzieję, że każdy dostał wiadomość, że dzisiaj mamy analizę."
-    hide teresa
+    show iza at left
+    Izabella "Witajcie, wszyscy. Mam nadzieję, że każdy dostał wiadomość, że dzisiaj mamy analizę."
+    hide iza
     show stud1 at left
     "Random1" "O kurde, zapomniałem! Ciekawe jak mi pójdzie kartkówka..."
     show stud2 at right
     "Random2" "Spoko, ja się uczyłem. Będę Ci podpowiadał jak coś."
     hide stud1
     hide stud2
-    show teresa at left
-    teresa "Ok, JD3.0 jest już gotowy do działania. Prawda, JD? "
+    show iza at left
+    Izabella "Ok, JD3.0 jest już gotowy do działania. Prawda, JD? "
     "JD3.0 ""BIP BOOOP BIB BOOOP BIP!"
-    teresa "No to możemy zaczynać. Specjalnie dałam prosty przykład ze względu na zmianę terminu zajęć. 
+    Izabella "No to możemy zaczynać. Specjalnie dałam prosty przykład ze względu na zmianę terminu zajęć. 
     Do roboty, kochani!"
     stop music
     jump mat_kart2
@@ -630,10 +631,10 @@ label back_wyklad_mat_3_cd:
     #label back
     play music "music/bensound-house.ogg"
     scene bg a123
-    show teresa at left
-    teresa "Sądzę, że wszyscy już skończyli. Widzę po waszych twarzach, że w miarę Wam poszło. 
+    show iza at left
+    Izabella "Sądzę, że wszyscy już skończyli. Widzę po waszych twarzach, że w miarę Wam poszło. 
     Mówiłam, że dam coś łatwego."
-    hide teresa
+    hide iza
     show stud1 at left
     "Random1" "Nawet nie musiałeś mi pomagać. Serio, tym razem dał coś łatwego!"
     show stud2 at right
@@ -641,20 +642,20 @@ label back_wyklad_mat_3_cd:
     "Random3" "Ja już wiem, że mam przechlapane. Nie mogę się jakoś wyuczyć tych wzorów na pamięć..."
     hide stud1
     hide stud2
-    show teresa at left
-    teresa "No dobrze, zacznijmy już wykład. Dzisiaj przechodzimy do trudniejszych rzeczy, więc radzę wszystkim uważać. 
+    show iza at left
+    Izabella "No dobrze, zacznijmy już wykład. Dzisiaj przechodzimy do trudniejszych rzeczy, więc radzę wszystkim uważać. 
     Dzisiaj zaczynamy całki!"
     
     scene black
-    show text "{color=#FFF}Całki nieoznaczone{/color}"
+    show text "{color=#FFF}{size=+30}Całki nieoznaczone{/color}{/color}"
     pause 2
 
     scene bg a123
-    show teresa at left
-    teresa "Rozprawiliśmy się z tematem szybciej nim myślałam. Dobrze, że w tym roku mam tak fajną grupę"
-    teresa "JD już sprawdził Wasze prace. Zaraz Wam je pokażę. Widzę że większość zaliczyła. Tak trzymać! Dajesz,  JD!"
+    show iza at left
+    Izabella "Rozprawiliśmy się z tematem szybciej nim myślałam. Dobrze, że w tym roku mam tak fajną grupę"
+    Izabella "JD już sprawdził Wasze prace. Zaraz Wam je pokażę. Widzę że większość zaliczyła. Tak trzymać! Dajesz,  JD!"
     "JD3.0" "BIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIP BOOP!"
-    teresa "Do całek wrócimy dopiero w następnym tygodniu. Trzymajcie się i do zobaczenia!"
+    Izabella "Do całek wrócimy dopiero w następnym tygodniu. Trzymajcie się i do zobaczenia!"
     
     scene bg white
     show text "{color=#000000}Twoja ocena: [ocena_kart1_tpi]{/color}"
@@ -715,8 +716,8 @@ label back_wyklad_mat_3_cd:
             adam "Byłoby super! Teraz lepiej chodźmy na laborki. Jeszcze nie oddałem tych programów, które zadała. 
             Mam nadzieję, że kobitka nie będzie zła..."
     
-    scene bg white
-    show text "{color=#000000}Piątek{/color}"
+    scene black
+    show text "{color=#FFF}{size=+30}Piątek{/size}{/color}"
     pause 2
     play music "music/bensound-happiness.ogg"
     scene bg pokoj
@@ -762,7 +763,7 @@ label wstajemy:
     opiekunroku "Dobrze kombinujesz, Amanda. Wskakujcie, dziewczyny. Jedziemy!"
 
     scene black
-    show text "{color=#FFF}PÓŁ GODZINY PÓŹNIEJ{/color}"
+    show text "{color=#FFF}{size=+30}PÓŁ GODZINY PÓŹNIEJ{/size}{/color}"
     pause 2
 
     scene bg miasto
@@ -774,7 +775,7 @@ label wstajemy:
         show main3
     show draco at left
     show opiekun at right
-    m "Jak długo zajmie nam podróż.  Jak daleko stąd jest placówka Mainsoftu?"
+    m "Jak długo zajmie nam podróż. Jak daleko stąd jest placówka Mainsoftu?"
     malfoy "Nigdy w Warszawie nie byłaś? Matko i córko. Ty to serio jakaś dziwna jesteś..."
     opiekunroku "Amanda, uspokój się. Inaczej porozmawiam sobie z Twoim ojcem!"
     malfoy "D-dobrze..."
@@ -789,7 +790,7 @@ label wstajemy:
     malfoy "Niechętnie to mówię, ale zgadzam się z Tobą..."
     
     scene black
-    show text "{color=#FFF}PÓŁ GODZINY PÓŹNIEJ{/color}"
+    show text "{color=#FFF}{size=+30}PÓŁ GODZINY PÓŹNIEJ{/size}{/color}"
     pause 2
     
     scene bg droga
@@ -809,7 +810,7 @@ label wstajemy:
     #(odglos poteznego uderzenia)
     #(tlo robi sie cale biale na parenascie sekund)
     scene bg white
-    ""
+    pause 2
     scene bg las1
     if i == 1:
         show main1
@@ -834,7 +835,7 @@ label wstajemy:
     malfoy "Najprawdopodobniej nogę złamałam. Jakoś żyję. Wyciągnij Matyldę. Spróbuję Ci pomóc...ohhh jak boli"
     
     scene black
-    show text "{color=#FFF}CHWILE PÓŹNIEJ{/color}"
+    show text "{color=#FFF}{size=+30}CHWILE PÓŹNIEJ{/size}{/color}"
     pause 2
 
     show bg las2
@@ -881,7 +882,7 @@ label wstajemy:
 
 label nieistony_x:
     scene black
-    show text "{color=#FFF}CHWILE PÓŹNIEJ{/color}"
+    show text "{color=#FFF}{size=+30}CHWILE PÓŹNIEJ{/size}{/color}"
     pause 2
 
     scene bg las2
@@ -946,7 +947,7 @@ label nieistony_x:
     m "O wilku mowa! Jesteśmy uratowane"
     
     scene black
-    show text "{color=#FFF}Kilka godzin później{/color}"
+    show text "{color=#FFF}{size=+30}Kilka godzin później{/size}{/color}"
     pause 2
     play music "music/bensound-rumble.ogg"
     scene bg szpital
@@ -971,7 +972,7 @@ label nieistony_x:
     opiekunroku "Hahahaha, tylko żartowałam!"
     
     scene black
-    show text "{color=#FFF}Jakis czas później{/color}"
+    show text "{color=#FFF}{size=+30}Jakis czas później{/size}{/color}"
     pause 2
 
     scene bg korytarz

@@ -151,8 +151,8 @@ init:
             text "Ocena : [ocena_egz_pe]"
         textbutton "Zakończ" xpos 0.8 ypos 0.9 text_color "#000" text_hover_color "#047" action Jump("pe_run_next")
 label minigame_pe:
-    scene bg white
-    show text "{color=#000000}Egzamin z Podstaw Elektroniki{/color}"
+    scene black
+    show text "{color=#FFF}{size=+30}Egzamin z Podstaw Elektroniki{/size}{/color}"
     pause 2
     hide text
 
@@ -206,6 +206,7 @@ label pe_end:
         $ odp_pe_q6 = "Dobra"
     else:
         $ odp_pe_q6 = "Zła"
+    scene bg white
     python:
         ocena_egz_pe = srednia_egzamin("Dobra", odp_pe_q1, odp_pe_q2, odp_pe_q3, odp_pe_q4, odp_pe_q5, odp_pe_q6)
     call screen pe_conclusion

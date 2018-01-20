@@ -101,7 +101,7 @@ label chapter1: #DONE
         o "O to akurat najmniej się martwię, leć już, bo się spóźnisz. Miłego dnia. "
 
         scene black
-        show text "{color=#FFFFFF}Uczelnia - godzina 10{/color}"
+        show text "{color=#FFF}{size=+30}Uczelnia - godzina 10{/size}{/color}"
         pause 2
         hide text
 
@@ -125,8 +125,7 @@ label chapter1: #DONE
         #czarne tło, napis: immatrykulacja uczelnia hate_u
 
         scene black
-
-        show text "{color=#FFFFFF}Immatrykulacja - [hate_u]{/color}"
+        show text "{color=#FFF}{size=+30}Immatrykulacja - [hate_u]{/color}{/color}"
         pause 2
         hide text
 
@@ -198,7 +197,7 @@ label chapter1: #DONE
         label zmiany:
         #odgłos tłumu
         scene black
-        show text "{color=#FFFFFF}Kilka minut później...{/color}"
+        show text "{color=#FFF}{size=+30}Kilka minut później...{/size}{/color}"
         pause 2
         hide text
 
@@ -225,7 +224,7 @@ label chapter1: #DONE
                         show main2
                     elif i == 3:
                         show main3
-                    m "O...k... to była ta sala? No nic, przekonajmy sie."
+                    m "O...kurcze to była ta sala? No nic, przekonajmy sie."
                     #sala wykladowa
                     show bg a123
                     #pokazywanie naszej studentki
@@ -246,7 +245,7 @@ label chapter1: #DONE
                         show main2
                     elif i == 3:
                         show main3
-                    m "O...k... to była ta sala? No nic, przekonajmy sie."
+                    m "O...kurcze to była ta sala? No nic, przekonajmy sie."
                     #sala wykladowa
                     show bg a129
                     #pokazywanie naszej studentki

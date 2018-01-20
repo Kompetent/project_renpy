@@ -278,8 +278,8 @@ init:
                 lista +=["Zła"]
 
 label minigame_tpi:
-    scene bg white
-    show text "{color=#000000}Egzamin z TPI{/color}"
+    scene black
+    show text "{color=#FFF}{size=+30}Egzamin z TPI{/size}{/color}"
     pause 2
     hide text
 

@@ -83,8 +83,8 @@ init:
             return zmienna
 
 label minigame_mat:
-    scene bg white
-    show text "{color=#000000}Egzamin z Analizy Matematycznej{/color}"
+    scene black
+    show text "{color=#FFF}{size=+30}Egzamin z Analizy Matematycznej{/size}{/color}"
     pause 2
     hide text
 
@@ -134,6 +134,7 @@ label next_mat_q6_wrong:
 label next_mat_q6_good:
     $ analiza_q6 = "Dobra"
 label next_mat_end:
+    scene bg white
     call screen analiza_conclusion
 label analiza_run:
     python:

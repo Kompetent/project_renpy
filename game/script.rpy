@@ -82,6 +82,7 @@ label splashscreen:
         return
 label start:
     $ _game_menu_screen = None
+    #$ renpy.movie_cutscene("video/Intro.ogv")
     #zrobic wersje na androida
     #jump minigame_mat #zrobione
     #jump minigame_tpi #zrobione
@@ -89,10 +90,11 @@ label start:
     #jump minigame_pp1 #zrobione
     #jump minigame_pe #zrobione
     #jump exams
+    #jump tpi_kart1
+    #jump pp1_kart2
+    
     scene black
     show text "{color=#FFF}{size=+30}Chapter 0\nStwórz swoją postać{/size}{/color}"
-    #with chapter_title
-    #with dissolve
     pause 2
 
     scene black
@@ -174,6 +176,8 @@ label Malgorzata:
 
 label next1:
     hide screen propozycje
+    if name is None:
+        $ name = "Anna"
     if i == 1:
         $ m = Character(name, image="mainGirl1",what_slow_cps=20)
     elif i == 2:

@@ -4,7 +4,7 @@ init:
     define teresa = Character("Teresa",what_slow_cps=20)
     define Izabella = Character("Pan dr",what_slow_cps=20)
     image bg park = "park2.jpg"
-    image bg dziekanat = "dziekanat2.jpg"
+    image bg dziekanat = "dziekanat.jpg"
 
     image stud1 = "noname1.png"
     image stud2 = "noname2.png"
@@ -19,8 +19,8 @@ label chapter2: #DONE
     show text "{color=#FFF}{size=+30}Chapter 2\nPierwszy tydzień zajęć{/size}{/color}"
     pause 2
     #==================nowa_scena==================
-    scene bg white
-    show text "{color=#000000}Poniedziałek{/color}"
+    scene black
+    show text "{color=#FFF}{size=+30}Poniedziałek{/size}{/color}"
     pause 2
     #==================nowa_scena==================
     show bg miasto
@@ -52,7 +52,7 @@ label chapter2: #DONE
         hide main2
     elif i == 3:
         hide main3
-    $ opiekunroku = Character("prof. hab. Matylda Kostrzewska",what_slow_cps=20)
+    $ opiekunroku = Character("prof. dr hab. Matylda Kostrzewska",what_slow_cps=20)
     show opiekun:
         xpos 200
     play music "music/bensound-jazzcomedy.ogg"
@@ -99,7 +99,7 @@ label chapter2: #DONE
     opiekunroku "No to zaczynamy zajęcia!"
     #==================nowa_scena==================
     scene black
-    show text "{color=#FFFFFF}temat lekcji: historia i cechy jezyka C, typy zmiennych, podstawy algorytmow-grafy, hello world, wprowadzanie danych, instrukcja IF{/color}"
+    show text "{color=#FFF}{size=+30}temat lekcji: historia i cechy jezyka C, typy zmiennych, podstawy algorytmow-grafy, \nhello world, wprowadzanie danych, instrukcja IF{/size}{/color}"
     pause 5
     hide text
     #==================nowa_scena==================
@@ -132,8 +132,8 @@ label chapter2: #DONE
         m "Ta kobieta zawsze musi mi psuć humor. Ehh...dobra wracam do domu. Muszę się odstresować. "
         m "Ciężko mi się będzie z kimś zakumplować, jeżeli ona wciąż będzie to robić. Niech ten zakład już się skończy..."
     #==================nowa_scena==================
-    scene bg white
-    show text "{color=#000000}Wtorek{/color}"
+    scene black
+    show text "{color=#FFF}{size=+30}Wtorek{/size}{/color}"
     pause 2
     #==================nowa_scena==================
     scene bg park
@@ -209,7 +209,7 @@ label w13:
     show dziekan casual at left
     dziekan "Witajcie, drodzy studenci. My się już znamy (a na pewno Ci co byli na inauguracji hehehe) ale przedstawię 
     się wam jeszcze raz. Nazywam się Stanisław Meister i będę miał z Wami w tym semestrze zajęcia z Podstaw elektroniki."
-    $ dziekan = Character("prof. hab. Stanisław Meister",what_slow_cps=20)
+    $ dziekan = Character("prof. dr hab. Stanisław Meister",what_slow_cps=20)
     hide dziekan casual
     show stud1:
         xpos 200
@@ -303,7 +303,7 @@ label w13:
     #==================nowa_scena==================
     #(zdjecie korytarza)
     scene black
-    show text "{color=#FFF}Wykład{/color}"
+    show text "{color=#FFF}{size=+30}Wstępne omówienie programu PSpice{/size}{/color}"
     pause 2
     play music "music/bensound-rumble.ogg"
     scene bg korytarz
@@ -375,8 +375,8 @@ label w13:
             jump w14
     label w14:
     #==================nowa_scena==================
-    scene bg white
-    show text "{color=#000000}Środa{/color}"
+    scene black
+    show text "{color=#FFF}{size=+30}Środa{/size}{/color}"
     pause 2
     #==================nowa_scena==================
     scene bg korytarz
@@ -484,7 +484,7 @@ label w13:
     ikar "Ta kartkówka ma pokazać jedną rzecz: czy uczycie się na bieżąco. Temat nie będzie trudny. Tutaj chodzi 
     tylko o sprawdzenie jakości waszego uczenia się."
     ikar "Kiedyś ta kartkówka była niezapowiedziana, ale w efekcie niewielu ludzi mogło podejść do egzaminu, 
-    więc szefostwo zadecydowało bym zmienił swój zwyczaj.  Osobiście uważam, że tamta metoda była lepsza niż ta."
+    więc szefostwo zadecydowało bym zmienił swój zwyczaj. Osobiście uważam, że tamta metoda była lepsza niż ta."
     ikar "Jeżeli nie nauczycie się samodyscypliny to nie poradzicie sobie w świecie IT. Moim zadaniem jest nie 
     tylko nauczyć was teorii informatyki, ale też i podstawowych zasad dorosłego życia."
     hide ikar
@@ -513,7 +513,7 @@ label w13:
     ikar "Mam nadzieję, że wszyscy zrozumieli to, co im teraz przekazałem. Obyście na wykładach mieli też takie 
     zrozumienie. Przejdźmy do tematu zajęć."
     scene black
-    show text "{color=#FFF}Wykład{/color}"
+    show text "{color=#FFF}{size=+30}Algorytmy i sposoby ich opisu{/size}{/color}"
     pause 2
     #-------------------------------dodokonczenia-------------------------------
     #==================nowa_scena==================
@@ -538,6 +538,7 @@ label w13:
         marta "Hmm...myślę, że to dzięki tobie. Poprawiłaś mi samoocenę. Zaczynam wierzyć, że będę sobie radzić."
         m "I o to chodzi! Jestem z ciebie dumna."
         show draco at right
+        play music "music/bensound-scifi.ogg"
         malfoy "Co ja tu słyszę? Czyżby niedorajda zaczęła sobie radzić?"
         marta "Odczep się ode mnie, [malfoy]."
         malfoy "Współczuję ci, [marta], że musisz użerać się z kimś takim. Ile ci zajęło by zrozumiała jak się 
@@ -546,6 +547,7 @@ label w13:
         malfoy "Biedactwa nie radzą sobie z prawdą. W pracy będziecie miały jeszcze gorzej. Lepiej od razu 
         przepiszcie się na Zarządzanie zanim stres was do reszty zje hahahahaha."
         hide draco
+        play music "music/bensound-rumble.ogg"
         marta "Mówiłaś, że z toba też ma na pieńku. O co chodzi?"
         m "Nic takiego. Wkurzała mnie swoja wyniosłością i tak wyszło, że się założyłyśmy. Ta, która będzie miała 
         lepsze oceny, wygra."
@@ -575,8 +577,8 @@ label w13:
         m "Lepiej od razu ruszę na zajęcia. Nie chcę, by ta [malfoy] jeszcze bardziej popsuła mi dzień."
         m "Jeśli ta Marta nie pojawi się jutro, to zainteresuje się tematem. Mam złe przeczucia..."
     #==================nowa_scena==================
-    scene bg white
-    show text "{color=#000000}Czwartek{/color}"
+    scene black
+    show text "{color=#FFF}{size=+30}Czwartek{/size}{/color}"
     pause 2
     #==================nowa_scena==================
     show bg park
@@ -686,7 +688,7 @@ label w13:
     #------------------------------------dodokonczenia----------------------------------------------------------
     #==================nowa_scena==================
     scene black
-    show text "{color=#FFF}Wykład{/color}"
+    show text "{color=#FFF}{size=+30}Ochrona własności intelektualnej{/size}{/color}"
     pause 2
     scene bg korytarz
     if i == 1:
@@ -746,19 +748,20 @@ label w13:
                 #(tlo zaczyna sie sciemniac az do czerni, pojawia sie obserwator)
                 scene black
                 show narrator at left
-                play music "music/bensound-exteremaction.ogg"
+                play music "music/bensound-extremeaction.ogg"
                 ob "Z powodu słusznego doniesienia o pobiciu, nasza studentka została wyrzucona z uczelni." 
                 ob "Dodatkowo musi zapłacić wysokie odszkodowanie tamtej dziewczynie. Ojciec bohaterki nigdy tak bardzo nie czuł wstydu z powodu zachowania swojej córki..."
                 ob "Zawiodła go na całej linii. Obawiam się, że to Twoja wina. Zawiodłem się na Tobie. Gra została skończona!"
-
-                show text "{color=#FF0000}GAME OVER{/color}"
-                pause 2
+                
+                scene black
+                show text "{color=#FF0000}{size=+30}GAME OVER{/size}{/color}"
+                pause 5
                 return
             "Biegnij do dziekanatu":
                 m "Nigdy....tak...nie mów...."
                 #==================nowa_scena==================
-                scene bg white
-                show text "{color=#000000}Parę chwil później{/color}"
+                scene black
+                show text "{color=#FFF}{size=+30}Parę chwil później{/size}{/color}"
                 pause 2
                 #==================nowa_scena==================
                 scene bg dziekanat
@@ -796,8 +799,8 @@ label w13:
                 marta "Trzymam cię za słowo. Obalimy twój sukces. Życzę ci powodzenia."
                 m "Dziękuję. Tym razem cię nie zawiodę."
                 #==================nowa_scena==================
-                scene bg white
-                show text "{color=#000000}Kilka chwil później{/color}"
+                scene black
+                show text "{color=#FFF}{size=+30}Kilka chwil później{/size}{/color}"
                 pause 2
                 #==================nowa_scena==================
                 scene bg korytarz
@@ -819,8 +822,8 @@ label w13:
                 malfoy "Zobaczymy, zobaczymy. Mimo to podtrzymuję swoje słowa. Jesteśmy do siebie podobne. Czas pokaże kto będzie górą."
                 m "Nawet nie wiesz jak bardzo nie mogę się tego doczekać...."
     #==================nowa_scena==================
-    scene bg white
-    show text "{color=#000000}Piątek{/color}"
+    scene black
+    show text "{color=#FFF}{size=+30}Piątek{/size}{/color}"
     pause 2
     #==================nowa_scena==================
     scene bg korytarz
@@ -916,9 +919,9 @@ label w13:
     "Student1" "Zachciało mi się inżyniera..."
     hide stud1
     show iza at left
-    Izabella "Sądzę, że chyba wszystko powiedziałam. Zacznijmy więc zajęcia."
+    Izabella "Sądzę, że chyba wszystko powiedziałem. Zacznijmy więc zajęcia."
     scene black
-    show text "{color=#FFF}Granice{/color}"
+    show text "{color=#FFF}{size=+30}Pochodne{/size}{/color}"
     pause 2
 #---------------------------------------------------temat zajęć: Granice------------------------------------------------------ 
     scene bg korytarz
@@ -936,7 +939,7 @@ label w13:
         show marta at right
         marta "Jejku, to było męczące. Czy mi się wydaje, czy nudziłaś się na tym wykładzie."
         m "W sumie, tak. Miałam już to w liceum. Byłam na profilu matematyczno-przyrodniczym."
-        marta "Jejku, Ty to musisz mieć łeb. Te granice nie wydają się aż tak trudne."
+        marta "Jejku, Ty to musisz mieć łeb. Te pochodne nie wydają się aż tak trudne."
         m "Bo nie są. Jak dojdziemy do całek to zaczniemy narzekać."
         marta "Weź nie strasz mnie na zapas, co?"
         m "Hhahahahaha, wybacz. Tylko żartowałam. Co planujesz na weekend?"

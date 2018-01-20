@@ -38,11 +38,11 @@ init:
             else:
                 return 5
 label pp1_kart1: #DONE
-    scene bg white
-    show text "{color=#000000}Kartkówka pierwsza z PP1{/color}"
-    pause 2
+    scene black
+    show text "{color=#FFF}{size=+30} Kartkówka pierwsza z PP1 {/size}{/color}"
+    pause 5
     hide text
-
+    scene bg white
     show countdown at Position(xalign=.9, yalign=.1)
     $ ui.timer(45.1, ui.jumps("next_pp1_kart1_q1_wrong"))
     call screen pp1_kart1_question1

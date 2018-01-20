@@ -203,8 +203,8 @@ init:
                 
 
 label minigame_prawo:
-    scene bg white
-    show text "{color=#000000}Egzamin z Prawa{/color}"
+    scene black
+    show text "{color=#FFF}{size=+30}Egzamin z Prawa{/size}{/color}"
     pause 2
     hide text
 

@@ -98,13 +98,13 @@ init:
                 return 2
             elif procent <65:
                 return 3
-            elif procent < 80:
+            elif procent < 88:
                 return 4
             else:
                 return 5
 label minigame_pp1:
-    scene bg white
-    show text "{color=#000000}Egzamin z PP1{/color}"
+    scene black
+    show text "{color=#FFF}{size=+30}Egzamin z PP1{/size}{/color}"
     pause 2
     hide text
 

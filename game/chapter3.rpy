@@ -7,8 +7,8 @@ label chapter3: #DONE
     show text "{color=#FFF}{size=+30}Chapter 3\nTydzień drugi{/size}{/color}"
     pause 2
 
-    scene bg white
-    show text "{color=#000000}Poniedziałek{/color}"
+    scene black
+    show text "{color=#FFF}{size=+30}Poniedziałek{/size}{/color}"
     pause 2
     #python:
         #marta_zostala_uspokojona = False
@@ -128,7 +128,7 @@ label back_wyklad_pp1_2_cd:
     opiekunroku "No dobrze, zacznijmy wreszcie wykład."
     
     scene black
-    show text "{color=#FFF}Wykład...{/color}"
+    show text "{color=#FFF}{size=+30}Omowienie petli w C{/size}{/color}"
     pause 2
     
     scene bg a123
@@ -206,8 +206,8 @@ label back_wyklad_pp1_2_cd:
             hide draco
             m "Nie mogę zawieść Marty. Dam sobie radę. Czas na następne zajęcia."
 
-    scene bg white
-    show text "{color=#000000}Wtorek{/color}"
+    scene black
+    show text "{color=#FFF}{size=+30}Wtorek{/size}{/color}"
     pause 2
     play music "music/bensound-sunny.ogg"
     scene bg park
@@ -261,7 +261,7 @@ label back_wyklad_pp1_2_cd:
     dziekan "No dobrze. Chyba nikt już nie dojdzie. Zacznijmy wreszcie wykład"
     
     scene black
-    show text "{color=#FFF}Wykład...{/color}"
+    show text "{color=#FFF}{size=+30}Elementy w obwodach elektrycznych{/size}{/color}"
     pause 2
     
     scene bg a128
@@ -291,8 +291,8 @@ label back_wyklad_pp1_2_cd:
         m "Jedyne co dziś mnie trzyma to moja motywacja. Nie mogę mieć żadnych zaległości."
         m "Chyba Amandy dzisiaj nie będzie. Warto jakoś wykorzystać ten cud..."
 
-    scene bg white
-    show text "{color=#000000}Środa{/color}"
+    scene black
+    show text "{color=#FFF}{size=+30}Środa{/size}{/color}"
     pause 2
     play music "music/bensound-rumble.ogg"
     scene bg park
@@ -392,7 +392,7 @@ label back_wyklad_pp1_2_cd:
         show main3
     m "Niech ten wykład jak najszybciej się skończy..."
     scene black
-    show text "{color=#FFF}Wykład...{/color}"
+    show text "{color=#FFF}{size=+30}Złożoność obliczeniowa algorytmów{/color}"
     pause 2
 
     scene bg korytarz
@@ -471,8 +471,8 @@ label back_wyklad_pp1_2_cd:
         adam "Taa...Przyda nam się to, jak będziemy pracować w jakimś korpo. Dobra, to co teraz mamy?"
     #KONIEC ŚRODY
     #CZWARTEK
-    scene bg white
-    show text "{color=#000000}Czwartek{/color}"
+    scene black
+    show text "{color=#FFF}{size=+30}Czwartek{/size}{/color}"
     pause 2
     scene bg korytarz
     play music "music/bensound-acousticbreeze.ogg"
@@ -505,7 +505,7 @@ label back_wyklad_pp1_2_cd:
     teresa "Lekki żart na poprawę humoru i jedziemy z następnym tematem"
     
     scene black
-    show text "{color=#FFF}Wykład...{/color}"
+    show text "{color=#FFF}{size=+30}Patent w branży IT{/color}"
     pause 2
     scene bg a123
     show teresa at left 
@@ -539,8 +539,8 @@ label back_wyklad_pp1_2_cd:
         m "Dzięki wielkie. Teraz tylko wytrwać do piątku i weekend...."
         adam "Który będzie zawalony nauką na Ikara. Bombowo....."
     
-    scene bg white
-    show text "{color=#000000}Piątek{/color}"
+    scene black
+    show text "{color=#FFF}{size=+30}Piątek{/size}{/color}"
     pause 2
     play music "music/bensound-rumble.ogg"
     scene bg korytarz
@@ -622,7 +622,7 @@ label back_wyklad_mat_2_cd:
     Izabella "Radzę wam się skupić, gdyż temat jest dosyć istotny. Zacznijmy więc."
 
     scene black
-    show text "{color=#FFF}Wykład...{/color}"
+    show text "{color=#FFF}{size=+30}Granice{/size}{/color}"
     pause 2
     
     scene bg a128

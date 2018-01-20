@@ -22,11 +22,11 @@ init:
             textbutton " * " text_color "#000000" text_hover_color "#0000FF" action Jump("next_pp1_kart2_q3_wrong")
 
 label pp1_kart2: #DONE
-    scene bg white
-    show text "{color=#000000}Kartkówka druga z PP1{/color}"
-    pause 2
+    scene black
+    show text "{color=#FFF}{size=+30} Kartkówka druga z PP1 {/size}{/color}"
+    pause 5
     hide text
-
+    scene bg white
     show countdown at Position(xalign=.9, yalign=.1)
     $ ui.timer(45.1, ui.jumps("next_pp1_kart2_q1_wrong"))
     call screen pp1_kart2_question1

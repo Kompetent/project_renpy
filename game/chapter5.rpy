@@ -83,7 +83,7 @@ label chapter5:
         ob "Muszę przyznać, że jestem rozczarowany. Nie spodziewałem się takich wyników. Widać, że nie potraktowałeś moich rad poważnie. Nie jestem zły. Jest mi tylko"
         ob "bardzo przykro. Oto koniec Twojej przygody z Wonderful Time. Jeśli kiedyś choć trochę nad sobą popracujesz to wróc tutaj. Będę na Ciebie czekał..."
         scene black
-        show text "{color=#F00} GAME OCER {/color}"
+        show text "{color=#F00} GAME OVER {/color}"
         pause 5
         return
     #(gra sie konczy, tyle; to co nizej sie nie wydarza)
@@ -118,8 +118,8 @@ label chapter5:
 
     if zaliczone == 5:
         play music "music/bensound-love.ogg"
-        scene bg white
-        show text "EPILOG"
+        scene black
+        show text "{color=#FFF}{size=+30}EPILOG{/size}{/color}"
         pause 2
 
         scene bg korytarz
@@ -153,6 +153,6 @@ label chapter5:
         ob "Hmm, czy wspominałem, że potrafię podrózować w czasie? Nie? No to popatrz na to!"
 
     scene black
-    show text "{color=#FFF} Dziękujemy za grę {/color}"
+    show text "{color=#FFF}{size=+30} Dziękujemy za grę {/size}{/color}"
     pause 5
     return

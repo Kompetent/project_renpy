@@ -22,11 +22,11 @@ init:
             textbutton " O(2^n) " text_color "#000000" text_hover_color "#0000FF" action Jump("next_tpi_kart1_q3_wrong")
 
 label tpi_kart1: #DONE
-    scene bg white
-    show text "{color=#000000}Kartkówka z tpi{/color}"
-    pause 2
+    scene black
+    show text "{color=#FFF}{size=+30} Kartkówka z TPI {/size}{/color}"
+    pause 5
     hide text
-
+    scene bg white
     show countdown at Position(xalign=.9, yalign=.1)
     $ ui.timer(45.1, ui.jumps("next_tpi_kart1_q1_wrong"))
     call screen tpi_kart1_question1
